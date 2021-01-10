@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>專屬於你的 個人化 留學展</title>
+		<link rel="icon" type="image/png" href="icon.png">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="header">
+			<a href="/"><img id="logo" src="logo.png" alt="Logo"></a>
+
+			<h3 id="carticon">清單</h3>
+		</header>
+
+		<div class="space"></div>
+		<div class="sticky" id="sticky"><h1>專屬於你的 個人化 留學展</h1></div>
+		<div id="banner">
+			<img src="banner.png" alt="Banner">
+		</div>
+
+	<!--	<div class="button">
+			<h2>你想去哪個國家?</h2>
+			<input type="radio" id="usbtn" name="country" class="btn"/>
+			<label for="usbtn"><a><p>US<br/>美國</p></a></label>
+			<input type="radio" id="ukbtn" name="country" class="btn"/>
+			<label for="ukbtn"><a><p>UK<br/>英國</p></a></label>
+		</div>-->
+		<div class="button" id="country">
+			<h2>你想去哪個國家?</h2>
+			<a href="#us" id="usbtn"><p>US<br/>美國</p></a>
+			<a href="#uk" id="ukbtn"><p>UK<br/>英國</p></a>
+		</div>
+		<span><hr noshade id="hr"/></span>
+
+		<!--<div id="us">-->
+			<div class="button us" id="us">
+				<a href="#ushs" id="ushsbtn"><p>申請<br/>高中</p></a>
+				<a href="#usug" id="usugbtn"><p>申請<br/>大學</p></a>
+				<a href="#uspg" id="uspgbtn"><p>申請<br/>碩士</p></a>
+				<a href="#ustalk" id="ustalkbtn"><p>留學<br/>講座</p></a>
+			</div>
+		<!--</div>-->
+
+		<!--<div id="uk">-->
+			<div class="button uk" id="uk">
+				<a href="#ukhs" id="ukhsbtn"><p>申請<br/>高中</p></a>
+				<a href="#ukug" id="ukugbtn"><p>申請<br/>大學</p></a>
+				<a href="#ukpg" id="ukpgbtn"><p>申請<br/>碩士</p></a>
+				<a href="#uktalk" id="uktalkbtn"><p>留學<br/>講座</p></a>
+			</div>
+		<!--</div>-->
+
+		<!--<div id="biglist">-->
+		<div id="ushs" class="cards">
+			<!--can i use js to input all tdese school contents?-->
+			<div class="card" id="temp"> <!--temp needs to be moved, decide click where for more info-->
+				<div class="cardimg">
+					<div class="addbtn"> <!--need to add function-->
+						<p>&plus;</p>
+					</div>
+					<img src="asu.jpg" alt="asu">
+					<h4>Arizona State University</h4>
+
+				</div>
+				<div class="info">
+					<p class="ranking">商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</p>
+					<p class="more">了解更多 &gt;</p>
+				</div>
+			</div>
+
+			<div class="card"> <!--temp needs to be moved, decide click where for more info-->
+				<div class="cardimg">
+					<div id="addddd"> <!--need to add function-->
+						<p>&plus; 清單</p>
+					</div>
+					<img src="asu.jpg" alt="asu">
+					<h4>Arizona State University</h4>
+
+				</div>
+				<div class="info">
+					<p class="ranking">商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</p>
+					<p class="more">了解更多 &gt;</p>
+				</div>
+			</div>
+
+			<div class="card"> <!--temp needs to be moved, decide click where for more info-->
+				<div class="cardimg">
+					<div class="addbtn"> <!--need to add function-->
+						<p>&plus;</p>
+					</div>
+					<img src="asu.jpg" alt="asu">
+					<h4>Arizona State University</h4>
+
+				</div>
+				<div class="info">
+					<p class="ranking">商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</p>
+					<p class="more">了解更多 &gt;</p>
+				</div>
+			</div>
+
+			<div class="card"> <!--temp needs to be moved, decide click where for more info-->
+				<div class="cardimg">
+					<div class="addbtn"> <!--need to add function-->
+						<p>&plus;</p>
+					</div>
+					<img src="asu.jpg" alt="asu">
+					<h4>Arizona State University</h4>
+
+				</div>
+				<div class="info">
+					<p class="ranking">商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</p>
+					<p class="more">了解更多 &gt;</p>
+				</div>
+			</div>
+
+			<!--<div class="card">
+				<h4>School Name</h4>
+				<img src="img/kdkdk.png" alt="school name">
+				<p>random rankings<br/>random rankings</p>
+				<div class="content">
+					<p>random rankings<br/>random rankings</p>
+				</div>
+				<p>ADD!!</p>
+			</div>-->
+		</div>
+	<!--</div>-->
+
+		<div class="school" id="asu">
+			<span class="close" id="close">&times;</span>
+			<img src="asu.jpg" alt="school name" class="schoolimg">
+			<h4>Arizona State University</h4>
+			<div class="schoolinfo">
+				<table>
+					<tr>
+						<td>學校簡介</td>
+						<td>成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。</td>
+					</tr>
+					<tr>
+						<td>學校排名</td>
+						<td>世界大學 排名 146 名<br/>商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</td>
+					</tr>
+					<tr>
+						<td>推薦科系</td>
+						<td>全球物流 Global Logistics &ast;&ast;<br/>財務金融 Finance &ast;&ast;<br/>使用者經驗 User Experience (UX) &ast;&ast;<br/>資訊管理 Information System Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT</td>
+					</tr>
+					<tr>
+						<td>補充資訊</td>
+					<td>&mdash; 雇主最愛聘僱的大學畢業生 全美 5 名<br/>&mdash; 畢業生在矽谷工作學生數量 全美 10 名</td>
+					</tr>
+				</table>
+				<!--
+				<h6>學校簡介</h6>
+				<p>成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。</p>
+				<span> <hr noshade/></span>
+				<h5>學校排名</h5>
+				<p>世界大學 排名 146 名<br/>商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</p>
+				<span> <hr noshade/></span>
+				<h5>推薦科系</h5>
+				<p>全球物流 Global Logistics &ast;&ast;<br/>財務金融 Finance &ast;&ast;<br/>使用者經驗 User Experience (UX) &ast;&ast;<br/>資訊管理 Information System Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT</p>
+				<span> <hr noshade/></span>
+				<h5>補充資訊</h5>
+				<p>&mdash; 雇主最愛聘僱的大學畢業生 全美 5 名<br/>&mdash; 畢業生在矽谷工作學生數量 全美 10 名</p>-->
+			</div>
+			<!--<p class="addschool" id="ugasu">新增至個人化留學展清單</p>-->
+
+			<input type="radio" id="btnControl"/><label for="btnControl"><p class="added">已新增!</p><p class="addschool" id="ugasu">新增至個人化留學展清單</p></label>
+		</div>
+
+		<!--<div id="school">
+			<a href="#ushs"><img src="close.png" id="close"></a>
+			<img src="img/kdkdk.png" alt="school name">
+			<h4>School Name</h4>
+			<p>random rankings<br/>random rankings</p>
+		</div>-->
+
+		<div class="cart" id="cart">
+			<span class="close" id="closecart">&times;</span>
+			<form>
+				<h2>專屬於你的 個人化 留學展</h2>
+				
+				<div class="seminarlist">
+					<h3>您的留學講座清單</h3>
+					<ul>
+						<li id="deleteproduct">
+							<span class="product">Seminar Name</span>
+							<span class="delete" id="deletebtn">&times;</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="schoollist">
+					<h3>您的學校清單</h3>
+					<ul id="tempy">
+					</ul>
+				</div>
+
+
+				<h3>希望與學校面談時段:</h3>
+				<div class="person">
+					<span>平日: </span>
+					<input type="checkbox"><label>上午</label>
+					<input type="checkbox"><label>下午</label>
+					<input type="checkbox"><label>傍晚</label><br>
+					<span>週六: </span>
+					<input type="checkbox"><label>上午</label>
+					<input type="checkbox"><label>下午</label><br>
+					<span>&lpar;可複選&rpar;</span>
+				</div>
+				<h3>個人資料</h3>
+				<div class="person">
+					<label>姓名&ast;: </label><input type="text"><br>
+					<label>電話&ast;: </label><input type="text"><br>
+					<label>居住城市&ast;: </label><input type="text"><br>
+					<label>Email&ast;: </label><input type="text"><br>
+					<label>LINE: </label><input type="text"><br>
+					<label>WeChat: </label><input type="text"><br>
+					<p>1. 資料送出後，EDU 壹教育顧問將於 24 小時內與您聯繫。<br/>2. 面談時間與方式，由 EDU 壹教育顧問安排協調。<br>3. 學校人員為 中文/英文 雙語溝通。</p>
+					<input type="checkbox"><label>我已了解並同意以上訊息</label><br>
+				</div>
+				<div id="submit"><input type="submit"></div>
+			</form>
+		</div>
+
+		<div class="modal-overlay" id="modaloverlay">
+		</div>
+
+		<button onclick="topFunction()" id="topBtn" title="Go to top" class="fade-in">&#8679;</button>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
+
