@@ -30,7 +30,7 @@ h2, h3 {
 	top: 0;
 	left: 0;
 	display: inline-block;
-    text-align: center;
+    /*! text-align: center; */
     vertical-align: middle;
 }
 
@@ -50,18 +50,45 @@ h2, h3 {
 .header #carticon {
 	float:right;
 	display:inline-block;
-	margin-right: 20px;
+	text-align: center;
+    color: #fff;
+    background-color: #103256;
+    border-radius: 15px;
+    margin: auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    transition: all .5s ease-out;
 }
 
 #carticon:hover, #carticon:focus {
 	transition: all .5s;
-	color: red;
+	background-color: red;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .space {
-	margin-top: 120px;
+	margin-top: 90px;
+}
+
+#cartcount {
+    position: absolute;
+    top: 10px;
+    right: 130px;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    background: #e94a35;
+    color: #fff;
+	  text-align: center;
+    font-size: .83333em;
+    font-weight: 700;
+    border-radius: 50%;
+    text-indent: 0;
+    transition: -webkit-transform .2s .5s;
+    transition: transform .2s .5s;
+    transition: transform .2s .5s,-webkit-transform .2s .5s;
 }
 
 .sticky {
@@ -76,15 +103,23 @@ h2, h3 {
 }
 
 
-#banner {
+.banner {
 	text-align: center;	
 	display: inline-block;
 	object-fit: cover;
-	margin-top: -100px;
+	/*! margin-top: -100px; */
 }
 
-#banner img {
+.banner img {
 	width: 100%;
+}
+
+#banner_mobile {
+	display: none;
+}
+
+#banner_full {
+	display: block;
 }
 
 .button {
@@ -104,8 +139,8 @@ h2, h3 {
 	background: #D9E9F9;
 	color: #000;
 	border-radius: 50%;
-	width: 135px;
-	height: 135px;
+	width: 160px;
+	height: 160px;
 	font-size: 25px;
 }
 
@@ -127,16 +162,72 @@ h2, h3 {
 	margin-top: 100px;
 }
 
-/*#usbtn, #ukbtn {
-	display: none;
+#ukbtn {
+	background: #f7d7d7;
+}
+
+#ukbtn.selected {
+	background: #6C0A0A !important; 
+}
+
+#ukbtn:hover, #ukbtn:focus {
+	transition: all .5s ease-out;
+	background: #E67D7D;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#ushsbtn, #ukhsbtn {
+	background: #DEC3E6;
+}
+
+#ushsbtn.selected, #ukhsbtn.selected {
+	background: #5C2A6C !important; 
+}
+
+#ushsbtn:hover, #ushsbtn:focus, #ukhsbtn:hover, #ukhsbtn:focus {
+	transition: all .5s ease-out;
+	background: #cc87e0;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#uspgbtn, #ukpgbtn {
+	background: #dff5dc;
+}
+
+#uspgbtn.selected, #ukpgbtn.selected {
+	background: #2F8125 !important; 
+}
+
+#uspgbtn:hover, #uspgbtn:focus, #ukpgbtn:hover, #uspgbtn:focus {
+	transition: all .5s ease-out;
+	background: #97db8f;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#ustalkbtn, #uktalkbtn {
+	background: #fcebd7;
+}
+
+#ustalkbtn.selected, #uktalkbtn.selected {
+	background: #C97F26 !important; 
+}
+
+#ustalkbtn:hover, #ustalkbtn:focus, #uktalkbtn:hover, #uktalkbtn:focus {
+	transition: all .5s ease-out;
+	background: #edb674;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 
 /*#usbtn:checked + label>a, #ukbtn:checked + label>a, */
 .clicked>a {
-	width: 80px;
-	height: 80px;
-	font-size: 19px;
+	width: 125px;
+	height: 125px;
+	font-size: 20px;
 	background: #D9E9F9;
 	color: #000;
 }
@@ -204,11 +295,11 @@ ul {
 	visibility: hidden; 
 	pointer-events: none;
 }
-
+/*
 #biglist {
 	display: none;
 }
-/*
+
 .us::before, .uk::before { 
 	display: block; 
 	content: " "; 
@@ -220,7 +311,7 @@ ul {
 
 .cards {
 	margin: auto;
-	width: 85%;
+	width: 90%;
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
@@ -238,9 +329,9 @@ ul {
 	border: 2px solid #85A4C4;
 	border-radius: 12px;
 	margin: 50px auto;
-	margin-left: 15px;
-	margin-right: 15px;
-	width: 560px; /* or45%/560px */
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 45%; /* or45%/560px */
 	display: inline-block;
 	background-color: #fcf6ed;
 	text-align: left;
@@ -259,7 +350,7 @@ ul {
 }
 
 .cardimg>img {
-	width: 560px;
+	width: 100%;
 	border-radius: 10px;
 }
 
@@ -274,6 +365,7 @@ ul {
 	text-shadow: 0 0 8px #000, 0 0 8px #777;
 }
 
+/*
 .addbtn {
 	position: absolute;
 	width: 0;
@@ -290,9 +382,9 @@ ul {
 	font-size: 40px;
 	margin-top: -40px;
 	margin-left: -30px;
-}
+}*/
 
-#addddd {
+.addbtn {
 	color: #fff;
 	font-size: 25px;
 	background-color: #EEA725;
@@ -306,7 +398,7 @@ ul {
     box-shadow: 1px 1px 3px #000;
 }
 
-#addddd>p {
+.addbtn>p {
 margin: 0;
 padding: 5px;
 }
@@ -323,7 +415,7 @@ padding: 5px;
 
 .more {
 	float: right;
-	margin-top: 45px;
+	margin-top: -45px;
 	margin-right: 20px;
 	text-decoration: underline;
 }
@@ -391,6 +483,8 @@ padding: 5px;
 
 .schoolinfo td {
 	padding: 30px;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .schoolinfo table {
@@ -470,21 +564,22 @@ padding: 5px;
 
 .close {
 	color: #EEA725;
-	float: right;
+	/*float: right;
 	font-size: 35px;
 	margin-right: 50px;
 	margin-top: 5px;
 	position: relative;
 	width: 0;
-	height: 0;
-	/* if want close to stick
-	margin-right: 120px;
-    margin-top: 25px;
+	height: 0;*/
+	/* if want close to stick*/
+	font-size: 35px;
+	margin-right: 13%; /*175px;*/
+    margin-top: 3%; /*30px;*/
     top: 0;
     right: 0;
     position: fixed;
-    height: 0;*/
-}
+    height: 0;
+ }
 
 .close:hover, .close:focus {
 	transition: all .5s ease-out;
@@ -564,13 +659,31 @@ padding: 5px;
 .delete {
 	float: right;
 	position: relative;
-	width: 0;
+	width: 25px;
 	height: 0;
 }
 
+/*
 .delete:hover, .delete:focus {
 	transition: all .5s ease-out;
 	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}*/
+
+svg {
+  display: block;
+}
+
+.close-x {
+  stroke: black;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+.close-x:hover, .close-x:focus {
+	stroke: red;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -588,6 +701,7 @@ padding: 5px;
 	backdrop-filter: blur(10px);
 }
 
+/*
 #topBtn {
   display: none;
   position: fixed;
@@ -606,8 +720,8 @@ padding: 5px;
 
 #topBtn:hover {
 	transition: all .5s ease-out;
-  background-color: #bbb; /* Add a dark-grey background on hover */
-}
+  background-color: #bbb; /* Add a dark-grey background on hover
+}*/
 
 .fade-in {
   animation: fadeIn ease 1s;
@@ -641,4 +755,976 @@ padding: 5px;
   100% {
     opacity:0;
   }
+}
+
+#footerbefore {
+padding: 80px;
+visibility: hidden;
+}
+
+/* -----------------footer----------------- */
+
+footer {
+  width: 100%;
+  background-color: #D2CBC2;
+  padding: 50px 0 0 0;
+}
+
+footer .ind-con {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+footer .footbox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+footer .leftbox {
+  width: 60%;
+}
+
+footer .footerinfo li {
+  margin: 7px 20px;
+  color: #333;
+  font-size: 17px;
+}
+
+footer strong{
+  color: #26351E;
+}
+
+/* ---------------- */
+
+footer .rightbox {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  flex-wrap: wrap;
+  margin-right: 60px;
+}
+
+footer .rightbox .icon-box {
+  width: calc(100% / 4);
+}
+
+footer .rightbox .f-icon {
+  width: 55%;
+  border-radius: 100%;
+  padding: 10px;
+  transition: .7s;
+}
+
+footer .rightbox .f-icon img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+footer .rightbox a:hover .f-icon {
+  background: #fbf3e8;
+}
+
+
+
+footer .copyright {
+  background-color: #A9A49C;
+  padding: 30px 0 20px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+footer .copyright .cr-link {
+  color: #444;
+  transition: 0.7s;
+  font-size: 16px;
+}
+
+footer .copyright a {
+  color: #555;
+  transition: 0.7s;
+  font-size: 16px;
+}
+
+footer .copyright a:hover {
+  color: #000;
+}
+
+footer .mb-footbox {
+  display: none;
+}
+
+
+/* -------------浮動小圖------------- */
+
+/*line@*/
+
+.lineat_box {
+  position: fixed;
+  right: 0%;
+  bottom: 170px;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  background-color: rgb(41, 173, 56);
+  border-radius: 50px;
+  overflow: hidden;
+  display: none;
+}
+
+.lineat_box>a>img {
+  width: auto;
+  height: 100%;
+  float: left;
+}
+
+.lineat_box>a>span {
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  text-align: right;
+  right: -150px;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+}
+
+.lineat_box:hover {
+  width: 160px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.lineat_box:hover>a>span {
+  right: 20px;
+}
+
+/* 滑動後顯示 */
+
+.shrink .lineat_box {
+  display: block;
+}
+
+/* 滑動後顯示 */
+
+.float {
+  position: fixed;
+  right: 0%;
+  bottom: 104px;
+}
+
+.float>ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.float>ul>li {
+  margin: 5px 0 0 0;
+}
+
+/* SCROLL TO TOP */
+
+.scrollToTop {
+  display: none;
+  background: rgba(149, 144, 137, 0.5) url('scroll-top.svg') no-repeat center center;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+	border-radius: 3px;
+}
+
+.scrollToTop:hover {
+  background: rgba(149, 144, 137, 0.9) url('scroll-top.svg') no-repeat center center;
+}
+
+/* //SCROLL TO TOP */
+
+.pc-f-icon {
+  width: 50px;
+  height: 50px;
+  padding: 3px 10px;
+  background-color: rgba(149, 144, 137, 0.5);
+  /*display: none;*/
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: 3px;
+}
+
+.pc-f-icon a {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  transition: all .5s;
+  line-height: 1.5;
+}
+
+.pc-f-icon:hover {
+  background-color: rgba(149, 144, 137, 0.9);
+}
+
+.pc-f-icon:hover a {
+  color: #fff;
+}
+
+/* 滑動後顯示 */
+
+.shrink .pc-f-icon {
+  display: block;
+}
+
+/* rwd */
+@media screen and (min-width:1096px)
+and (max-width:1238px){	
+	.button {
+	margin: auto;
+	width: 85%;
+}
+	.button a {
+	width: 140px;
+	height: 140px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+	.clicked>a {
+	width: 100px;
+	height: 100px;
+}
+	
+	.cardimg>h4 {
+	font-size: 18px;
+		width: 100%;
+}
+	
+	.addbtn {
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+	
+	.schoolinfo, .cart form {
+	width: 65%;
+}
+
+}
+/*
+@media screen and (min-width:1001px)
+and (max-width:1060px){
+		.button {
+	margin: auto;
+	width: 85%;
+}
+	.button a {
+	width: 120px;
+	height: 120px;
+}
+	.clicked>a {
+	width: 100px;
+	height: 100px;
+}
+	
+	.cardimg>h4 {
+	font-size: 18px;
+		width: 100%;
+}
+	.card {
+	width: 70%;
+}
+	.addbtn {
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+}*/
+
+@media screen and (min-width:901px)
+and (max-width:1095px){
+		.button {
+	margin: auto;
+	width: 90%;
+}
+	.button a {
+	width: 120px;
+	height: 120px;
+		font-size: 22px;
+			margin-left: 20px;
+	margin-right: 20px;
+}
+	.clicked>a {
+	width: 95px;
+	height: 95px;
+}
+	
+.card {
+	width: 60%;
+}
+	
+	.cardimg>h4 {
+	font-size: 18px;
+		width: 100%;
+}
+	#cartcount {
+    top: 10px;
+    right: 120px;
+	}
+	.addbtn {
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+	
+footer .footerinfo li {
+  font-size: 16px;
+}
+	.header #carticon {
+  font-size: 17px;
+}
+	
+		.school, .cart {
+		width: 85%;
+	}
+		.schoolinfo, .cart form {
+	width: 70%;
+}
+	
+.close {
+	margin-right: 10%;
+    margin-top: 3%;
+	}
+}
+
+@media screen and (min-width:700px)
+and (max-width:900px){
+		.button {
+	margin: auto;
+	width: 80%;
+}
+	.button a {
+	width: 115px;
+	height: 115px;
+		font-size: 22px;
+			margin-left: 50px;
+	margin-right: 50px;
+}
+	.clicked>a {
+	width: 85px;
+	height: 85px;
+}
+	
+.card {
+	width: 75%;
+}
+	
+	.cardimg>h4 {
+		font-weight: 400;
+	font-size: 18px;
+		width: 100%;
+}
+	
+		#cartcount {
+    top: 10px;
+    right: 120px;
+	}
+	
+	.addbtn {
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+	
+footer .footerinfo li {
+  font-size: 14px;
+}
+	.header #carticon {
+		font-weight: 300;
+  font-size: 16px;
+}
+	
+	.school, .cart {
+		width: 90%;
+	}
+			.schoolinfo {
+	width: 77%;
+}
+	
+			.cart form {
+			font-size: 15px;
+	width: 80%;
+	}
+	.close {
+	margin-right: 7%;
+    margin-top: 3%;
+	}
+}
+
+/*banner getting too small?*/
+@media screen and (min-width:500px)
+and (max-width:699px){
+		.button {
+	margin: auto;
+	width: 80%;
+}
+	.button a {
+	width: 115px;
+	height: 115px;
+		font-size: 22px;
+			margin-left: 20px;
+	margin-right: 20px;
+}
+	.clicked>a {
+	width: 85px;
+	height: 85px;
+}
+	
+.card {
+	width: 85%;
+}
+	
+	.cardimg>h4 {
+		font-weight: 400;
+	font-size: 18px;
+		width: 100%;
+}
+		#cartcount {
+    top: 10px;
+    right: 120px;
+	}
+	
+		#cartcount {
+    top: 10px;
+    right: 100px;
+	}
+	
+	.addbtn {
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+	
+footer .footerinfo li, .ind-con {
+  font-size: 14px;
+}
+
+	footer .footbox {
+		margin: 0;
+		display: block;
+	}
+	
+	footer .leftbox {
+  width: 100%;
+}
+	footer .rightbox {
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 40%;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	
+	.header #carticon {
+		font-weight: 300;
+  font-size: 16px;
+		margin-right: 0;
+}
+	
+	.header #logo {
+		margin-left: 0;
+	}
+	.school, .cart {
+		width: 95%;
+	}
+
+	.school>h4 {
+		font-size: 22px;
+	}
+
+			.schoolinfo {
+				font-size: 15px;
+	width: 85%;
+}
+	
+			.cart form {
+			font-size: 14.5px;
+	width: 85%;
+	}
+	.schoolinfo td{
+		display: block;
+		padding: 7px;
+	}
+		.schoolinfo tr{
+		display: block;
+			padding-top: 22px;
+	}
+	.close {
+	margin-right: 5%;
+    margin-top: 3.5%;
+	}
+}
+
+@media screen and (min-width:417px) /*disable scroll in the back when modal open?*/
+and (max-width:499px){
+
+			#banner_mobile {
+	display: block;
+}
+
+#banner_full {
+	display: none;
+}
+	
+		.header {
+	 padding: 0;
+		text-align: left;
+	}
+	
+	.header #carticon {
+		width: 100%;
+		border-radius: 0;
+		position: fixed;
+		bottom: 0;
+			font-weight: 300;
+  font-size: 16px;
+		margin-right: 0;
+		float: none;
+		padding: 20px 0 20px 0;
+	}
+	
+	.header #logo {
+		padding: 15px;
+		margin-left: 0;
+		float: none;
+	}
+		#cartcount {
+			top: 90.5vh;
+    right: 32%;
+	}
+	
+		.button {
+	margin: auto;
+	width: 90%;
+}
+	.button a {
+	width: 115px;
+	height: 115px;
+		font-size: 22px;
+			margin-left: 15px;
+	margin-right: 15px;
+}
+	.clicked>a {
+	width: 85px;
+	height: 85px;
+}
+	
+.card {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 95%;
+	border: none;
+	background-color: #F8EEDD;
+}
+	
+	.cardimg>h4 {
+		font-weight: 400;
+	font-size: 18px;
+		width: 100%;
+}
+
+	
+	.addbtn {
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+	
+footer .footerinfo li, .ind-con {
+  font-size: 14px;
+}
+
+	footer .footbox {
+		margin: 0;
+		display: block;
+	}
+	
+	footer .leftbox {
+  width: 100%;
+}
+	footer .rightbox {
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 40%;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	
+	
+	.header #logo {
+		margin-left: 0;
+	}
+		.school, .cart {
+		width: 95%;
+	}
+
+	.school>h4 {
+		font-size: 22px;
+	}
+				.schoolinfo {
+					font-size: 14px;
+	width: 80%;
+}
+	
+			.cart form {
+			font-size: 14.5px;
+	width: 85%;
+	}
+	
+	.schoolinfo td{
+		display: block;
+		padding: 7px;
+	}
+		.schoolinfo tr{
+		display: block;
+			padding-top: 25px;
+	}
+	.close {
+	margin-right: 4.5%;
+    margin-top: 3.5%;
+	}
+}
+
+@media screen and (min-width:410px)
+and (max-width:416px){
+		#banner_mobile {
+	display: block;
+}
+
+#banner_full {
+	display: none;
+}
+
+			.header {
+	 padding: 0;
+		text-align: left;
+	}
+	
+	.header #carticon {
+		width: 100%;
+		border-radius: 0;
+		position: fixed;
+		bottom: 0;
+			font-weight: 300;
+  font-size: 16px;
+		margin-right: 0;
+		float: none;
+		padding: 20px 0 20px 0;
+	}
+			#cartcount {
+			top: 90.5vh;
+    right: 31%;
+	}
+	.header #logo {
+		padding: 15px;
+		margin-left: 0;
+		float: none;
+	}
+	
+		.button {
+	margin: auto;
+	width: 90%;
+}
+	.button a {
+	width: 100px;
+	height: 100px;
+		font-size: 22px;
+			margin-left: 15px;
+	margin-right: 15px;
+}
+	.clicked>a {
+	width: 80px;
+	height: 80px;
+}
+	
+.card {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 95%;
+	border: none;
+	background-color: #F8EEDD;
+}
+	
+	.cardimg>h4 {
+		font-weight: 400;
+	font-size: 18px;
+		width: 100%;
+}
+	
+	.addbtn {
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.info {
+			font-size: 14px;
+	}
+	
+footer .footerinfo li, .ind-con {
+  font-size: 14px;
+}
+
+	footer .footbox {
+		margin: 0;
+		display: block;
+	}
+	
+	footer .leftbox {
+  width: 100%;
+}
+	footer .rightbox {
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 40%;
+		justify-content: center;
+		text-align: center;
+	}
+	
+		.school, .cart {
+		width: 100%;
+			border: none;
+	}
+
+	.school>h4 {
+		font-size: 22px;
+	}
+.schoolinfo {
+					font-size: 14px;
+	width: 80%;
+}
+	
+		.cart form {
+			font-size: 14.5px;
+	width: 90%;
+	}
+	
+	.schoolinfo td{
+		display: block;
+		padding: 7px;
+	}
+		.schoolinfo tr{
+		display: block;
+			padding-top: 25px;
+	}
+	.close {
+	margin-right: 2.5%;
+    margin-top: 3.5%;
+	}
+}
+
+@media screen and (min-width:280px)
+and (max-width:409px){
+	#banner_mobile {
+	display: block;
+}
+
+#banner_full {
+	display: none;
+}
+	.header {
+	 padding: 0;
+		text-align: left;
+	}
+	
+	.header #carticon {
+		width: 100%;
+		border-radius: 0;
+		position: fixed;
+		bottom: 0;
+			font-weight: 300;
+  font-size: 15px;
+		margin-right: 0;
+		float: none;
+		padding: 20px 0 20px 0;
+	}
+	
+	.header #logo {
+		padding: 12px;
+		margin-left: 0;
+		width: 95px;
+		float: none;
+	}
+	
+	#cartcount {
+			top: 90.5vh;
+    right: 28%;
+	}
+	
+		.button {
+	margin: auto;
+	width: 100%;
+}
+	.button a {
+	width: 80px;
+	height: 80px;
+	font-size: 20px;
+		margin-left: 15px;
+		margin-right: 15px;
+}
+	.clicked>a {
+	width: 65px;
+	height: 65px;
+}
+	
+.card {
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+	border: none;
+	background-color: #F8EEDD;
+}
+	
+	.cardimg>h4 {
+		font-weight: 400;
+	font-size: 15px;
+		width: 100%;
+}
+	
+	.addbtn {
+		font-weight: 400;
+		font-size: 15px;
+		transform: translateY(450%);
+		box-shadow: none;
+	}
+	
+	.addbtn>p {
+margin: 0;
+padding: 12px;
+}
+
+	.info {
+			font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.ranking {
+	float: none;
+}
+
+.more {
+	float: none;
+	margin-top: 20px;
+	text-decoration: underline;
+}
+footer .footerinfo li, .ind-con {
+  font-size: 12px;
+}
+
+	footer .footbox {
+		margin: 0;
+		display: block;
+	}
+	
+	footer .leftbox {
+  width: 100%;
+}
+	footer .rightbox {
+		margin: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		width: 45%;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	
+	
+	.lineat_box, .scrollToTop {
+		bottom: 160px;
+		width: 40px;
+		height: 40px;
+	}
+	.lineat_box>a>span {
+  width: auto;
+  height: 40px;
+		line-height: 40px;
+	}
+	.school, .cart {
+		width: 100%;
+		border: none;
+	}
+
+	.school>h4 {
+		font-size: 20px;
+	}
+	.schoolinfo {
+	font-size: 14px;
+	width: 80%;
+}
+	
+	.cart form {
+			font-size: 14px;
+	width: 95%;
+	}
+	.schoolinfo td{
+		display: block;
+		padding: 7px;
+	}
+		.schoolinfo tr{
+		display: block;
+			padding-top: 25px;
+	}
+		.close {
+	margin-right: 3%;
+    margin-top: 4%;
+	}
+	.space {
+	margin-top: 80px;
+}
+	
 }
