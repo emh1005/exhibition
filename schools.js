@@ -58,10 +58,11 @@ var schoolData = [
 
 
 {type: "usug", id: "ugua", cardimg: "ugua.jpg", img: "ugua.jpg", name: "亞利桑那大學<br/>University of Arizona", 
-	cardrank: "世界大學 排名97名<br/>商學專業 全美32名<br/>市場行銷 全美24名<br/>管理資訊系統 全美4名",
+	/*cardrank: "世界大學&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;排名97名<br/>商學專業&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全美32名<br/>市場行銷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全美24名<br/>管理資訊系統&nbsp;全美4名",*/
+	cardrank: "世界大學&emsp;&emsp;&nbsp;排名97名<br/>商學專業&emsp;&emsp;&nbsp;全美32名<br/>市場行銷&emsp;&emsp;&nbsp;全美24名<br/>管理資訊系統&nbsp;全美4名<br/>",
 	intro: "成立於1885年，在世界大學排名97名，在美國有「公立長春藤」美名。強調產學合作，與超過250家國際企業合作，包含Apple, Microsoft, Amazon, Google, FedEx, Cisco等，提供多元實習就業機會。超過9成的畢業生在畢業後兩個月內找到工作。<br/>本校也為傳統的美國大學體育強權，出了眾多的NBA以及美國大聯盟球星、教練。", 
-	rank: "世界大學 排名97名<br/>商學專業 全美32名<br/>市場行銷 全美24名<br/>管理資訊系統 全美4名<br/>",
-	major: "管理資訊系統 Management Information System &ast;&ast;<br/>電腦科學 Computer Science &ast;&ast;<br/>市場行銷 Marketing<br/>心理學 Psychology<br/>物理學 Physics &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	rank: "世界大學&emsp;&emsp;&nbsp;排名97名<br/>商學專業&emsp;&emsp;&nbsp;全美32名<br/>市場行銷&emsp;&emsp;&nbsp;全美24名<br/>管理資訊系統&nbsp;全美4名<br/>",
+	major: "管理資訊系統 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>市場行銷<br/>心理學<br/>物理學 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "入學可以不提交SAT/ACT成績<br/>學校提供英語強化課程給托福/雅思未達標的同學<br/>學校提供豐厚獎學金，一年最高一萬美金，最高可連續獲得四年"
 },
 /*
@@ -69,16 +70,16 @@ var schoolData = [
 	cardrank: "世界大學 排名97名<br/>商學專業 全美32名<br/>市場行銷 全美24名<br/>管理資訊系統 全美4名<br/>",
 	intro: "成立於1885年，在世界大學排名97名，在美國有「公立長春藤」美名。強調產學合作，與超過250家國際企業合作，包含Apple, Microsoft, Amazon, Google, FedEx, Cisco等，提供多元實習就業機會。超過9成的畢業生在畢業後兩個月內找到工作。<br/>本校也為傳統的美國大學體育強權，出了眾多的NBA以及美國大聯盟球星、教練。", 
 	rank: "世界大學 排名97名<br/>商學專業 全美32名<br/>市場行銷 全美24名<br/>管理資訊系統 全美4名<br/>",
-	major: "管理資訊系統 Management Information System &ast;&ast;<br/>電腦科學 Computer Science &ast;&ast;<br/>市場行銷 Marketing<br/>心理學 Psychology<br/>物理學 Physics &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "管理資訊系統 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>市場行銷 <br/>心理學 <br/>物理學 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "入學可以不提交SAT/ACT成績<br/>學校提供英語強化課程給托福/雅思未達標的同學<br/>學校提供豐厚獎學金，一年最高一萬美金，最高可連續獲得四年"
 },*/
 
 
 {type: "usug", id: "ugosu", cardimg: "osu.jpg", img: "osu.jpg", name: "奧勒岡州立大學<br/>Oregon State University", 
-	cardrank: "公立大學 全美71名<br/>商學院  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
+	cardrank: "公立大學 全美71名<br/>商學院&emsp; 全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
 	intro: "成立於1868年，是全球TOP1%的菁英大學。總學生人數約為三萬多人，國際學生來自全球112個國家，佔全校學生數量約10%。<br/>距離奧勒岡州最大城市─波特蘭車程約90分鐘，惠普、英特爾、蘋果、戴爾、微軟、谷歌以及摩根斯坦利、花旗銀行等公司坐落於此，為學生提供了豐富的實習和就業機會。", 
-	rank: "公立大學 全美71名<br/>商學院  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
-	major: "商學碩士 M.S. Business &ast;&ast;<br/>電腦科學 Computer Science &ast;&ast;<br/>化學工程 Chemical Engineering &ast;&ast;<br/>機械工程 Mechanical Engineering &ast;&ast;<br/>電子電機工程 Electrical and Computer Engineering &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	rank: "公立大學 全美71名<br/>商學院&emsp; 全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
+	major: "商學碩士 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>化學工程 &ast;&ast;<br/>機械工程 &ast;&ast;<br/>電子電機工程 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "奧勒岡州為全美是美國最安全、整潔、環保的地區之一<br/>美國西部唯一的免稅州，購物便宜<br/>學校於谷心鎮（Corvallis），是美國教育程度最高城市的第二名<br/>波特蘭是本州最大的城市，距谷心鎮約 90 分鐘車程，讓學生擁有許多就業與實習機會。現有的當地投資公司如：惠普、耐吉及波音"
 },
 
@@ -86,23 +87,23 @@ var schoolData = [
 	cardrank: "世界大學 排名81名<br/>理工專業 全美79名<br/>商學專業 全美81名<br/>商業分析 全球34名",
 	intro: "坐落於芝加哥市中心，是少數在市中心內有寬廣校園的大學。因為學校地點絕佳，有豐富的實習就業機會，且商學院獲得AACSB認證(全球前5%的商學管理學院)。根據《華爾街日報》/《泰晤士報高等教育》評比，伊利諾大學芝加哥分校為The Best Value最具就讀價值的大學排名TOP 8。芝加哥的就業生態相較其他城市較為多元，各種領域的學生都有機會在此一展長才。另外麥當勞、波音、亞培的總部皆位於芝加哥。", 
 	rank: "世界大學 排名81名<br/>理工專業 全美79名<br/>商學專業 全美81名<br/>商業分析 全球34名",
-	major: "建築系 Architecture<br/>財務金融 Finance &ast;&ast;<br/>市場行銷 Marketing<br/>生物資訊 Bioinformatics<br/>商業分析 Business analytics &ast;&ast;<br/>電機及電腦工程 Electrical and Computer Engineering &ast;&ast;<br/>供應鏈管理 Supply Chain and Operations Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "建築系 <br/>財務金融 &ast;&ast;<br/>市場行銷 <br/>生物資訊 <br/>商業分析 &ast;&ast;<br/>電機及電腦工程 &ast;&ast;<br/>供應鏈管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "提供超過700個校內工作機會<br/>每年舉辦超過10場就業博覽會<br/>學校科學研究經費 全美TOP50<br/>芝加哥市中心唯一一所擁有完整美國校園的大學<br/>擁有 EVL 全景電子視覺化實驗室，提供VR 沈浸式全景視覺教學<br/>擁有全美規模最大醫學院，對於生物臨床相關科系學生，可提供許多資源"
 },
 
 {type: "usug", id: "ugasu", cardimg: "asu.jpg", img: "asu.jpg", name: "亞利桑那州立大學<br/>Arizona State University", 
-	cardrank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院 全美35名<br/>理工學院 全美41名",
+	cardrank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院&emsp; 全美35名<br/>理工學院 全美41名",
 	intro: "成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。", 
-	rank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院 全美35名<br/>理工學院 全美41名<br/>供應鏈/物流 全美3名",
-	major: "全球物流 Global Logistics &ast;&ast;<br/>財務金融 Finance &ast;&ast;<br/>使用者經驗 User Experience (UX) &ast;&ast;<br/>資訊管理 Information System Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	rank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院&emsp; 全美35名<br/>理工學院 全美41名<br/>供應鏈/物流 全美3名",
+	major: "全球物流 &ast;&ast;<br/>財務金融 &ast;&ast;<br/>使用者經驗 &ast;&ast;<br/>資訊管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "&mdash; 雇主最愛聘僱的大學畢業生 全美 5 名<br/>&mdash; 畢業生在矽谷工作學生數量 全美 10 名"
 },
 
 {type: "usug", id: "uslu", cardimg: "ugslu.jpg", img: "ugslu.jpg", name: "聖路易斯大學<br/>Saint Louis University", 
-	cardrank: "供應鏈/物流 全美13名<br/>國際商務 全美11名<br/>會計學 全美40名<br/>健康法律 全美1名",
+	cardrank: "供應鏈/物流 全美13名<br/>國際商務&emsp;&nbsp;&nbsp; 全美11名<br/>會計學&emsp;&emsp;&nbsp;&nbsp; 全美40名<br/>健康法律&emsp;&nbsp;&nbsp; 全美1名",
 	intro: "成立於1818年，是全美最古老的教會大學之一，長期以來為美國百大名校，教學理念強調學以致用。坐落於密蘇里州聖路易斯市，許多國際企業在此設立總部，學生前往實習的機構，包含有德勤會計師事務所、安永會計師事務所以及波音公司等。", 
-	rank: "供應鏈/物流 全美13名<br/>國際商務 全美11名<br/>會計學 全美40名<br/>健康法律 全美1名",
-	major: "供應鏈管理Supply Chain Management &ast;&ast;<br/>國際商務International Business<br/>數據科學Data Science &ast;&ast;<br/>會計學Accounting<br/>法律Law<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	rank: "供應鏈/物流 全美13名<br/>國際商務&emsp;&nbsp;&nbsp; 全美11名<br/>會計學&emsp;&emsp;&nbsp;&nbsp; 全美40名<br/>健康法律&emsp;&nbsp;&nbsp; 全美1名",
+	major: "供應鏈管理 &ast;&ast;<br/>國際商務 <br/>數據科學 &ast;&ast;<br/>會計學<br/>法律 <br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "學校提供豐厚獎學予申請大學同學，一年最高可獲得1.5萬美金，最高可獲得四年。<br/>學校接受國際學生念Pre-Med醫學預備課程"
 },
 
@@ -110,7 +111,7 @@ var schoolData = [
 	cardrank: "綜合大學 全美97名<br/>護理學院 全美22名<br/>商學專業 全美44名<br/>電腦工程 全美48名",
 	intro: "成立於1850年，位於鹽湖城─全美國最安全的城市之一。與哈佛大學、哥倫比亞大學同為美國大學協會AAU的成員。猶他州的勞動成長率是美國平均的三倍以上，許多知名企業坐落於此，包含Adobe, eBay以及Overstock都設立於鹽湖城，學生實習/就業資源豐富。Adobe、萬豪酒店以及皮克斯動畫的創辦人皆畢業於此。", 
 	rank: "綜合大學 全美97名<br/>護理學院 全美22名<br/>商學專業 全美44名<br/>電腦工程 全美48名",
-	major: "Games<br/>會計Accounting<br/>護理Nursing<br/>企業管理Business Administration<br/>影片與多媒體藝術Film and Media Arts",
+	major: "Games<br/>會計 <br/>護理 <br/>企業管理 <br/>影片與多媒體藝術",
 	extra: "猶他州為全美國經濟前景最好的州，經濟成長率維持在4%以上<br/>學校接受國際學生念Nursing護理課程<br/>全球公立大學評比中，猶他大學的Game Design遊戲設計，獲得世界第一<br/>學校距離鹽湖城市中心僅需10分鐘車程，鹽湖城國際機場車程15分鐘<br/>自然環境豐富，夏天可登山、冬天可滑雪，鹽湖城曾舉辦過冬季奧運，其中選手村被猶他大學沿用為學生宿舍"
 },
 
@@ -118,31 +119,31 @@ var schoolData = [
 	cardrank: "綜合大學 全美76名<br/>商學專業 全美67名<br/>市場行銷 全美31名<br/>",
 	intro: "成立於1845年，位於德州，為美國國家級研究型大學，也是全世界最大的浸信會大學。總共有142個專業供選擇，重視學生實務經驗，學生在知名國際企業實習，包含Google、3M、KPMG、Walt Disney Corporation等。此外，本校在運動方面表現傑出，籃球與美式足球為傳統美國強隊。", 
 	rank: "綜合大學 全美76名<br/>商學專業 全美67名<br/>市場行銷 全美31名",
-	major: "會計學 Accounting<br/>行銷學 Marketing<br/>管理學 Management<br/>護理學 Nursing<br/>風險管理與保險 Risk Management and Insurance",
+	major: "會計學 <br/>行銷學 <br/>管理學 <br/>護理學 <br/>風險管理與保險 ",
 	extra: "入學可以不提交SAT/ACT成績<br/>學校提供英語強化課程給托福/雅思未達標的同學"
 },
 
 {type: "usug", id: "ugusf", cardimg: "usf.jpg", img: "usf.jpg", name: "南佛羅里達大學<br/>University of South Florida", 
-	cardrank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院 全美99名<br/>化學工程 全美66名",
+	cardrank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院&emsp; 全美99名<br/>化學工程 全美66名",
 	intro: "屬於佛羅里達州州立大學系統，是該州前三大旗艦型公立研究型大學，坐落於美國佛羅里達州坦帕市，距離邁阿密車程約四小時。獲卡內基基金會評選為「第一級特高研究型的公立大學」，其商學院獲得AACSB認證(全球前5%的商學管理學院)。", 
 	rank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院 全美99名<br/>化學工程 全美66名",
-	major: "英語教學 TESOL<br/>行銷學 Marketing<br/>管理學 Management<br/>大眾傳播 Mass Communication<br/>工程管理 Engineering Management ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "英語教學 <br/>行銷學 <br/>管理學 <br/>大眾傳播 <br/>工程管理 ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "學費實惠，是全美對國際學生收費最低的前10名大學。<br/>全美前40名最多元化大學，學生來自全球141個國家。"
 },
 
 {type: "usug", id: "ugauburn", cardimg: "ugauburn.jpg", img: "ugauburn.jpg", name: "奧本大學<br/>Auburn University", 
-	cardrank: "綜合大學 全美97名<br/>理工專業 全美53名<br/>商學專業 全美53名<br/>供應鏈管理（大學部） 全美第20名",
+	cardrank: "綜合大學&emsp; 全美97名<br/>理工專業&emsp; 全美53名<br/>商學專業&emsp; 全美53名<br/>供應鏈管理 全美第20名",
 	intro: "成立於1856年，位於阿拉巴馬州，由於該州汽車及航太工業發達，本校工程專業的畢業生就業表現優異。而本校距離亞特蘭大市(全球最繁忙機場)車程約1.5小時，全球交通網重鎮，Amazon也在此建造物流中心，商學專業的同學能爭取實習/就業的機會。現代汽車製造廠及賓士的美國總部也位於阿拉巴馬州，對工程相關科系的同學來說，有很好的就業機會。", 
 	rank: "綜合大學 全美97名<br/>理工專業 全美53名<br/>商學專業 全美53名<br/>供應鏈管理（大學部） 全美第20名",
-	major: "會計學Accounting<br/>供應鏈管理 Supply Chain Management<br/>幼兒教育Childhood Education<br/>運動管理Sport Management<br/>電腦科學Computer Science &ast;&ast;<br/>平面設計Graphic Design<br/>航太科技 Aerospace Engineering &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "會計學 <br/>供應鏈管理 <br/>幼兒教育 <br/>運動管理 <br/>電腦科學 &ast;&ast;<br/>平面設計 <br/>航太科技 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "蘋果執行長Tim Cook畢業於此<br/>維基百科創始人Jimmy Wales畢業於此<br/>全美最豪華的學生活動中心 第三名"
 },
 
 {type: "usug", id: "uguab", cardimg: "uab.jpg", img: "uab.jpg", name: "阿拉巴馬大學伯明翰分校<br/>University of Alabama at Birmingham", 
-	cardrank: "世界大學 排名153名<br/>公共健康 全美19名<br/>健康照顧管理 全美1名<br/>生物醫學碩士 全美58名",
+	cardrank: "世界大學&emsp;&emsp; 排名153名<br/>公共健康&emsp;&emsp; 全美19名<br/>健康照顧管理 全美1名<br/>生物醫學碩士 全美58名",
 	intro: "本校是世界聞名的研究大學及醫學中心，其醫療科學學術中心為全美TOP20。本校也是阿拉巴馬州的最大僱主，該州大約每33份工作中就有一份直接或間接與該大學有關聯。距離亞特蘭大車程約2.5小時，就業機會豐富。", 
 	rank: "世界大學 排名153名<br/>公共健康 全美19名<br/>健康照顧管理  全美1名<br/>生物醫學碩士 全美58名<br/>生物科學碩士 全美62名",
-	major: "工商管理 MBA<br/>公共健康 Public Health<br/>生物科技 Biotechnology &ast;&ast;<br/>護理師先修課程 Pre-Nursing<br/>數據科學 Data Science (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 Computer Science (學校接受無相關背景的申請人) &ast;&ast;<br/>資訊安全 Cyber Security (學校接受無相關背景的申請人) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "工商管理 <br/>公共健康 <br/>生物科技 &ast;&ast;<br/>護理師先修課程 <br/>數據科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>資訊安全 (學校接受無相關背景的申請人) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "台灣的中山大學醫學院每年都會派教授及學生至本校交流<br/>校內超過250個社團活動組織，校風開放多元<br/>位於美國南方，生活費及學費相對便宜"
 },
 
@@ -150,7 +151,7 @@ var schoolData = [
 	cardrank: "綜合大學 全美76名<br/>公共事務 全美13名<br/>國際商務 全美14名<br/>",
 	intro: "成立於1892年，位於華盛頓哥倫比亞特區，距離白宮僅15分鐘車程，學校在政治、商業的連結資源豐富。此外，華府為媒體重鎮，本校的大眾傳播課程實務性強，受到學生喜愛。其國際事務學院曾被美國《外交政策》雜誌選為全球TOP 10。", 
 	rank: "綜合大學 全美76名<br/>公共事務 全美13名<br/>國際商務 全美14名",
-	major: "財務金融 Finance<br/>數據分析 Data Science &ast;&ast;<br/>生物科 Biotechnology &ast;&ast;<br/>公共行政 Public Administration<br/>國際經濟 International Economics<br/>健康促進管理 Health Promotion Management<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "財務金融 <br/>數據分析 &ast;&ast;<br/>生物科 &ast;&ast;<br/>公共行政 <br/>國際經濟 <br/>健康促進管理 <br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "畢業生就業率高達92% <br/>學生會活躍度  全美第1名<br/>最多實習機會大學  全美20名<br/>各學院專屬的Career Center，了解各專業學生的需求<br/>校園緊鄰國土安全局且離白宮及市中心僅15分鐘車程，治安好。"
 },
 
@@ -166,26 +167,27 @@ var schoolData = [
 },
 
 {type: "uspg", id: "pgasu",cardimg: "asu.jpg", img: "asu.jpg", name: "亞利桑那州立大學<br/>Arizona State University", 
-	cardrank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院 全美35名<br/>理工學院 全美41名",
+	cardrank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院&emsp; 全美35名<br/>理工學院 全美41名",
 	intro: "成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。", 
 	rank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院 全美35名<br/>理工學院 全美41名<br/>供應鏈/物流 全美3名",
-	major: "全球物流 Global Logistics &ast;&ast;<br/>財務金融 Finance &ast;&ast;<br/>使用者經驗 User Experience (UX) &ast;&ast;<br/>資訊管理 Information System Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "全球物流 &ast;&ast;<br/>財務金融 &ast;&ast;<br/>使用者經驗 &ast;&ast;<br/>資訊管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "&mdash; 雇主最愛聘僱的大學畢業生 全美 5 名<br/>&mdash; 畢業生在矽谷工作學生數量 全美 10 名"
 },
 
 {type: "uspg", id: "pgosu", cardimg: "osu.jpg", img: "osu.jpg", name: "奧勒岡州立大學<br/>Oregon State University", 
-	cardrank: "公立大學 全美71名<br/>商學院  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
+	cardrank: "公立大學 全美71名<br/>商學院&emsp;  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
 	intro: "成立於1868年，是全球TOP1%的菁英大學。總學生人數約為三萬多人，國際學生來自全球112個國家，佔全校學生數量約10%。<br/>距離奧勒岡州最大城市─波特蘭車程約90分鐘，惠普、英特爾、蘋果、戴爾、微軟、谷歌以及摩根斯坦利、花旗銀行等公司坐落於此，為學生提供了豐富的實習和就業機會。", 
 	rank: "公立大學 全美71名<br/>商學院  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
-	major: "商學碩士 M.S. Business &ast;&ast;<br/>電腦科學 Computer Science &ast;&ast;<br/>化學工程 Chemical Engineering &ast;&ast;<br/>機械工程 Mechanical Engineering &ast;&ast;<br/>電子電機工程 Electrical and Computer Engineering &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "商學碩士 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>化學工程 &ast;&ast;<br/>機械工程 &ast;&ast;<br/>電子電機工程 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "奧勒岡州為全美是美國最安全、整潔、環保的地區之一<br/>美國西部唯一的免稅州，購物便宜<br/>學校於谷心鎮（Corvallis），是美國教育程度最高城市的第二名<br/>波特蘭是本州最大的城市，距谷心鎮約 90 分鐘車程，讓學生擁有許多就業與實習機會。現有的當地投資公司如：惠普、耐吉及波音"
 },
 
+/*check org doc!!!!!*/
 {type: "uspg", id: "pgsit", cardimg: "pgsit.jpg", img: "pgsit.jpg", name: "史蒂文斯理工學院<br/>Stevens Institute of Technology", 
-	cardrank: "全美80名<br/>商學院 全美77名<br/>理工學院 全美80名<br/>商業分析MBA 全美21名",
+	cardrank: "全美80名<br/>商學院&emsp; 全美77名<br/>理工學院 全美80名<br/>商業分析MBA 全美21名",
 	intro: "成立於1870年，是美國歷史最悠久的理工學校之一。位於紐澤西州，距紐約曼哈頓十分鐘車程，實習就業機會豐富。2020年度畢業生平均起薪為7.7萬美金/年、電腦科學相關科系畢業生平均起薪8.8萬美金/年，是全美投資回報率最高的學校第17名。", 
 	rank: "全美80名<br/>商學院 全美77名<br/>理工學院 全美80名<br/>商業分析MBA 全美21名",
-	major: "商業智能與分析 Business Intelligence & Analytics &ast;&ast;<br/>商業分析工商管理 Analytics MBA &ast;&ast;<br/>金融 Finance &ast;&ast;<br/>資訊系統 Information Systems &ast;&ast;<br/>系統分析 Systems Analytics &ast;&ast;<br/>軟體工程 Software Engineering &ast;&ast;<br/>工程管理 Engineering Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "商業智能與分析 &ast;&ast;<br/>商業分析工商管理 &ast;&ast;<br/>金融 &ast;&ast;<br/>資訊系統 &ast;&ast;<br/>系統分析 &ast;&ast;<br/>軟體工程 &ast;&ast;<br/>工程管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "最佳就業率的大學 全美11名<br/>最多實習機會大學 全美15名"
 },
 
@@ -193,7 +195,7 @@ var schoolData = [
 	cardrank: "世界大學 排名81名<br/>理工專業 全美79名<br/>商學專業 全美81名<br/>商業分析 全球34名",
 	intro: "坐落於芝加哥市中心，是少數在市中心內有寬廣校園的大學。因為學校地點絕佳，有豐富的實習就業機會，且商學院獲得AACSB認證(全球前5%的商學管理學院)。根據《華爾街日報》/《泰晤士報高等教育》評比，伊利諾大學芝加哥分校為The Best Value最具就讀價值的大學排名TOP 8。芝加哥的就業生態相較其他城市較為多元，各種領域的學生都有機會在此一展長才。另外麥當勞、波音、亞培的總部皆位於芝加哥。", 
 	rank: "世界大學 排名81名<br/>理工專業 全美79名<br/>商學專業 全美81名<br/>商業分析 全球34名",
-	major: "建築系 Architecture<br/>財務金融 Finance &ast;&ast;<br/>市場行銷 Marketing<br/>生物資訊 Bioinformatics<br/>商業分析 Business analytics &ast;&ast;<br/>電機及電腦工程 Electrical and Computer Engineering &ast;&ast;<br/>供應鏈管理 Supply Chain and Operations Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "建築系 <br/>財務金融 &ast;&ast;<br/>市場行銷 <br/>生物資訊 <br/>商業分析 &ast;&ast;<br/>電機及電腦工程 &ast;&ast;<br/>供應鏈管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "提供超過700個校內工作機會<br/>每年舉辦超過10場就業博覽會<br/>學校科學研究經費 全美TOP50<br/>芝加哥市中心唯一一所擁有完整美國校園的大學<br/>擁有 EVL 全景電子視覺化實驗室，提供VR 沈浸式全景視覺教學<br/>擁有全美規模最大醫學院，對於生物臨床相關科系學生，可提供許多資源"
 },
 
@@ -201,23 +203,24 @@ var schoolData = [
 	cardrank: "飯店管理 伊利諾州第1名<br/>商學專業 全美97名<br/>會計專業 全美52名<br/>",
 	intro: "成立於1898年，是一所坐落於芝加哥市的非營利型的天主教學校。DePaul University重視實務經驗，其畢業生一直是企業的最愛，超過9成的畢業生於畢業後6個月內找到工作或是繼續深造。商學院獲得AACSB認證(全球前5%的商學管理學院)，其飯店管理課程被評鑑為全伊利諾州最頂尖。", 
 	rank: "飯店管理 伊利諾州第1名<br/>商學專業 全美97名<br/>會計專業 全美52名",
-	major: "行銷分析 Marketing Analysis &ast;&ast;<br/>人工智慧 Artificial Intelligence &ast;&ast;<br/>傳播與媒體 Communication and Media<br/>供應鏈管理 Supply Chain Management &ast;&ast;<br/>飯店領導與營運績效 Hospitality Leadership and Operational Performance<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "行銷分析 &ast;&ast;<br/>人工智慧 &ast;&ast;<br/>傳播與媒體 <br/>供應鏈管理 &ast;&ast;<br/>飯店領導與營運績效 <br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "小班制，每班平均不超過40人<br/>業界最愛的大學生，超過60%的學生具有實習經驗<br/>Princeton Review評鑑為全美最棒的企業家商學課程"
 },
 
+/*check org doc!!*/
 {type: "uspg", id: "pgneu", cardimg: "pgneu.jpg", img: "pgneu.jpg", name: "東北大學<br/>Northeastern University", 
-	cardrank: "Co-ops/Internships 全美第1名<br/>綜合大學 全美49名<br/>商學院 全美61名<br/>理工學院 全美31名",
+	cardrank: "Co-ops/Internships 全美第1名<br/>綜合大學 全美49名<br/>商學院&emsp; 全美61名<br/>理工學院 全美31名",
 	intro: "成立於1898年，位於波士頓。該校以學術結合實務為其最大特點，超過9成的學生在畢業前皆參加建教合作課程(Co-Op)，畢業後留在美國當地工作機會大，因此吸引了眾多的國際學生在此就讀。", 
 	rank: "Co-ops/Internships 全美第1名<br/>綜合大學 全美49名<br/>商學院 全美61名<br/>理工學院 全美31名<br/>法學院 全美67名<br/>電腦科學 全美12名",
-	major: "分析學 Analytics &ast;&ast;<br/>財務金融 Finance &ast;&ast;<br/>數位媒體 Digital Media &ast;&ast;<br/>國際商務 International Business<br/>專案管理 Project Management &ast;&ast;<br/>應用性機器智能Applied Machine Intelligence &ast;&ast;<br/>電機與電腦工程 Electrical and Computer Engineering &ast;&ast;<br/>電腦科學 Computer Science_ Align (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 Computer Science (申請者須有相關背景) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "分析學 &ast;&ast;<br/>財務金融 &ast;&ast;<br/>數位媒體 &ast;&ast;<br/>國際商務 <br/>專案管理 &ast;&ast;<br/>應用性機器智能 &ast;&ast;<br/>電機與電腦工程 &ast;&ast;<br/>電腦科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 (申請者須有相關背景) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "Twitter 創始人的母校<br/>Co-op企業合作教育發展成熟，學生多實習機會"
 },
 
 {type: "uspg", id: "pgusf", cardimg: "usf.jpg", img: "usf.jpg", name: "南佛羅里達大學<br/>University of South Florida", 
-	cardrank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院 全美99名<br/>化學工程 全美66名",
+	cardrank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院&emsp; 全美99名<br/>化學工程 全美66名",
 	intro: "屬於佛羅里達州州立大學系統，是該州前三大旗艦型公立研究型大學，坐落於美國佛羅里達州坦帕市，距離邁阿密車程約四小時。獲卡內基基金會評選為「第一級特高研究型的公立大學」，其商學院獲得AACSB認證(全球前5%的商學管理學院)。", 
-	rank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院 全美99名<br/>化學工程 全美66名",
-	major: "英語教學 TESOL<br/>行銷學 Marketing<br/>管理學 Management<br/>大眾傳播 Mass Communication<br/>工程管理 Engineering Management ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	rank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院&emsp; 全美99名<br/>化學工程 全美66名",
+	major: "英語教學 <br/>行銷學 <br/>管理學 <br/>大眾傳播 <br/>工程管理 ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "學費實惠，是全美對國際學生收費最低的前10名大學。<br/>全美前40名最多元化大學，學生來自全球141個國家。"
 },
 
@@ -225,7 +228,7 @@ var schoolData = [
 	cardrank: "綜合大學 全美76名<br/>公共事務 全美13名<br/>國際商務 全美14名<br/>",
 	intro: "成立於1892年，位於華盛頓哥倫比亞特區，距離白宮僅15分鐘車程，學校在政治、商業的連結資源豐富。此外，華府為媒體重鎮，本校的大眾傳播課程實務性強，受到學生喜愛。其國際事務學院曾被美國《外交政策》雜誌選為全球TOP 10。", 
 	rank: "綜合大學 全美76名<br/>公共事務 全美13名<br/>國際商務 全美14名",
-	major: "財務金融 Finance<br/>數據分析 Data Science &ast;&ast;<br/>生物科 Biotechnology &ast;&ast;<br/>公共行政 Public Administration<br/>國際經濟 International Economics<br/>健康促進管理 Health Promotion Management<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "財務金融 <br/>數據分析 &ast;&ast;<br/>生物科 &ast;&ast;<br/>公共行政 <br/>國際經濟 <br/>健康促進管理 <br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "畢業生就業率高達92% <br/>學生會活躍度  全美第1名<br/>最多實習機會大學  全美20名<br/>各學院專屬的Career Center，了解各專業學生的需求<br/>校園緊鄰國土安全局且離白宮及市中心僅15分鐘車程，治安好。"
 },
 
@@ -233,16 +236,16 @@ var schoolData = [
 	cardrank: "管理學碩士 世界19名<br/>一年制MBA  世界17名<br/><br/>",
 	intro: "一年制商學碩士課程，校區分布紐約、波士頓、舊金山、倫敦、杜拜以及上海。<br/>霍特商學院為美國第一所獲得三項權威認證的商學院，全球僅1%商學院獲得三大著名國際認證AMBA、AACSB和EQUIS所認可。<br/>霍特商學院國際學生畢業後在美國當地找到正職工作的比率超高，其就業率是其他美國大學的4倍。", 
 	rank: "管理學碩士 世界19名<br/>一年制MBA  世界17名",
-	major: "國際市場行銷 International Marketing<br/>國際商務學 International Business<br/>商業分析 Business Analytics &ast;&ast;<br/>金融學 Finance &ast;&ast;<br/>工商管理 MBA &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "國際市場行銷 <br/>國際商務學 <br/>商業分析 &ast;&ast;<br/>金融學 &ast;&ast;<br/>工商管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "可於1.5年(第一個學位1年；第二個學位0.5年)內取得雙碩士<br/>可在六個校區自由輪轉完成實習/選修課程<br/>無須提供GRE/GMAT成績<br/>提供獎學金給優秀學生"
 },
 
 
 {type: "uspg", id: "pguab", cardimg: "uab.jpg", img: "uab.jpg", name: "阿拉巴馬大學伯明翰分校<br/>University of Alabama at Birmingham", 
-	cardrank: "世界大學 排名153名<br/>公共健康 全美19名<br/>健康照顧管理 全美1名<br/>生物醫學碩士 全美58名",
+	cardrank: "世界大學&emsp;&emsp; 排名153名<br/>公共健康&emsp;&emsp; 全美19名<br/>健康照顧管理 全美1名<br/>生物醫學碩士 全美58名",
 	intro: "本校是世界聞名的研究大學及醫學中心，其醫療科學學術中心為全美TOP20。本校也是阿拉巴馬州的最大僱主，該州大約每33份工作中就有一份直接或間接與該大學有關聯。距離亞特蘭大車程約2.5小時，就業機會豐富。", 
-	rank: "世界大學 排名153名<br/>公共健康 全美19名<br/>健康照顧管理  全美1名<br/>生物醫學碩士 全美58名<br/>生物科學碩士 全美62名",
-	major: "工商管理 MBA<br/>公共健康 Public Health<br/>生物科技 Biotechnology &ast;&ast;<br/>護理師先修課程 Pre-Nursing<br/>數據科學 Data Science (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 Computer Science (學校接受無相關背景的申請人) &ast;&ast;<br/>資訊安全 Cyber Security (學校接受無相關背景的申請人) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	rank: "世界大學&emsp;&emsp; 排名153名<br/>公共健康&emsp;&emsp; 全美19名<br/>健康照顧管理  全美1名<br/>生物醫學碩士 全美58名<br/>生物科學碩士 全美62名",
+	major: "工商管理 <br/>公共健康 <br/>生物科技 &ast;&ast;<br/>護理師先修課程 <br/>數據科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>資訊安全 (學校接受無相關背景的申請人) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "台灣的中山大學醫學院每年都會派教授及學生至本校交流<br/>校內超過250個社團活動組織，校風開放多元<br/>位於美國南方，生活費及學費相對便宜"
 },
 
@@ -250,16 +253,16 @@ var schoolData = [
 	cardrank: "綜合大學 全美96名<br/>理工專業 全美60名<br/><br/>",
 	intro: "成立於1851年，是加州第一所特許大學，也是加州第一所男女共校的學院。課程結合理論與實務，注重對學生的個別輔導，本校為最佳投報率大學Top50，畢業生初期平均薪資落在6萬美金/年。有三個校區，分別位於美國加州的斯托克頓、薩克拉門托、舊金山。", 
 	rank: "綜合大學 全美96名<br/>理工專業 全美60名",
-	major: "會計學 Accounting<br/>公共政策 Public Policy<br/>音樂治療 Music Therapy<br/>工程科學 Engineering Science &ast;&ast;<br/>數據科學 Data Science (學校接受無相關背景的申請人 &ast;&ast;<br/>多媒體   X Media X<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "會計學 <br/>公共政策 <br/>音樂治療 <br/>工程科學 &ast;&ast;<br/>數據科學 (學校接受無相關背景的申請人 &ast;&ast;<br/>多媒體 <br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "音樂學院就業率100%，無須Audition即可申請<br/>師生比13:1，學生能夠獲得最多資源與關注<br/>畢業生就業率高，超過9成的畢業生都有找到工作或是繼續深造<br/>國際企業進入校園招募，包含蘋果Apple、彭博Bloomberg等"
 },
 
 
 {type: "uspg", id: "pgiit", cardimg: "pgiit.jpg", img: "pgiit.jpg", name: "伊利諾理工學院<br/>Illinois Institute of Technology", 
-	cardrank: "綜合大學 全美124名<br/>理工學院 全美83名<br/>電子與電機工程 世界86名<br/>數學金融 全美15名 ",
+	cardrank: "綜合大學&emsp;&emsp;&emsp; 全美124名<br/>理工學院&emsp;&emsp;&emsp; 全美83名<br/>電子與電機工程 世界86名<br/>數學金融&emsp;&emsp;&emsp; 全美15名 ",
 	intro: "成立於1890年，位於芝加哥市中心，與業界合作密切，惠普、可口可樂、克萊斯勒汽車等國際公司，贊助並參與協助本校各領域的學生，共同研發、創新，將學術知識應用於實際生活中。本校畢業生獲得企業喜愛，平均起薪約6萬美金/年。", 
 	rank: "綜合大學 全美124名<br/>理工學院 全美83名<br/>電子與電機工程 世界86名<br/>數學金融 全美15名 ",
-	major: "數據科學Data Science &ast;&ast;<br/>數學金融 Mathematical Finance &ast;&ast;<br/>市場分析 Marketing Analytics &ast;&ast;<br/>電腦科學 Computer Science &ast;&ast;<br/>電腦工程Computer Engineering &ast;&ast;<br/>生物工程Biological Engineering &ast;&ast;<br/>運輸工程Transportation Engineering &ast;&ast;<br/>資安工程Cybersecurity Engineering &ast;&ast;<br/>資訊科技管理Information Technology and Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "數據科學 &ast;&ast;<br/>數學金融 &ast;&ast;<br/>市場分析 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>電腦工程 &ast;&ast;<br/>生物工程 &ast;&ast;<br/>運輸工程 &ast;&ast;<br/>資安工程 &ast;&ast;<br/>資訊科技管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "本校的投報率高居全美前5%，畢業生初期薪資平均落在6萬美金/年<br/>行動電話發明人的母校<br/>條碼科技先驅者的母校<br/>台科大校長廖慶榮母校"
 },
 
@@ -296,7 +299,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 27<br/>THE UK Ranking: 8<br/>Financial Times, European Business Schools: 36<br/>",
 	intro: "曼徹斯特大學是一所歷史悠久，以其開創性的發現和對全球具有影響力的高質量研究而聞名的大學。這間羅素集團大學的歷史可追溯至1824年，並提供豐富的學術設備。 這所一流的大學因其優質教學質量，高就業率和高學生滿意度受到世界160個國家學生喜愛。", 
 	rank: "QS World Ranking: 27<br/>THE UK Ranking: 8<br/>Financial Times, European Business Schools: 36",
-	major: "商管碩士Business Management/ Marketing<br/>財經碩士Finance/ Business analytics<br/>化學工程Chemical Engineering<br/>電腦科學Computer Science/Data Science<br/>建築設計Architecture",
+	major: "商管碩士<br/>財經碩士<br/>化學工程<br/>電腦科學<br/>建築設計",
 	extra: "The Graduate Market雜誌評價曼徹斯特大學的畢業生為業主最看好的社會新鮮人。<br/>曼徹斯特國際機場鄰近市中心，方便抵達校園。<br/>距離倫敦約2.5小時火車。"
 },
 
@@ -304,7 +307,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 58<br/>THE UK Ranking: 10<br/>The Guardian: 11<br/>",
 	intro: "布里斯托大學創校於1896，被世界公認為高品質研究學校，是羅素大學集團同時也是紅磚大學其中成員。英國前首相邱吉爾曾任此大學校長，此校也以國際關係和政治相關的科系聞名。", 
 	rank: "QS World Ranking: 58<br/>THE UK Ranking: 10<br/>The Guardian: 11",
-	major: "國際關係International Relations/ Politics<br/>商管碩士Business Management/ Marketing<br/>教育Education/TESOL<br/>電腦科學 Computer Science<br/>法律 Law",
+	major: "國際關係<br/>商管碩士<br/>教育<br/>電腦科學 <br/>法律 ",
 	extra: "紅磚大學之一的布里斯托大學，被譽為英國的麻省理工（MIT）。<br/>High Fliers Research 2020 QS Graduate Employability Rankings 2020評比布里斯托大學的畢業生為英國企業愛用第4名。<br/>距離倫敦約2小時火車。"
 },
 
@@ -313,7 +316,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 86<br/>THE UK Ranking: 18<br/>Financial Times, European Business Schools: 48<br/>",
 	intro: "為英國最古老的大學其中之一，常駐世界百大的羅素集團大學，學術研究的成果在全世界有極高的地位，常獲得Internationally Excellence 或是World Leading 殊榮。", 
 	rank: "QS World Ranking: 86<br/>THE UK Ranking: 18<br/>Financial Times, European Business Schools: 48",
-	major: "商管碩士Business Management/ Marketing<br/>財經碩士Finance/ Business analytics<br/>生物科學 Biological Science<br/>國際關係International Relations<br/>人類學Anthropolgy",
+	major: "商管碩士<br/>財經碩士<br/>生物科學 <br/>國際關係<br/>人類學",
 	extra: "英國僅存學院制大學（劍橋大學、牛津大學、杜倫大學）也是英國人心中首屈一指的大學。<br/>商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。<br/>距離愛丁堡約2小時火車。"
 },
 
@@ -321,7 +324,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 93<br/>THE UK Ranking: 14<br/>The Guardian: 31<br/>",
 	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
 	rank: "QS World Ranking: 93<br/>THE UK Ranking: 14<br/>The Guardian: 31",
-	major: "機械工程Mechanical Engineering<br/>商管碩士Business Management/ Marketing<br/>生物科學 Biological Science<br/>國際關係International Relations<br/>建築設計Architecture",
+	major: "機械工程<br/>商管碩士<br/>生物科學 <br/>國際關係<br/>建築設計",
 	extra: "全英國生活開銷最低，同時是最安全的城市之一，擁有非常適合居住的讀書環境。<br/>商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。<br/>距離倫敦2小時火車。"
 },
 
@@ -329,7 +332,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 164<br/>THE UK Ranking: 24<br/>The Guardian: 16<br/>",
 	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
 	rank: "QS World Ranking: 164<br/>THE UK Ranking: 24<br/>The Guardian: 16",
-	major: "商管碩士 Business Management/ Marketing<br/>財經碩士 Finance/ Business analytics<br/>生物科學 Biological Science<br/>電子工程Electronic Engineering<br/>古典文學 Classic/English ",
+	major: "商管碩士 <br/>財經碩士 <br/>生物科學 <br/>電子工程<br/>古典文學 ",
 	extra: "羅馬時期為英國西南部的防禦重鎮，城市歷史文化豐富，可體驗濃厚英國文化。<br/>商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。<br/>距離倫敦約3小時火車。<br/>知名校友J.K.羅琳。"
 },
 
@@ -337,7 +340,7 @@ var schoolData = [
 	cardrank: "THE UK Ranking: 67<br/>The Guardian: 12<br/><br/>",
 	intro: "座落於英格蘭中部，諾丁漢是藝術家和創意產業的故鄉。時裝設計師保羅·史密斯爵士就是在諾丁漢土生土長的。一年四季可以在諾丁漢郡觀賞縱觀豐富的文化活動、劇院的演出、畫廊的展覽，學生於活動期間積極參與活動，累積社會實戰經驗。", 
 	rank: "THE UK Ranking: 67<br/>The Guardian: 12",
-	major: "時尚設計Fashion Design<br/>室內設計Interior Architecture<br/>廣告行銷 Advertising and Marketing<br/>生物動物學Biology and Zoology<br/>新聞媒體 Journalism and Media",
+	major: "時尚設計<br/>室內設計<br/>廣告行銷 <br/>生物動物學<br/>新聞媒體 ",
 	extra: "榮獲TEACHING EXCELLENCE FRAMEWORK (TEF) 金牌獎，獲得此獎代表學校持續不斷-提供高質量教學，並且學生學術成果也高於一般英國大學。<br/>每年提供大於6000個實習機會，在英國享有教學優良名聲。<br/>距離倫敦2小時火車。"
 },
 
@@ -346,7 +349,7 @@ var schoolData = [
 	cardrank: "ONCAMPUS-University of London International Foundation Programme<br/><br/><br/>",
 	intro: "倫敦大學是由多个行政獨立的大學組成（聯邦制大學），这些學校包括眾多世界上知名且學術名望高的学校。大學擁有高度的自治權，各校在學術上有各自的領域，例如：London School of Economics and Political Science（LSE）倫敦政經學院,即是成員之一。", 
 	rank: "N/A",
-	major: "國際關係International Relations<br/>法律Law<br/>社會學 Socialogy<br/>政治與經濟Politics and economics<br/>地理與經濟 Geography and Economics",
+	major: "國際關係<br/>法律<br/>社會學 <br/>政治與經濟<br/>地理與經濟 ",
 	extra: "倫敦大學學士預備課程提供國際學生一個能夠進入英國高等教育學校的機會，如「倫敦政經學院（LSE）」僅接受4間預備課程提出的申請件。<br/>許多國際學生因中學制度不同，無法直接升上英國學士課程，需要先念預備課程。<br/>此課程不只提供優質學術教學，並且提供學生全方位輔導，讓學生不管在唸書，當地生活，或是未來升學方面都可以享有專人指導。<br/>此課程學生，校方會透過UCAS為學生申請5間英國的大學，3間倫敦大學體系學院和2間學生的志願，學校選擇於入學後，即安排面試討論。"
 },
 
@@ -354,7 +357,7 @@ var schoolData = [
 	cardrank: "<br/><br/><br/><br/>",
 	intro: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程，此課程幫助許多學生順利申請上世界前100名大學，並且班級由各個國家學生組成，真正認識多元文化環境，讓學生不只是唸書，更是拓展國際視野以及文化交流。", 
 	rank: "N/A",
-	major: "商管學士Business Management<br/>生物科學 Biological Science<br/>國際關係International Relations<br/>心理學 Psychology<br/>化學 Chemistry<br/>醫學 Medicine<br/>藝術設計 Art & Design",
+	major: "商管學士<br/>生物科學 <br/>國際關係<br/>心理學 <br/>化學 <br/>醫學 <br/>藝術設計 ",
 	extra: "學校提供學生自由選擇修課內容。學校指導老師會再依照學生未來想念大學之科系給予選擇修課的建議，以達到之後申請正式學士課程時，學生即有相對應學術背景供申請學校參考審核。<br/>學校有多個校區：伯恩茅斯，布萊頓，倫敦，牛津。"
 },
 
@@ -369,7 +372,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 27<br/>THE UK Ranking: 8<br/>Financial Times, European Business Schools: 36<br/>",
 	intro: "曼徹斯特大學是一所歷史悠久，以其開創性的發現和對全球具有影響力的高質量研究而聞名的大學。這間羅素集團大學的歷史可追溯至1824年，並提供豐富的學術設備。 這所一流的大學因其優質教學質量，高就業率和高學生滿意度受到世界160個國家學生喜愛。", 
 	rank: "QS World Ranking: 27<br/>THE UK Ranking: 8<br/>Financial Times, European Business Schools: 36",
-	major: "商管碩士Business Management/ Marketing<br/>財經碩士Finance/ Business analytics<br/>化學工程Chemical Engineering<br/>電腦科學Computer Science/Data Science<br/>建築設計Architecture",
+	major: "商管碩士<br/>財經碩士<br/>化學工程<br/>電腦科學<br/>建築設計",
 	extra: "The Graduate Market雜誌評價曼徹斯特大學的畢業生為業主最看好的社會新鮮人。<br/>曼徹斯特國際機場鄰近市中心，方便抵達校園。<br/>距離倫敦約2.5小時火車。"
 },
 
@@ -377,7 +380,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 86<br/>THE UK Ranking: 18<br/>Financial Times, European Business Schools: 48<br/>",
 	intro: "為英國最古老的大學其中之一，常駐世界百大的羅素集團大學，學術研究的成果在全世界有極高的地位，常獲得Internationally Excellence 或是World Leading 殊榮。", 
 	rank: "QS World Ranking: 86<br/>THE UK Ranking: 18<br/>Financial Times, European Business Schools: 48",
-	major: "商管碩士Business Management/ Marketing<br/>財經碩士Finance/ Business analytics<br/>生物科學 Biological Science<br/>國際關係International Relations<br/>人類學Anthropolgy",
+	major: "商管碩士<br/>財經碩士<br/>生物科學 <br/>國際關係<br/>人類學",
 	extra: "英國僅存學院制大學（劍橋大學、牛津大學、杜倫大學）也是英國人心中首屈一指的大學。<br/>商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。<br/>距離愛丁堡約2小時火車。"
 },
 
@@ -385,7 +388,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 77<br/>THE UK Ranking: 11<br/>Financial Times, European Business Schools: 85<br/>",
 	intro: "學校位於蘇格蘭第一大城市，交通便利，是全英國唯三有地鐵的城市。此大學是蘇格蘭最古老大學之一，同時也是羅素集團成員之一。該校因為成立歷史悠久，學術研究資源豐厚，是莘莘學子們唸書的好選擇。商學院是經由ACCSB, EQUIS,以及AMBA三個國際組織所認證，是世界top 1%的商學院。", 
 	rank: "QS World Ranking: 77<br/>THE UK Ranking: 11<br/>Financial Times, European Business Schools: 85",
-	major: "金融經濟Finance/Economics<br/>商管碩士Business Management/ Marketing<br/>電腦科學 Computer Science<br/>生物醫學 Biomedical Science<br/>航太工程Aerospace Engineering",
+	major: "金融經濟<br/>商管碩士<br/>電腦科學 <br/>生物醫學 <br/>航太工程",
 	extra: "格拉斯哥大學培養出許多知名校友，經濟學之父亞當史密斯（Adam Smith），蒸汽機改良者詹姆斯瓦特（James Watt），都是其校友，其中物理學家阿爾伯愛因斯坦(Albert Einstein) 於1933年被格拉斯哥大學授予名譽博士學位。"
 },
 
@@ -393,7 +396,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 93<br/>THE UK Ranking: 14<br/>The Guardian: 31<br/>",
 	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
 	rank: "QS World Ranking: 93<br/>THE UK Ranking: 14<br/>The Guardian: 31",
-	major: "機械工程Mechanical Engineering<br/>商管碩士Business Management/ Marketing<br/>生物科學 Biological Science<br/>國際關係International Relations<br/>建築設計Architecture",
+	major: "機械工程<br/>商管碩士<br/>生物科學 <br/>國際關係<br/>建築設計",
 	extra: "全英國生活開銷最低，同時是最安全的城市之一，擁有非常適合居住的讀書環境。<br/>商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。<br/>距離倫敦2小時火車。"
 },
 
@@ -401,7 +404,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 99<br/>THE UK Ranking: 19<br/><br/>",
 	intro: "座落於英格蘭中部，諾丁漢城市一年四季遊客舉辦各種豐富的文化活動，包括劇院的演出，畫廊的展覽，學生大多在活動期間積極參與活動，累積實習經驗。該校更是羅素集團成員之一，學術地位以及名聲在國際上享有高知名度。碩士獎學金豐富，提供優秀學生學費減免的機會。", 
 	rank: "QS World Ranking: 99<br/>THE UK Ranking: 19",
-	major: "商管碩士Business Management<br/>藥學Pharmaceutical Sciences<br/>財經會計Finance/Accounting<br/>法律 Law<br/>化學 Chemistry",
+	major: "商管碩士<br/>藥學<br/>財經會計<br/>法律 <br/>化學 ",
 	extra: "學校學位課程獎學金優渥，積極招募世界菁英學生就讀。<br/>校園距離市中心約20分鐘車程，可以同時享受市中心和綠地校園的環境。<br/>諾丁漢城市是羅賓漢故事的起源地。"
 },
 
@@ -410,7 +413,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 99<br/>THE UK Ranking: 19<br/><br/>",
 	intro: "身為羅素集團以及倫敦大學的成員，學術品質質量高，地點在倫敦商務中心，就學期間方便學生尋找實習，增加國外工作經驗，更進一步爭取海外正職工作。<br/>學校更孕育了9位諾貝爾獎得主。", 
 	rank: "QS World Ranking: 114<br/>THE UK Ranking: 13",
-	major: "商管碩士Business Management/ Marketing<br/>財經碩士Finance/ Banking and Finance<br/>醫科和牙科Medicine and Dentistry<br/>法律 Law<br/>商業分析Business Analytics",
+	major: "商管碩士<br/>財經碩士<br/>醫科和牙科<br/>法律 <br/>商業分析",
 	extra: "高教學品質被評價為TEF Silver Award<br/>少數坐落在倫敦卻有校園的學校<br/>Mile End 校區旁邊是金融商務地區"
 },
 
@@ -418,7 +421,7 @@ var schoolData = [
 	cardrank: "QS World Ranking: 135<br/>THE UK Ranking: 17<br/>Financial Times, European Business Schools: 54<br/>",
 	intro: "身為羅素集團以及倫敦大學的成員，學術品質質量高，地點在倫敦商務中心，就學期間方便學生尋找實習，增加國外工作經驗，更進一步爭取海外正職工作。<br/>學校更孕育了9位諾貝爾獎得主。", 
 	rank: "QS World Ranking: 135<br/>THE UK Ranking: 17<br/>Financial Times, European Business Schools: 54",
-	major: "商管碩士Business Management/ Marketing<br/>財經碩士Finance/ Business analytics<br/>語言學Language and Linguistics<br/>工商管理 MBA<br/>創意寫作 Creative Writing",
+	major: "商管碩士<br/>財經碩士<br/>語言學<br/>工商管理 <br/>創意寫作 ",
 	extra: "蘭卡斯特大學與杜倫大學、利兹大學、利物浦大學、曼徹斯特大學、紐卡索大學、雪菲爾大學和約克大學一同成立N8大學聯盟。<br/>商學院是經由ACCSB, EQUIS,以及AMBA三個國際組織所認證。"
 },
 
@@ -426,7 +429,7 @@ var schoolData = [
 	cardrank: "Top 25 Fashion Schools in the World 2019<br/><br/><br/>",
 	intro: "馬蘭戈尼學院在全世界有六個主校區(倫敦、巴黎、米蘭、佛羅倫斯、上海、深圳)，是全球知名頂尖時尚藝術學校。學校積極推動精緻教學，班級人數約為25人，掌握教學品質。校內常有世界一線國際品牌對學生做人才招募，讓學生畢業後留在藝術領域工作機會大增。", 
 	rank: "Top 25 Fashion Schools in the World 2019",
-	major: "Fashion Design 時尚設計<br/>Fashion Styling 時尚造型<br/>Fashion Marketing 時尚行銷<br/>Brand Management 品牌管理<br/>Interior Design 室內設計<br/>Visual Design 視覺設計 ",
+	major: "時尚設計<br/>時尚造型<br/>時尚行銷<br/>品牌管理<br/>室內設計<br/>視覺設計 ",
 	extra: "知名校友包括：<br/>Louis Vuitton/ Marc Jacobs設計總監Julie de Libran<br/>MOSCHINO創辦人Franco Moschino<br/>Gucci/ Tod's設計總監Alessandra Facchinetti<br/>Dolce & Gabbana 創辦人Domenico Dolce"
 },
 
