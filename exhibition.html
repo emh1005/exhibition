@@ -14,25 +14,70 @@
 	<body>
 		<header class="header">
 			<a href="/"><img id="logo" src="logo.png" alt="Logo"></a>
-
+			<h1 id="headerfull">專屬於你的 個人化 留學展</h1>
+			<h1 id="headerbreak">專屬於你的<br/>個人化 留學展</h1>
 			<h3 id="carticon">選校清單</h3>
 			<span id="cartcount">0</span>
 		</header>
 
 		<div class="space"></div>
 		<!--<div class="sticky" id="sticky"><h1>專屬於你的 個人化 留學展</h1></div>-->
+		<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="banner1_full.jpg" style="width:100%" class="banner_full">
+    <img src="banner1_mobile.jpg" style="width:100%" class="banner_mobile">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="banner2_full.jpg" style="width:100%" class="banner_full">
+    <img src="banner2_mobile.jpg" style="width:100%" class="banner_mobile">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="banner3_full.jpg" style="width:100%" class="banner_full">
+    <img src="banner3_mobile.jpg" style="width:100%" class="banner_mobile">
+  </div>
+
+    <div class="mySlides fade">
+    <img src="banner4_full.jpg" style="width:100%" class="banner_full">
+    <img src="banner4_mobile.jpg" style="width:100%" class="banner_mobile">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!--
 		<div class="banner">
-			<img src="banner_full.png" alt="Banner">
+			<img src="banner1_full.jpg" alt="Banner">
 		</div>
 
 		<div class="banner">
-			<img src="steps_mobile.png" alt="Banner" id="banner_mobile">
+			<img src="banner1_mobile.jpg" alt="Banner" id="banner_mobile">
 			<img src="steps_full.png" alt="Banner" id="banner_full">
 		</div>
+	-->
 
 
 		<div class="button" id="country">
 			<h2>你想去哪個國家?</h2>
+			<div class="title-line">
+            	<span class="red"></span>
+            	<span class="blue"></span>
+          	</div>
 			<a href="#us" id="usbtn"><p>US<br/>美國</p></a>
 			<a href="#uk" id="ukbtn"><p>UK<br/>英國</p></a>
 		</div>
@@ -60,17 +105,16 @@
 		<div id="ushs" class="cards"></div>
 		<div id="usug" class="cards"></div>
 		<div id="uspg" class="cards"></div>
-		<div id="ustalk" class="cards"></div>
 		<div id="ukhs" class="cards"></div>
 		<div id="ukug" class="cards"></div>
 		<div id="ukpg" class="cards"></div>
-		<div id="uktalk" class="cards"></div>
+		<div id="talk" class="cards"></div>
 		<div >
 		<div  style="display:none">
 			<!--can i use js to input all tdese school contents?-->
 			<div class="card" id="template"> <!--temp needs to be moved, decide click where for more info-->
 				<div class="cardimg">
-					<div class="addbtn" id="test"> <!--need to add function-->
+					<div class="addbtn"> <!--need to add function-->
 						<p>加入清單</p>
 					</div>
 					<img src="asu.jpg" class="cardImg">
@@ -86,6 +130,10 @@
 			<span class="close" id="close">&times;</span>
 			<img src="asu.jpg" alt="school name" class="schoolimg" id="tableimg">
 			<h4 class="tableName">Arizona State University 亞利桑那州立大學</h4>
+			<div class="title-line">
+            	<span class="red"></span>
+            	<span class="blue"></span>
+          	</div>
 			<div class="schoolinfo">
 				<table>
 					<tr>
@@ -109,7 +157,7 @@
 			</div>
 
 
-			<input type="radio" id="btnControl"/><label for="btnControl"><p class="added">已新增!</p><p class="addschool" id="ugasu">新增至個人化留學展清單</p></label>
+			<p class="addschool" id="ugasu">新增至個人化留學展清單</p>
 		</div>
 
 		

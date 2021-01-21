@@ -1,6 +1,61 @@
 // check cookie enable
 var cookieEnable = areCookiesEnabled();
 var shoppingCart = new Set();
+
+//carousel
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(o) {
+  showSlides(slideIndex += o);
+}
+
+// Thumbnail image controls
+function currentSlide(o) {
+  showSlides(slideIndex = o);
+}
+
+function showSlides(o) {
+  var w;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (o > slides.length) {slideIndex = 1}
+  if (o < 1) {slideIndex = slides.length}
+  for (w = 0; w < slides.length; w++) {
+      slides[w].style.display = "none";
+  }
+  for (w = 0; w < dots.length; w++) {
+      dots[w].className = dots[w].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+/*var slideIndex1 = 0;*/
+showSlidesTimed();
+
+function showSlidesTimed() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlidesTimed, 5000); // Change image every 2 seconds
+}
+
+
 //display us/uk options
 var usbtn = document.getElementById("usbtn");
 var us = document.getElementById("us");
@@ -35,6 +90,7 @@ var addToCart = function(e) {
 //		addItemToList(tempy, schoolName);
 	}
 	shoppingCart.add(schoolName);
+	updateCartCount();
 	testCheck = true;
 	alert(schoolName+" 已新增至清單!");
 }
@@ -53,16 +109,16 @@ var cardClick = function(e) {
 	modal.getElementsByClassName("tableIntro")[0].innerHTML = schoolObj.intro;
 	modal.getElementsByClassName("tableRank")[0].innerHTML = schoolObj.rank;
 	modal.getElementsByClassName("tableMajor")[0].innerHTML = schoolObj.major;
-	modal.getElementsByClassName("tableExtra")[0].innerHTML = schoolObj.extra;
+	if (schoolObj.extra)
+		modal.getElementsByClassName("tableExtra")[0].innerHTML = schoolObj.extra;
 	modal.classList.remove("fade-out");
 	modal.classList.add("fade-in");
 	modal.style.display = "block";
 	/*modal.style.opacity = "1";
 	modal.style.visibility = "visible";*/
 }
-var clickAction = function(ct, type) {
+var clickAction = function(ct, type, btn) {
 	var a = document.getElementById(ct);
-	var btn = document.getElementById(type+'btn');
 	var card = document.getElementById(type);
 	var aLink = document.querySelectorAll("."+ct+" > a");
 	for(var i=0; i< aLink.length;i++) {
@@ -127,42 +183,35 @@ var ushsbtn = document.getElementById("ushsbtn");
 var usugbtn = document.getElementById("usugbtn");
 var uspgbtn = document.getElementById("uspgbtn");
 var ustalkbtn = document.getElementById("ustalkbtn");
-var ushs = document.getElementById("ushs");
-var usug = document.getElementById("usug");
-var uspg = document.getElementById("uspg");
-var ustalk = document.getElementById("ustalk");
 
 var ukhsbtn = document.getElementById("ukhsbtn");
 var ukugbtn = document.getElementById("ukugbtn");
 var ukpgbtn = document.getElementById("ukpgbtn");
 var uktalkbtn = document.getElementById("uktalkbtn");
-var ukhs = document.getElementById("ukhs");
-var ukug = document.getElementById("ukug");
-var ukpg = document.getElementById("ukpg");
-var uktalk = document.getElementById("uktalk");
+
 ushsbtn.onclick = function() {
-	clickAction("us", "ushs");
+	clickAction("us", "ushs", ushsbtn);
 }
 usugbtn.onclick = function() {
-	clickAction("us", "usug");
+	clickAction("us", "usug", usugbtn);
 }
 uspgbtn.onclick = function() {
-	clickAction("us", "uspg");
+	clickAction("us", "uspg", uspgbtn);
 }
 ustalkbtn.onclick = function() {
-	clickAction("us", "ustalk");
+	clickAction("us", "talk", ustalkbtn);
 }
 ukhsbtn.onclick = function() {
-	clickAction("uk", "ukhs");
+	clickAction("uk", "ukhs", ukhsbtn);
 }
 ukugbtn.onclick = function() {
-	clickAction("uk", "ukug");
+	clickAction("uk", "ukug", ukugbtn);
 }
 ukpgbtn.onclick = function() {
-	clickAction("uk", "ukpg");
+	clickAction("uk", "ukpg", ukpgbtn);
 }
 uktalkbtn.onclick = function() {
-	clickAction("uk", "uktalk");
+	clickAction("uk", "talk", uktalkbtn);
 }
 
 //popup modal for schools and events
@@ -215,7 +264,6 @@ cartbtn.onclick = function() {
 	for (var i=0; i<schoolList.length; i++) {
 		addItemToList(tempy, schoolList[i]);
 	}
-
 }
 
 closeForm = function() {
@@ -243,29 +291,41 @@ function addItemToList(list, item) {
 	dataSpan.innerHTML = item;
 	var deleteSpan = document.createElement('span')
 	deleteSpan.setAttribute("class", "delete");
-	deleteSpan.innerHTML = '&times';
+	deleteSpan.innerHTML = '<svg viewbox="0 0 40 40"><path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" /></svg>';
 	li.appendChild(dataSpan);
 	li.appendChild(deleteSpan);
 //  li.appendChild(document.createTextNode("asu"));
 	list.appendChild(li);
 	deleteSpan.onclick = function(e) {
-		e.target.parentNode.remove();
-		var value = e.target.parentNode.innerText;
+		e.target.parentNode.parentNode.remove();
+		var value = e.target.parentNode.parentNode.innerText;
 		removeCookie("schools", value);
 		shoppingCart.delete(value);
+		updateCartCount();
 	};
 }
 
 addschool.onclick = function(e) {
 //	tempy.insertAdjacentHTML('afterend', '<li id="deleteschool"><span class="product">asu</span><span class="delete" onclick="document.getElementById(deleteschool).remove();">&times;</span></li>');
-	var schoolName = e.target.parentNode.parentNode.name;
+	var schoolName = e.target.parentNode.name;
 	if (cookieEnable) {
 		appendCookie('schools', schoolName);
 //	} else {  // no cookie, add to cart directly
 //		addItemToList(tempy, schoolName);
 	}
 	shoppingCart.add(schoolName);
+	updateCartCount();
 	closeModal();
+}
+
+function updateCartCount() {
+	var count = shoppingCart.size;
+	if (cookieEnable) {
+		var schoolList = getCookie('schools');
+		if (schoolList)
+			count = schoolList.split(',').length;
+	}
+	document.getElementById('cartcount').innerHTML = count;
 }
 
 var deleteproduct = document.getElementById("deleteproduct");
@@ -377,7 +437,7 @@ function setEncodedCookie(name, value) {
 
 // append value to existing cookie, create one if not exist
 function appendCookie(name, value) {
-    var oldValue = getAllCookies()[name];
+    var oldValue = getCookie(name);
     if (oldValue) {
         value = oldValue+','+ value;
     }
@@ -393,7 +453,7 @@ function removeCookie(name,value) {
 				newValue += ","+items[i];
 		}
 		if (newValue) {
-			setCookie(name, newValue.substring(2));
+			setCookie(name, newValue.substring(1));
 		} else {
 			deleteCookie(name);
 		}
@@ -404,3 +464,6 @@ function removeCookie(name,value) {
 function deleteCookie(name) {
 	document.cookie = name +"=; expires=Thu, 01-Jan-1970 00:00:01 GMT";
 }
+
+// update shopping count on startup
+updateCartCount();
