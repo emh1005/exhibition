@@ -4,17 +4,22 @@ var shoppingCart = new Set();
 
 //carousel
 
-var slideIndex = 1;
+var slideIndex = 0;
 showSlides(slideIndex);
+var timer;
 
 // Next/previous controls
 function plusSlides(o) {
   showSlides(slideIndex += o);
+  clearTimeout(timer);
+  timer = setTimeout(showSlidesTimed, 5000);
 }
 
 // Thumbnail image controls
 function currentSlide(o) {
   showSlides(slideIndex = o);
+  clearTimeout(timer);
+  timer = setTimeout(showSlidesTimed, 5000);
 }
 
 function showSlides(o) {
@@ -25,6 +30,7 @@ function showSlides(o) {
   if (o < 1) {slideIndex = slides.length}
   for (w = 0; w < slides.length; w++) {
       slides[w].style.display = "none";
+
   }
   for (w = 0; w < dots.length; w++) {
       dots[w].className = dots[w].className.replace(" active", "");
@@ -52,7 +58,7 @@ function showSlidesTimed() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlidesTimed, 5000); // Change image every 2 seconds
+  timer = setTimeout(showSlidesTimed, 5000); // Change image every 2 seconds
 }
 
 

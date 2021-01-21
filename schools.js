@@ -126,7 +126,7 @@ var schoolData = [
 {type: "usug", id: "ugusf", cardimg: "usf.jpg", img: "usf.jpg", name: "南佛羅里達大學<br/>University of South Florida", 
 	cardrank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院&emsp; 全美99名<br/>化學工程 全美66名",
 	intro: "屬於佛羅里達州州立大學系統，是該州前三大旗艦型公立研究型大學，坐落於美國佛羅里達州坦帕市，距離邁阿密車程約四小時。獲卡內基基金會評選為「第一級特高研究型的公立大學」，其商學院獲得AACSB認證(全球前5%的商學管理學院)。", 
-	rank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院 全美99名<br/>化學工程 全美66名",
+	rank: "綜合大學 全美103名<br/>理工學院 全美92名<br/>商學院&emsp; 全美99名<br/>化學工程 全美66名",
 	major: "英語教學 <br/>行銷學 <br/>管理學 <br/>大眾傳播 <br/>工程管理 ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "學費實惠，是全美對國際學生收費最低的前10名大學。<br/>全美前40名最多元化大學，學生來自全球141個國家。"
 },
@@ -134,7 +134,7 @@ var schoolData = [
 {type: "usug", id: "ugauburn", cardimg: "ugauburn.jpg", img: "ugauburn.jpg", name: "奧本大學<br/>Auburn University", 
 	cardrank: "綜合大學&emsp; 全美97名<br/>理工專業&emsp; 全美53名<br/>商學專業&emsp; 全美53名<br/>供應鏈管理 全美第20名",
 	intro: "成立於1856年，位於阿拉巴馬州，由於該州汽車及航太工業發達，本校工程專業的畢業生就業表現優異。而本校距離亞特蘭大市(全球最繁忙機場)車程約1.5小時，全球交通網重鎮，Amazon也在此建造物流中心，商學專業的同學能爭取實習/就業的機會。現代汽車製造廠及賓士的美國總部也位於阿拉巴馬州，對工程相關科系的同學來說，有很好的就業機會。", 
-	rank: "綜合大學 全美97名<br/>理工專業 全美53名<br/>商學專業 全美53名<br/>供應鏈管理（大學部） 全美第20名",
+	rank: "綜合大學&emsp; 全美97名<br/>理工專業&emsp; 全美53名<br/>商學專業&emsp; 全美53名<br/>供應鏈管理 全美第20名",
 	major: "會計學 <br/>供應鏈管理 <br/>幼兒教育 <br/>運動管理 <br/>電腦科學 &ast;&ast;<br/>平面設計 <br/>航太科技 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "蘋果執行長Tim Cook畢業於此<br/>維基百科創始人Jimmy Wales畢業於此<br/>全美最豪華的學生活動中心 第三名"
 },
@@ -142,7 +142,7 @@ var schoolData = [
 {type: "usug", id: "uguab", cardimg: "uab.jpg", img: "uab.jpg", name: "阿拉巴馬大學伯明翰分校<br/>University of Alabama at Birmingham", 
 	cardrank: "世界大學&emsp;&emsp; 排名153名<br/>公共健康&emsp;&emsp; 全美19名<br/>健康照顧管理 全美1名<br/>生物醫學碩士 全美58名",
 	intro: "本校是世界聞名的研究大學及醫學中心，其醫療科學學術中心為全美TOP20。本校也是阿拉巴馬州的最大僱主，該州大約每33份工作中就有一份直接或間接與該大學有關聯。距離亞特蘭大車程約2.5小時，就業機會豐富。", 
-	rank: "世界大學 排名153名<br/>公共健康 全美19名<br/>健康照顧管理  全美1名<br/>生物醫學碩士 全美58名<br/>生物科學碩士 全美62名",
+	rank: "世界大學&emsp;&emsp; 排名153名<br/>公共健康&emsp;&emsp; 全美19名<br/>健康照顧管理 全美1名<br/>生物醫學碩士 全美58名<br/>生物科學碩士 全美62名",
 	major: "工商管理 <br/>公共健康 <br/>生物科技 &ast;&ast;<br/>護理師先修課程 <br/>數據科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>資訊安全 (學校接受無相關背景的申請人) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "台灣的中山大學醫學院每年都會派教授及學生至本校交流<br/>校內超過250個社團活動組織，校風開放多元<br/>位於美國南方，生活費及學費相對便宜"
 },
@@ -166,10 +166,11 @@ var schoolData = [
 	extra: "兩年長度的碩士課程。<br/>第一年在台灣進行遠距課程學習；第二年於麻州大學阿默斯特分校UMass Amherst進行實體課程，並取得ECE碩士學位。畢業後享有3年OPT資格。<br/>台灣的大四在校生，即可開始修讀其第一年的線上碩士課程。<br/>在台上課期間，上課時間為台灣時間的傍晚7-11點。"
 },
 
+/*check org doc!!!*/
 {type: "uspg", id: "pgasu",cardimg: "asu.jpg", img: "asu.jpg", name: "亞利桑那州立大學<br/>Arizona State University", 
 	cardrank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院&emsp; 全美35名<br/>理工學院 全美41名",
 	intro: "成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。", 
-	rank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院 全美35名<br/>理工學院 全美41名<br/>供應鏈/物流 全美3名",
+	rank: "世界大學 排名146名<br/>綜合大學 全美103名<br/>商學院&emsp; 全美35名<br/>理工學院 全美41名<br/>供應鏈/物流 全美3名",
 	major: "全球物流 &ast;&ast;<br/>財務金融 &ast;&ast;<br/>使用者經驗 &ast;&ast;<br/>資訊管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "&mdash; 雇主最愛聘僱的大學畢業生 全美 5 名<br/>&mdash; 畢業生在矽谷工作學生數量 全美 10 名"
 },
@@ -177,7 +178,7 @@ var schoolData = [
 {type: "uspg", id: "pgosu", cardimg: "osu.jpg", img: "osu.jpg", name: "奧勒岡州立大學<br/>Oregon State University", 
 	cardrank: "公立大學 全美71名<br/>商學院&emsp;  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
 	intro: "成立於1868年，是全球TOP1%的菁英大學。總學生人數約為三萬多人，國際學生來自全球112個國家，佔全校學生數量約10%。<br/>距離奧勒岡州最大城市─波特蘭車程約90分鐘，惠普、英特爾、蘋果、戴爾、微軟、谷歌以及摩根斯坦利、花旗銀行等公司坐落於此，為學生提供了豐富的實習和就業機會。", 
-	rank: "公立大學 全美71名<br/>商學院  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
+	rank: "公立大學 全美71名<br/>商學院&emsp;  全美99名<br/>理工學院 全美63名<br/>電腦科學 全美TOP 1%",
 	major: "商學碩士 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>化學工程 &ast;&ast;<br/>機械工程 &ast;&ast;<br/>電子電機工程 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "奧勒岡州為全美是美國最安全、整潔、環保的地區之一<br/>美國西部唯一的免稅州，購物便宜<br/>學校於谷心鎮（Corvallis），是美國教育程度最高城市的第二名<br/>波特蘭是本州最大的城市，距谷心鎮約 90 分鐘車程，讓學生擁有許多就業與實習機會。現有的當地投資公司如：惠普、耐吉及波音"
 },
@@ -186,7 +187,7 @@ var schoolData = [
 {type: "uspg", id: "pgsit", cardimg: "pgsit.jpg", img: "pgsit.jpg", name: "史蒂文斯理工學院<br/>Stevens Institute of Technology", 
 	cardrank: "全美80名<br/>商學院&emsp; 全美77名<br/>理工學院 全美80名<br/>商業分析MBA 全美21名",
 	intro: "成立於1870年，是美國歷史最悠久的理工學校之一。位於紐澤西州，距紐約曼哈頓十分鐘車程，實習就業機會豐富。2020年度畢業生平均起薪為7.7萬美金/年、電腦科學相關科系畢業生平均起薪8.8萬美金/年，是全美投資回報率最高的學校第17名。", 
-	rank: "全美80名<br/>商學院 全美77名<br/>理工學院 全美80名<br/>商業分析MBA 全美21名",
+	rank: "全美80名<br/>商學院&emsp; 全美77名<br/>理工學院 全美80名<br/>商業分析MBA 全美21名",
 	major: "商業智能與分析 &ast;&ast;<br/>商業分析工商管理 &ast;&ast;<br/>金融 &ast;&ast;<br/>資訊系統 &ast;&ast;<br/>系統分析 &ast;&ast;<br/>軟體工程 &ast;&ast;<br/>工程管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "最佳就業率的大學 全美11名<br/>最多實習機會大學 全美15名"
 },
@@ -211,7 +212,7 @@ var schoolData = [
 {type: "uspg", id: "pgneu", cardimg: "pgneu.jpg", img: "pgneu.jpg", name: "東北大學<br/>Northeastern University", 
 	cardrank: "Co-ops/Internships 全美第1名<br/>綜合大學 全美49名<br/>商學院&emsp; 全美61名<br/>理工學院 全美31名",
 	intro: "成立於1898年，位於波士頓。該校以學術結合實務為其最大特點，超過9成的學生在畢業前皆參加建教合作課程(Co-Op)，畢業後留在美國當地工作機會大，因此吸引了眾多的國際學生在此就讀。", 
-	rank: "Co-ops/Internships 全美第1名<br/>綜合大學 全美49名<br/>商學院 全美61名<br/>理工學院 全美31名<br/>法學院 全美67名<br/>電腦科學 全美12名",
+	rank: "Co-ops/Internships 全美第1名<br/>綜合大學 全美49名<br/>商學院&emsp; 全美61名<br/>理工學院 全美31名<br/>法學院&emsp; 全美67名<br/>電腦科學 全美12名",
 	major: "分析學 &ast;&ast;<br/>財務金融 &ast;&ast;<br/>數位媒體 &ast;&ast;<br/>國際商務 <br/>專案管理 &ast;&ast;<br/>應用性機器智能 &ast;&ast;<br/>電機與電腦工程 &ast;&ast;<br/>電腦科學 (學校接受無相關背景的申請人) &ast;&ast;<br/>電腦科學 (申請者須有相關背景) &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "Twitter 創始人的母校<br/>Co-op企業合作教育發展成熟，學生多實習機會"
 },
@@ -259,9 +260,9 @@ var schoolData = [
 
 
 {type: "uspg", id: "pgiit", cardimg: "pgiit.jpg", img: "pgiit.jpg", name: "伊利諾理工學院<br/>Illinois Institute of Technology", 
-	cardrank: "綜合大學&emsp;&emsp;&emsp; 全美124名<br/>理工學院&emsp;&emsp;&emsp; 全美83名<br/>電子與電機工程 世界86名<br/>數學金融&emsp;&emsp;&emsp; 全美15名 ",
+	cardrank: "綜合大學&emsp;&emsp;&emsp; 全美124名<br/>理工學院&emsp;&emsp;&emsp; 全美83名<br/>電子與電機工程 世界86名<br/>數學金融&emsp;&emsp;&emsp; 全美15名",
 	intro: "成立於1890年，位於芝加哥市中心，與業界合作密切，惠普、可口可樂、克萊斯勒汽車等國際公司，贊助並參與協助本校各領域的學生，共同研發、創新，將學術知識應用於實際生活中。本校畢業生獲得企業喜愛，平均起薪約6萬美金/年。", 
-	rank: "綜合大學 全美124名<br/>理工學院 全美83名<br/>電子與電機工程 世界86名<br/>數學金融 全美15名 ",
+	rank: "綜合大學&emsp;&emsp;&emsp; 全美124名<br/>理工學院&emsp;&emsp;&emsp; 全美83名<br/>電子與電機工程 世界86名<br/>數學金融&emsp;&emsp;&emsp; 全美15名",
 	major: "數據科學 &ast;&ast;<br/>數學金融 &ast;&ast;<br/>市場分析 &ast;&ast;<br/>電腦科學 &ast;&ast;<br/>電腦工程 &ast;&ast;<br/>生物工程 &ast;&ast;<br/>運輸工程 &ast;&ast;<br/>資安工程 &ast;&ast;<br/>資訊科技管理 &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "本校的投報率高居全美前5%，畢業生初期薪資平均落在6萬美金/年<br/>行動電話發明人的母校<br/>條碼科技先驅者的母校<br/>台科大校長廖慶榮母校"
 },
@@ -278,7 +279,7 @@ var schoolData = [
 
 /* ukhs */
 {type: "ukhs", id: "dcs", cardimg: "dcs.jpg", img: "dcs.jpg", name: "Dean Close School", 
-	cardrank: "Pre-Preparatory 學齡前課程(2-7歲)<br/>Preparatory 中小學課程(7-13歲)<br/>Senior School & Sixth Form 高中課程(13-18歲)<br/>",
+	cardrank: "Pre-Preparatory (2-7歲)<br/>Preparatory (7-13歲)<br/>Senior School & Sixth Form (13-18歲)<br/>",
 	intro: "此中學位於英國西邊城市Cheltenham, 距離倫敦搭乘火車約2小時可以抵達。<br/>學校提供一條龍式教育，從學生2歲～18歲皆可在此校就讀，校園內學生約700人，中學部約有450人。中學高考成績超過70%拿到A*-B的成績，99% 的學生都順利升上英國大學，每年更是有許多劍橋大學及牛津大學錄取生。", 
 	rank: "The ethos of Dean Close encourages independent thinking and the self-confidence to challenge the status quo. It challenges selfishness and promotes respect for others, service to the School and wider community and the development of healthy and positive relationships.",
 	major: "Pre-Preparatory 學齡前課程(2-7歲)<br/>Preparatory 中小學課程(7-13歲)<br/>Senior School & Sixth Form 高中課程(13-18歲)",
@@ -286,7 +287,7 @@ var schoolData = [
 },
 
 {type: "ukhs", id: "catslon", cardimg: "catslon.jpg", img: "catslon.jpg", name: "CATS London", 
-	cardrank: "GCSE中學部(14+歲)<br/>International Baccalaureate國際文憑課程(16+歲)<br/>A-Level 高中課程(15+歲)<br/>International Foundation 大學預備課程(17+歲)",
+	cardrank: "GCSE(14+歲)<br/>International Baccalaureate(16+歲)<br/>A-Level (15+歲)<br/>International Foundation (17+歲)",
 	intro: "CATS London 校區在倫敦市中心最方便的Holborn 地鐵站附近，大英博物館就在學校隔壁，學術氣息濃厚，生活交通相當便利。校內由超過80個國籍的學生組成，小班式教學能照顧好每個學生的需求，更提供額外英文課程，讓國際學生不擔心英文能力。針對想要申請劍橋牛津大學的學生也提供額外學術/面試輔導，而大部分學生也都順利申請上世界百大英國大學。", 
 	rank: "We offer a world-class education, attracting students from across the globe. In a diverse and exciting international community, you will learn to be your best and achieve a place at a top university.",
 	major: "GCSE中學部(14+歲)<br/>International Baccalaureate國際文憑課程(16+歲)<br/>A-Level 高中課程(15+歲)<br/>International Foundation 大學預備課程(17+歲)",
@@ -346,7 +347,7 @@ var schoolData = [
 
 
 {type: "ukug", id: "uglon", cardimg: "uglon.jpg", img: "uglon.jpg", name: "University of London<br/>倫敦大學學士預備課程", 
-	cardrank: "ONCAMPUS-University of London International Foundation Programme<br/><br/><br/>",
+	cardrank: "倫敦大學學士預備課程提供國際學生一個能夠進入英國高等教育學校的機會，如「倫敦政經學院（LSE）」僅接受4間預備課程提出的申請件<br/><br/>",
 	intro: "倫敦大學是由多个行政獨立的大學組成（聯邦制大學），这些學校包括眾多世界上知名且學術名望高的学校。大學擁有高度的自治權，各校在學術上有各自的領域，例如：London School of Economics and Political Science（LSE）倫敦政經學院,即是成員之一。", 
 	rank: "N/A",
 	major: "國際關係<br/>法律<br/>社會學 <br/>政治與經濟<br/>地理與經濟 ",
@@ -354,7 +355,7 @@ var schoolData = [
 },
 
 {type: "ukug", id: "ugking", cardimg: "ugking.jpg", img: "ugking.jpg", name: "King's Education<br/>學士預備課程", 
-	cardrank: "<br/><br/><br/><br/>",
+	cardrank: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程<br/><br/>",
 	intro: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程，此課程幫助許多學生順利申請上世界前100名大學，並且班級由各個國家學生組成，真正認識多元文化環境，讓學生不只是唸書，更是拓展國際視野以及文化交流。", 
 	rank: "N/A",
 	major: "商管學士<br/>生物科學 <br/>國際關係<br/>心理學 <br/>化學 <br/>醫學 <br/>藝術設計 ",

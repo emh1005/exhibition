@@ -137,19 +137,19 @@
 			<div class="schoolinfo">
 				<table>
 					<tr>
-						<td>學校簡介</td>
+						<td class="tableTitle">學校簡介</td>
 						<td class="tableIntro">成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。</td>
 					</tr>
 					<tr>
-						<td>學校排名</td>
+						<td class="tableTitle">學校排名</td>
 						<td class="tableRank">世界大學 排名 146 名<br/>商學院 全美 35 名<br/>理工學院 全美 41 名<br/>供應鏈/物流 全美 3 名</td>
 					</tr>
 					<tr>
-						<td>推薦科系</td>
+						<td class="tableTitle">推薦科系</td>
 						<td class="tableMajor">全球物流 Global Logistics &ast;&ast;<br/>財務金融 Finance &ast;&ast;<br/>使用者經驗 User Experience (UX) &ast;&ast;<br/>資訊管理 Information System Management &ast;&ast;<br/><br/>&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT</td>
 					</tr>
 					<tr>
-						<td>補充資訊</td>
+						<td class="tableTitle">補充資訊</td>
 					<td class="tableExtra">&mdash; 雇主最愛聘僱的大學畢業生 全美 5 名<br/>&mdash; 畢業生在矽谷工作學生數量 全美 10 名</td>
 					</tr>
 				</table>
@@ -166,6 +166,10 @@
 			<span class="close" id="closecart">&times;</span>
 			<form action="register.php" method="get" onsubmit="submitForm();return false">
 				<h2>專屬於你的 個人化 留學展</h2>
+				<div class="title-line">
+            	<span class="red"></span>
+            	<span class="blue"></span>
+          	</div>
 				
 				<div class="seminarlist">
 					<h3>您的留學講座清單</h3>
@@ -201,12 +205,12 @@
 				</div>
 				<h3>個人資料</h3>
 				<div class="person">
-					<label>姓名&ast;: </label><input type="text" name="name" required><br>
-					<label>電話&ast;: </label><input type="text" name="phone" required><br>
-					<label>居住城市&ast;: </label><input type="text" name="city" required><br>
-					<label>Email&ast;: </label><input type="text" name="email" required><br>
-					<label>LINE: </label><input type="text" name="line"><br>
-					<label>WeChat: </label><input type="text" name="wechat"><br>
+					<label>姓名&ast;:&emsp;&emsp; </label><input type="text" name="name" required class="textinput"><br>
+					<label>電話&ast;:&emsp;&emsp; </label><input type="text" name="phone" required class="textinput"><br>
+					<label>居住城市&ast;: </label><input type="text" name="city" required class="textinput"><br>
+					<label>Email&ast;:&emsp;&nbsp;&thinsp; </label><input type="text" name="email" required class="textinput"><br>
+					<label>LINE:&emsp;&ensp;&nbsp;&nbsp;&nbsp;&thinsp; </label><input type="text" name="line" class="textinput"><br>
+					<label>WeChat:&ensp;&nbsp;&thinsp; </label><input type="text" name="wechat" class="textinput"><br>
 					<p>1. 資料送出後，EDU 壹教育顧問將於 24 小時內與您聯繫。<br/>2. 面談時間與方式，由 EDU 壹教育顧問安排協調。<br>3. 學校人員為 中文/英文 雙語溝通。</p>
 					<input type="checkbox" required><label>我已了解並同意以上訊息</label><br>
 				</div>
