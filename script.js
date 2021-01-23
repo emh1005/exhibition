@@ -42,7 +42,8 @@ function showSlides(o) {
 
 
 /*var slideIndex1 = 0;*/
-showSlidesTimed();
+window.onload = function() {showSlidesTimed()};
+//showSlidesTimed();
 
 function showSlidesTimed() {
   var i;
@@ -92,10 +93,18 @@ var addToCart = function(e) {
 	var schoolName = e.target.parentNode.parentNode.parentNode.name;
 	if (cookieEnable) {
 		appendCookie('schools', schoolName);
-//	} else {  // no cookie, add to cart directly
-//		addItemToList(tempy, schoolName);
 	}
 	shoppingCart.add(schoolName);
+	updateCartCount();
+	testCheck = true;
+	alert(schoolName+" 已新增至清單!");
+}
+var addToTalk = function(e) {
+	var schoolName = e.target.parentNode.parentNode.parentNode.name;
+	if (cookieEnable) {
+		appendCookie('talks', schoolName);
+	}
+	shoppingCart.add('talk '+schoolName);
 	updateCartCount();
 	testCheck = true;
 	alert(schoolName+" 已新增至清單!");
@@ -111,14 +120,18 @@ var cardClick = function(e) {
 	});
 	modal.name = schoolObj.name;
 	modal.getElementsByClassName("schoolimg")[0].setAttribute("src", 'img/'+schoolObj.img);
-	modal.getElementsByClassName("tableName")[0].innerHTML = schoolObj.name;
-	modal.getElementsByClassName("tableIntro")[0].innerHTML = schoolObj.intro;
-	modal.getElementsByClassName("tableRank")[0].innerHTML = schoolObj.rank;
-	modal.getElementsByClassName("tableMajor")[0].innerHTML = schoolObj.major;
-	if (schoolObj.extra)
-		modal.getElementsByClassName("tableExtra")[0].innerHTML = schoolObj.extra;
-	modal.classList.remove("fade-out");
-	modal.classList.add("fade-in");
+	modal.getElementsByClassName("tableName")[0].innerHTML = schoolObj.name.replace(/\n/g, '<br/>');
+	modal.getElementsByClassName("tableIntro")[0].innerHTML = schoolObj.intro.replace(/\n/g, '<br/>');
+	modal.getElementsByClassName("tableRank")[0].innerHTML = schoolObj.rank.replace(/\n/g, '<br/>');
+	modal.getElementsByClassName("tableMajor")[0].innerHTML = schoolObj.major.replace(/\n/g, '<br/>');
+	if (schoolObj.extra) { // get extra content
+		modal.getElementsByClassName("tableExtra")[0].innerHTML = '<li>'+schoolObj.extra.replace(/\n/g, '</li><li>')+'</li>';
+	} else {	// no extra content, disable whole TR
+		modal.getElementsByClassName("extraTR")[0].style.display = "none";
+	}
+//	modal.classList.remove("fade-out");
+//	modal.classList.add("fade-in");
+	modal.className = schoolObj.type + " school fade-in";  // set classList directly, with different type
 	modal.style.display = "block";
 	/*modal.style.opacity = "1";
 	modal.style.visibility = "visible";*/
@@ -147,10 +160,10 @@ var clickAction = function(ct, type, btn) {
 			myNode.id = obj.id;
 			myNode.name = obj.name;
 			myNode.getElementsByClassName("cardImg")[0].setAttribute("src", 'img/'+obj.cardimg);
-			myNode.getElementsByClassName("cardName")[0].innerHTML = obj.name;
-			myNode.getElementsByClassName("cardRank")[0].innerHTML = obj.cardrank;
+			myNode.getElementsByClassName("cardName")[0].innerHTML = obj.name.replace(/\n/g, '<br/>');
+			myNode.getElementsByClassName("cardRank")[0].innerHTML = obj.cardrank.replace(/\n/g, '<br/>');
 //			myNode.getElementsByClassName("tableExtra")[0].innerHTML = obj.extra;
-			myNode.getElementsByClassName("addbtn")[0].onclick = addToCart;
+			myNode.getElementsByClassName("addbtn")[0].onclick = (obj.type === 'talk')? addToTalk : addToCart;
 			myNode.onclick = cardClick;
 			card.appendChild(myNode);
 		}
@@ -251,7 +264,7 @@ var closecart = document.getElementById("closecart");
 var modaloverlay = document.getElementById("modaloverlay");
 
 var tempy = document.getElementById("tempy");
-
+var talky = document.getElementById("talky");
 cartbtn.onclick = function() {
 	modaloverlay.classList.remove("fade-out");
 	modaloverlay.classList.add("fade-in");
@@ -261,14 +274,26 @@ cartbtn.onclick = function() {
 	cart.style.display = "block";
 	// add to cart for cookie case
 	var schoolList = Array.from(shoppingCart);
+	var talkList = [];
 	if (cookieEnable) {
+		var talks = getCookie('talks');
 		var schools = getCookie('schools');
+		if (talks && talks.length > 0) {
+			talkList = talks.split(',');
+		}
 		if (schools && schools.length > 0) {
 			schoolList = schools.split(',');
 		}  // else no cookie set
 	}
+	for (var i=0; i<talkList.length; i++) {
+		addItemToList(talky, talkList[i]);
+	}
 	for (var i=0; i<schoolList.length; i++) {
-		addItemToList(tempy, schoolList[i]);
+		if (schoolList[i].slice(0, 5) === 'talk ') { //talk
+			addItemToList(talky, schoolList[i].substr(5));
+		} else {
+			addItemToList(tempy, schoolList[i]);
+		}
 	}
 }
 
@@ -279,6 +304,9 @@ closeForm = function() {
 	cart.classList.remove("fade-in");
 	cart.classList.add("fade-out");
 	cart.style.display = "none";
+	while (talky.firstChild) {
+		talky.removeChild(talky.firstChild);
+	}
 	while (tempy.firstChild) {
 		tempy.removeChild(tempy.firstChild);
 	}
@@ -304,21 +332,25 @@ function addItemToList(list, item) {
 	list.appendChild(li);
 	deleteSpan.onclick = function(e) {
 		e.target.parentNode.parentNode.remove();
-		var value = e.target.parentNode.parentNode.innerText;
+		var value = e.target.parentNode.parentNode.textContent;
+		removeCookie("talks", value);
 		removeCookie("schools", value);
 		shoppingCart.delete(value);
+		shoppingCart.delete("talk "+value);
 		updateCartCount();
 	};
 }
 
 addschool.onclick = function(e) {
 //	tempy.insertAdjacentHTML('afterend', '<li id="deleteschool"><span class="product">asu</span><span class="delete" onclick="document.getElementById(deleteschool).remove();">&times;</span></li>');
-	var schoolName = e.target.parentNode.name;
+	var parent = e.target.parentNode;
+	var schoolName = parent.name;
+	var type = (parent.classList.contains("talk"))? 'talks' : 'schools';
 	if (cookieEnable) {
-		appendCookie('schools', schoolName);
-//	} else {  // no cookie, add to cart directly
-//		addItemToList(tempy, schoolName);
+		 appendCookie(type, schoolName);
 	}
+	if (type === 'talks')
+		schoolNamme = 'talk '+schoolName;
 	shoppingCart.add(schoolName);
 	updateCartCount();
 	closeModal();
@@ -327,18 +359,14 @@ addschool.onclick = function(e) {
 function updateCartCount() {
 	var count = shoppingCart.size;
 	if (cookieEnable) {
+		var talkList = getCookie('talks');
+		if (talkList)
+			count = talkList.split(',').length;
 		var schoolList = getCookie('schools');
 		if (schoolList)
-			count = schoolList.split(',').length;
+			count += schoolList.split(',').length;
 	}
 	document.getElementById('cartcount').innerHTML = count;
-}
-
-var deleteproduct = document.getElementById("deleteproduct");
-var deletebtn = document.getElementById("deletebtn");
-
-deletebtn.onclick = function() {
-	deleteproduct.remove();
 }
 
 var topbutton = document.getElementById("topBtn");
@@ -367,6 +395,9 @@ function topFunction() {
 
 // ---------- function for submit form ---------
 function submitForm() {
+var talks = document.getElementById("talky").getElementsByTagName("li");
+document.getElementById("talks").value = liAsString(talks);
+deleteCookie('talks');
 var schools = document.getElementById("tempy").getElementsByTagName("li");
 document.getElementById("schools").value = liAsString(schools);
 deleteCookie('schools');
@@ -468,7 +499,7 @@ function removeCookie(name,value) {
 
 // delete a cookie
 function deleteCookie(name) {
-	document.cookie = name +"=; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+	document.cookie = name +"=; path=/; expires=Thu, 01-Jan-1970 00:00:01 GMT";
 }
 
 // update shopping count on startup

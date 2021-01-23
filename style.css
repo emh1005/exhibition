@@ -453,6 +453,9 @@ padding: 5px;
 	clear: both;
 	padding-left: 30px;
 	padding-right: 30px;
+	text-align: justify;
+	text-justify: distribute;
+}
 }
 
 .ranking {
@@ -530,7 +533,7 @@ padding: 5px;
 .schoolinfo td {
 	padding: 30px;
 	text-align: justify;
-	text-justify: inter-word;
+	text-justify: distribute;
 }
 
 .schoolinfo table {
@@ -654,7 +657,7 @@ padding: 5px;
 	overflow: auto;
 	background-color: #fff;
 	box-sizing: border-box;
-	text-align: justify;
+	text-align: left;
 	/*position: absolute;
 	left: 50%;
 	top: 50%;
@@ -1279,18 +1282,18 @@ footer .footerinfo li {
 and (max-width:900px){
 		.button {
 	margin: auto;
-	width: 80%;
+	width: 100%;
 }
 	.button a {
 	width: 115px;
 	height: 115px;
 		font-size: 22px;
-			margin-left: 50px;
-	margin-right: 50px;
+			margin-left: 20px;
+	margin-right: 20px;
 }
 	.clicked>a {
-	width: 85px;
-	height: 85px;
+	width: 90px;
+	height: 90px;
 }
 	
 .card {
@@ -1371,8 +1374,8 @@ and (max-width:699px){
 	width: 115px;
 	height: 115px;
 		font-size: 22px;
-			margin-left: 20px;
-	margin-right: 20px;
+			margin-left: 30px;
+	margin-right: 30px;
 }
 	.clicked>a {
 	width: 85px;
@@ -1559,8 +1562,8 @@ and (max-width:499px){
 	width: 125px;
 	height: 125px;
 		font-size: 22px;
-			margin-left: 10px;
-	margin-right: 10px;
+			margin-left: 12px;
+	margin-right: 12px;
 }
 	.clicked>a {
 	width: 100px;
@@ -1621,6 +1624,7 @@ footer .footerinfo li, .ind-con {
 		.school, .cart {
 		width: 100%;
 			border: none;
+			margin: 0;
 	}
 
 	.school>h4 {
@@ -1659,6 +1663,10 @@ footer .footerinfo li, .ind-con {
 	.cart h3 {
     font-size: 21px;
 }
+
+	.tableTitle{
+		font-weight: 700;
+	}
 }
 
 @media screen and (min-width:410px)
@@ -1779,6 +1787,7 @@ footer .footerinfo li, .ind-con {
 		.school, .cart {
 		width: 100%;
 			border: none;
+			margin: 0;
 	}
 
 	.school>h4 {
@@ -1816,6 +1825,10 @@ footer .footerinfo li, .ind-con {
 		.cart h3 {
     font-size: 21px;
 }
+
+	.tableTitle{
+		font-weight: 700;
+	}
 }
 
 @media screen and (min-width:280px)
@@ -1968,6 +1981,7 @@ footer .footerinfo li, .ind-con {
 	.school, .cart {
 		width: 100%;
 		border: none;
+		margin: 0;
 	}
 
 	.school>h4 {
@@ -2004,5 +2018,8 @@ footer .footerinfo li, .ind-con {
     width: 100%;
 		margin-bottom: 10px;
 }
+	.tableTitle{
+		font-weight: 700;
+	}
 	
 }
