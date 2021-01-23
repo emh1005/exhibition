@@ -13,9 +13,10 @@
 
 	<body>
 		<header class="header">
-			<a href="/"><img id="logo" src="logo.png" alt="Logo"></a>
+			<!--<a href="/"><img id="logo" src="logo.png" alt="Logo"></a>
 			<h1 id="headerfull">專屬於你的 個人化 留學展</h1>
-			<h1 id="headerbreak">專屬於你的<br/>個人化 留學展</h1>
+			<h1 id="headerbreak">專屬於你的<br/>個人化 留學展</h1>-->
+			<img id="headerimg" src="header.png" alt="Header">
 			<h3 id="carticon">選校清單</h3>
 			<span id="cartcount">0</span>
 		</header>
@@ -141,11 +142,11 @@
 						<td class="tableIntro"></td>
 					</tr>
 					<tr>
-						<td class="tableTitle">學校排名</td>
+						<td class="tableTitle rankTitle">學校排名</td>
 						<td class="tableRank"></td>
 					</tr>
 					<tr>
-						<td class="tableTitle">推薦科系</td>
+						<td class="tableTitle majorTitle">推薦科系</td>
 						<td class="tableMajor"></td>
 					</tr>
 					<tr class="extraTR">
@@ -164,7 +165,7 @@
 
 		<div class="cart" id="cart">
 			<span class="close" id="closecart">&times;</span>
-			<form action="register.php" method="get" onsubmit="submitForm();return false">
+			<form action="register.php" method="post" onsubmit="submitForm()">
 				<h2>專屬於你的 個人化 留學展</h2>
 				<div class="title-line">
             	<span class="red"></span>
@@ -189,12 +190,12 @@
 				<h3>希望與學校面談時段:</h3>
 				<div class="person">
 					<span>平日: </span>
-					<input type="checkbox" name="time" value="AM"><label>上午</label>
-					<input type="checkbox" name="time" value="PM"><label>下午</label>
-					<input type="checkbox" name="time" value="Eve"><label>傍晚</label><br>
+					<input type="checkbox" name="time[]" value="AM"><label>上午</label>
+					<input type="checkbox" name="time[]" value="PM"><label>下午</label>
+					<input type="checkbox" name="time[]" value="Eve"><label>傍晚</label><br>
 					<span>週六: </span>
-					<input type="checkbox" name="time" value="SAM"><label>上午</label>
-					<input type="checkbox" name="time" value="SPM"><label>下午</label><br>
+					<input type="checkbox" name="time[]" value="SAM"><label>上午</label>
+					<input type="checkbox" name="time[]" value="SPM"><label>下午</label><br>
 					<span>&lpar;可複選&rpar;</span>
 				</div>
 				<h3>個人資料</h3>
@@ -214,7 +215,13 @@
 
 		<div class="modal-overlay" id="modaloverlay">
 		</div>
-
+		<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="close popupCloseButton">&times;</div>
+        <p> School 已新增至清單!</p>
+    </div>
+</div>
 
 
 <!-- line@ --> <!-- why is it not working??? see: http://jlwork.com/2009_edu/web-/index.php -->

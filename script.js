@@ -129,6 +129,17 @@ var cardClick = function(e) {
 	} else {	// no extra content, disable whole TR
 		modal.getElementsByClassName("extraTR")[0].style.display = "none";
 	}
+	if (schoolObj.type === "ushs") {
+		modal.getElementsByClassName("rankTitle")[0].innerHTML = "學術實力";
+		modal.getElementsByClassName("majorTitle")[0].innerHTML = "學校資源";
+	} else if (schoolObj.type === "ukhs") {
+		modal.getElementsByClassName("rankTitle")[0].innerHTML = "學術宗旨";
+		modal.getElementsByClassName("majorTitle")[0].innerHTML = "課程種類";
+	} else if (schoolObj.type === "talk") {
+		modal.getElementsByClassName("tableTitle")[0].innerHTML = "&nbsp;";
+		modal.getElementsByClassName("tableTitle")[1].innerHTML = "&nbsp;";
+		modal.getElementsByClassName("tableTitle")[2].innerHTML = "&nbsp;";
+	}
 //	modal.classList.remove("fade-out");
 //	modal.classList.add("fade-in");
 	modal.className = schoolObj.type + " school fade-in";  // set classList directly, with different type
@@ -410,11 +421,9 @@ function liAsString(liObj) {
 	var result="";
 	if (liObj.length < 1)
 		return result;	//no data
-	result = liObj[0] + ',';
+	result = liObj[0].textContent;
 	for(var i=1; i<liObj.length; i++) {
-		// remove duplicates
-		if (liObj.indexOf(liObj[i]) == i)  //check for duplicate, where new one never appeared before
-			result = ','+liObj[i].textContent+result;
+		result += ','+liObj[i].textContent;
     };
 	return result;
 }
