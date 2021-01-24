@@ -3,7 +3,7 @@ var schoolData = [
 	cardrank: "畢業生升學率100%\n全波士頓最好的寄宿中學 第17名",
 	intro: "橋文理高中CATS Academy Boston，是男女合校的大學預科高中。位於波士頓近郊Braintree，距離波士頓市中心僅20分鐘車程。校園花費4500萬美金修建，提供學生最新穎的教學設備，包含藝術中心、時裝實驗室、音樂教室、多功能運動中心以及劇場空間等。此外，每年超過150所大學來學校與同學碰面分享大學升學技巧以及入學標準等。\n\n本校與多所美國優質大學如伊利諾大學芝加哥分校、猶他大學以及伊利諾理工學院等具有合作關係，能夠提供本校優秀學生提前被錄取的機會。",
 	rank: "每個學生平均收到四所大學的錄取通知\n超級小班制，師生比1:5\nNiche.com評比為A+\n24/7全年無休可與升學顧問約訪",
-	major: "提供SAT/ACT預備課程\n駐校英語輔導教師為學生 提供個人化英語課程\n升學輔導顧問提供個別指導，協助進入優質大學",
+	major: "提供SAT/ACT預備課程\n駐校英語輔導教師為學生 提供個人化英語課程\n升學輔導顧問提供個別指導，協助進入優質大學  ",
 	extra: "100%保證校內住宿\n學生宿舍為單性別的單人或雙人房，由宿舍管理輔導老師提供 24/7 全天候監管\n宿舍管理輔導老師使用應用程式即時追蹤學生位置，並利用先進的保全技術監督宿舍安全"
 },
 {type: "ushs", id: "stjohns", cardimg: "stjohns.jpg", img:"stjohns.jpg", name: "St. Johnsbury Academy\n聖約翰博睿學院 (位於 佛蒙特州柏林頓)", 
@@ -278,7 +278,7 @@ var schoolData = [
 
 /* ukhs */
 {type: "ukhs", id: "dcs", cardimg: "dcs.jpg", img: "dcs.jpg", name: "Dean Close School", 
-	cardrank: "Pre-Preparatory (2-7歲)\nPreparatory (7-13歲)\nSenior School & Sixth Form (13-18歲)\n",
+	cardrank: "Pre-Preparatory (2-7歲)\nPreparatory (7-13歲)\nSenior School & Sixth Form (13-18歲)\n \n",
 	intro: "此中學位於英國西邊城市Cheltenham, 距離倫敦搭乘火車約2小時可以抵達。\n學校提供一條龍式教育，從學生2歲～18歲皆可在此校就讀，校園內學生約700人，中學部約有450人。中學高考成績超過70%拿到A*-B的成績，99% 的學生都順利升上英國大學，每年更是有許多劍橋大學及牛津大學錄取生。", 
 	rank: "The ethos of Dean Close encourages independent thinking and the self-confidence to challenge the status quo. It challenges selfishness and promotes respect for others, service to the School and wider community and the development of healthy and positive relationships.",
 	major: "Pre-Preparatory 學齡前課程(2-7歲)\nPreparatory 中小學課程(7-13歲)\nSenior School & Sixth Form 高中課程(13-18歲)",
@@ -353,7 +353,7 @@ var schoolData = [
 },
 
 {type: "ukug", id: "ugking", cardimg: "ugking.jpg", img: "ugking.jpg", name: "學士預備課程\nKing's Education", 
-	cardrank: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程\n\n",
+	cardrank: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程\n\n \n",
 	intro: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程，此課程幫助許多學生順利申請上世界前100名大學，並且班級由各個國家學生組成，真正認識多元文化環境，讓學生不只是唸書，更是拓展國際視野以及文化交流。",
 	major: "商管學士\n生物科學 \n國際關係\n心理學 \n化學 \n醫學 \n藝術設計 ",
 	extra: "學校提供學生自由選擇修課內容。學校指導老師會再依照學生未來想念大學之科系給予選擇修課的建議，以達到之後申請正式學士課程時，學生即有相對應學術背景供申請學校參考審核。\n學校有多個校區：伯恩茅斯，布萊頓，倫敦，牛津。"
@@ -454,7 +454,7 @@ var schoolData = [
 },
 
 {type: "talk", id: "ukstudy", cardimg: "ukstudy.jpg", img: "ukstudy.jpg", name: "別放棄，申請英國2021秋季入學還來得及！", 
-	cardrank: "2021年2月27日(六) 下午2:00\n\n申請英國碩士有截止時間嗎？我完全沒準備要怎麼趕上申請…",
+	cardrank: "2021年2月27日(六) 下午2:00\n\n申請英國碩士有截止時間嗎？我完全沒準備要怎麼趕上申請…\n \n",
 	intro: "<b>日期</b>\n2021年2月27日(六) 下午2:00", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
 	major: "主講者：英國顧問Esther Chuang\n\n現在申請是否太晚？太晚申請都會被拒絕？IELTS還沒考試怎麼辦？\n難道我要放棄2021入學再延後一年入學，浪費我寶貴的青春？\n\n資深英國顧問Esther Chuang已經成功協助許多學生順利獲得目標學校入學許可。\n依照申請時間不同，給予相對應的策略建議，搭配客製化文件，為學生的申請加分，讓學生不擔心自己的申請無效，順利取得2021秋季的入學許可。 "
