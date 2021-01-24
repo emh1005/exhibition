@@ -289,21 +289,21 @@ var schoolData = [
 	cardrank: "GCSE(14+歲)\nInternational Baccalaureate(16+歲)\nA-Level (15+歲)\nInternational Foundation (17+歲)",
 	intro: "CATS London 校區在倫敦市中心最方便的Holborn 地鐵站附近，大英博物館就在學校隔壁，學術氣息濃厚，生活交通相當便利。校內由超過80個國籍的學生組成，小班式教學能照顧好每個學生的需求，更提供額外英文課程，讓國際學生不擔心英文能力。針對想要申請劍橋牛津大學的學生也提供額外學術/面試輔導，而大部分學生也都順利申請上世界百大英國大學。", 
 	rank: "We offer a world-class education, attracting students from across the globe. In a diverse and exciting international community, you will learn to be your best and achieve a place at a top university.",
-	major: "GCSE中學部(14+歲)\nInternational Baccalaureate國際文憑課程(16+歲)\nA-Level 高中課程(15+歲)\nInternational Foundation 大學預備課程(17+歲)",
+	major: "GCSE中學部(14+歲)\nA-Level高中課程(15+歲)\nInternational Baccalaureate國際文憑課程(16+歲)\nInternational Foundation 大學預備課程(17+歲)",
 	extra: "歐洲唯一學校設有最多Bloomberg 交易模擬室，讓對未來有興趣念商科的中學生，提早接觸到學士等級的頂尖設備。\n中學課程時間彈性，依照學生背景及不同需求，可以選擇就讀一年或是兩年課程。\n宿舍有醫護中心、各種社交活動，讓住宿生活多樣化且讓學生放鬆課業壓力。"
 },
 
 /* ukug */
 
-{type: "ukug", id: "ugman", cardimg: "man.jpg", img: "man.jpg", name: "University of Manchester", 
-	cardrank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times, European Business Schools: 36\n",
+{type: "ukug", id: "ugman", cardimg: "man.jpg", img: "man.jpg", name: "曼徹斯特大學\nUniversity of Manchester", 
+	cardrank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times: 36\n",
 	intro: "曼徹斯特大學是一所歷史悠久，以其開創性的發現和對全球具有影響力的高質量研究而聞名的大學。這間羅素集團大學的歷史可追溯至1824年，並提供豐富的學術設備。 這所一流的大學因其優質教學質量，高就業率和高學生滿意度受到世界160個國家學生喜愛。", 
-	rank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times, European Business Schools: 36",
+	rank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times: 36",
 	major: "商管碩士\n財經碩士\n化學工程\n電腦科學\n建築設計",
 	extra: "The Graduate Market雜誌評價曼徹斯特大學的畢業生為業主最看好的社會新鮮人。\n曼徹斯特國際機場鄰近市中心，方便抵達校園。\n距離倫敦約2.5小時火車。"
 },
 
-{type: "ukug", id: "ugbris", cardimg: "ugbris.jpg", img: "ugbris.jpg", name: "University of Bristol", 
+{type: "ukug", id: "ugbris", cardimg: "ugbris.jpg", img: "ugbris.jpg", name: "布里斯托大學\nUniversity of Bristol", 
 	cardrank: "QS World Ranking: 58\nTHE UK Ranking: 10\nThe Guardian: 11\n",
 	intro: "布里斯托大學創校於1896，被世界公認為高品質研究學校，是羅素大學集團同時也是紅磚大學其中成員。英國前首相邱吉爾曾任此大學校長，此校也以國際關係和政治相關的科系聞名。", 
 	rank: "QS World Ranking: 58\nTHE UK Ranking: 10\nThe Guardian: 11",
@@ -312,15 +312,15 @@ var schoolData = [
 },
 
 
-{type: "ukug", id: "ugdur", cardimg: "dur.jpg", img: "dur.jpg", name: "Durham University", 
-	cardrank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times, European Business Schools: 48\n",
+{type: "ukug", id: "ugdur", cardimg: "dur.jpg", img: "dur.jpg", name: "杜倫大學\nDurham University", 
+	cardrank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times: 48\n",
 	intro: "為英國最古老的大學其中之一，常駐世界百大的羅素集團大學，學術研究的成果在全世界有極高的地位，常獲得Internationally Excellence 或是World Leading 殊榮。", 
-	rank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times, European Business Schools: 48",
+	rank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times: 48",
 	major: "商管碩士\n財經碩士\n生物科學 \n國際關係\n人類學",
 	extra: "英國僅存學院制大學（劍橋大學、牛津大學、杜倫大學）也是英國人心中首屈一指的大學。\n商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。\n距離愛丁堡約2小時火車。"
 },
 
-{type: "ukug", id: "ugshef", cardimg: "shef.jpg", img: "shef.jpg", name: "University of Sheffield", 
+{type: "ukug", id: "ugshef", cardimg: "shef.jpg", img: "shef.jpg", name: "雪菲爾大學\nUniversity of Sheffield", 
 	cardrank: "QS World Ranking: 93\nTHE UK Ranking: 14\nThe Guardian: 31\n",
 	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
 	rank: "QS World Ranking: 93\nTHE UK Ranking: 14\nThe Guardian: 31",
@@ -328,7 +328,7 @@ var schoolData = [
 	extra: "全英國生活開銷最低，同時是最安全的城市之一，擁有非常適合居住的讀書環境。\n商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。\n距離倫敦2小時火車。"
 },
 
-{type: "ukug", id: "ugexe", cardimg: "ugexe.jpg", img: "ugexe.jpg", name: "University of Exeter", 
+{type: "ukug", id: "ugexe", cardimg: "ugexe.jpg", img: "ugexe.jpg", name: "艾希特大學\nUniversity of Exeter", 
 	cardrank: "QS World Ranking: 164\nTHE UK Ranking: 24\nThe Guardian: 16\n",
 	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
 	rank: "QS World Ranking: 164\nTHE UK Ranking: 24\nThe Guardian: 16",
@@ -336,7 +336,7 @@ var schoolData = [
 	extra: "羅馬時期為英國西南部的防禦重鎮，城市歷史文化豐富，可體驗濃厚英國文化。\n商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。\n距離倫敦約3小時火車。\n知名校友J.K.羅琳。"
 },
 
-{type: "ukug", id: "ugtrent", cardimg: "ugtrent.jpg", img: "ugtrent.jpg", name: "Nottingham Trent University", 
+{type: "ukug", id: "ugtrent", cardimg: "ugtrent.jpg", img: "ugtrent.jpg", name: "諾丁漢大學\nNottingham Trent University", 
 	cardrank: "THE UK Ranking: 67\nThe Guardian: 12\n\n",
 	intro: "座落於英格蘭中部，諾丁漢是藝術家和創意產業的故鄉。時裝設計師保羅·史密斯爵士就是在諾丁漢土生土長的。一年四季可以在諾丁漢郡觀賞縱觀豐富的文化活動、劇院的演出、畫廊的展覽，學生於活動期間積極參與活動，累積社會實戰經驗。", 
 	rank: "THE UK Ranking: 67\nThe Guardian: 12",
@@ -345,18 +345,16 @@ var schoolData = [
 },
 
 
-{type: "ukug", id: "uglon", cardimg: "uglon.jpg", img: "uglon.jpg", name: "University of London\n倫敦大學學士預備課程", 
+{type: "ukug", id: "uglon", cardimg: "uglon.jpg", img: "uglon.jpg", name: "倫敦大學學士預備課程\nUniversity of London", 
 	cardrank: "倫敦大學學士預備課程提供國際學生一個能夠進入英國高等教育學校的機會，如「倫敦政經學院（LSE）」僅接受4間預備課程提出的申請件\n\n",
-	intro: "倫敦大學是由多个行政獨立的大學組成（聯邦制大學），这些學校包括眾多世界上知名且學術名望高的学校。大學擁有高度的自治權，各校在學術上有各自的領域，例如：London School of Economics and Political Science（LSE）倫敦政經學院,即是成員之一。", 
-	rank: "N/A",
+	intro: "倫敦大學是由多个行政獨立的大學組成（聯邦制大學），这些學校包括眾多世界上知名且學術名望高的学校。大學擁有高度的自治權，各校在學術上有各自的領域，例如：London School of Economics and Political Science（LSE）倫敦政經學院,即是成員之一。",
 	major: "國際關係\n法律\n社會學 \n政治與經濟\n地理與經濟 ",
 	extra: "倫敦大學學士預備課程提供國際學生一個能夠進入英國高等教育學校的機會，如「倫敦政經學院（LSE）」僅接受4間預備課程提出的申請件。\n許多國際學生因中學制度不同，無法直接升上英國學士課程，需要先念預備課程。\n此課程不只提供優質學術教學，並且提供學生全方位輔導，讓學生不管在唸書，當地生活，或是未來升學方面都可以享有專人指導。\n此課程學生，校方會透過UCAS為學生申請5間英國的大學，3間倫敦大學體系學院和2間學生的志願，學校選擇於入學後，即安排面試討論。"
 },
 
-{type: "ukug", id: "ugking", cardimg: "ugking.jpg", img: "ugking.jpg", name: "King's Education\n學士預備課程", 
+{type: "ukug", id: "ugking", cardimg: "ugking.jpg", img: "ugking.jpg", name: "學士預備課程\nKing's Education", 
 	cardrank: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程\n\n",
-	intro: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程，此課程幫助許多學生順利申請上世界前100名大學，並且班級由各個國家學生組成，真正認識多元文化環境，讓學生不只是唸書，更是拓展國際視野以及文化交流。", 
-	rank: "N/A",
+	intro: "King's Education 教育集團提供國際學生銜接英國學士課程的預備課程，此課程幫助許多學生順利申請上世界前100名大學，並且班級由各個國家學生組成，真正認識多元文化環境，讓學生不只是唸書，更是拓展國際視野以及文化交流。",
 	major: "商管學士\n生物科學 \n國際關係\n心理學 \n化學 \n醫學 \n藝術設計 ",
 	extra: "學校提供學生自由選擇修課內容。學校指導老師會再依照學生未來想念大學之科系給予選擇修課的建議，以達到之後申請正式學士課程時，學生即有相對應學術背景供申請學校參考審核。\n學校有多個校區：伯恩茅斯，布萊頓，倫敦，牛津。"
 },
@@ -368,31 +366,31 @@ var schoolData = [
 
 /* ukpg */
 
-{type: "ukpg", id: "pgman", cardimg: "man.jpg", img: "man.jpg", name: "University of Manchester", 
-	cardrank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times, European Business Schools: 36\n",
+{type: "ukpg", id: "pgman", cardimg: "man.jpg", img: "man.jpg", name: "曼徹斯特大學\nUniversity of Manchester", 
+	cardrank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times: 36\n",
 	intro: "曼徹斯特大學是一所歷史悠久，以其開創性的發現和對全球具有影響力的高質量研究而聞名的大學。這間羅素集團大學的歷史可追溯至1824年，並提供豐富的學術設備。 這所一流的大學因其優質教學質量，高就業率和高學生滿意度受到世界160個國家學生喜愛。", 
-	rank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times, European Business Schools: 36",
+	rank: "QS World Ranking: 27\nTHE UK Ranking: 8\nFinancial Times: 36",
 	major: "商管碩士\n財經碩士\n化學工程\n電腦科學\n建築設計",
 	extra: "The Graduate Market雜誌評價曼徹斯特大學的畢業生為業主最看好的社會新鮮人。\n曼徹斯特國際機場鄰近市中心，方便抵達校園。\n距離倫敦約2.5小時火車。"
 },
 
-{type: "ukpg", id: "pgdur", cardimg: "dur.jpg", img: "dur.jpg", name: "Durham University", 
-	cardrank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times, European Business Schools: 48\n",
+{type: "ukpg", id: "pgdur", cardimg: "dur.jpg", img: "dur.jpg", name: "杜倫大學\nDurham University", 
+	cardrank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times: 48\n",
 	intro: "為英國最古老的大學其中之一，常駐世界百大的羅素集團大學，學術研究的成果在全世界有極高的地位，常獲得Internationally Excellence 或是World Leading 殊榮。", 
-	rank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times, European Business Schools: 48",
+	rank: "QS World Ranking: 86\nTHE UK Ranking: 18\nFinancial Times: 48",
 	major: "商管碩士\n財經碩士\n生物科學 \n國際關係\n人類學",
 	extra: "英國僅存學院制大學（劍橋大學、牛津大學、杜倫大學）也是英國人心中首屈一指的大學。\n商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。\n距離愛丁堡約2小時火車。"
 },
 
-{type: "ukpg", id: "pgglas", cardimg: "pgglas.jpg", img: "pgglas.jpg", name: "University of Glasgow", 
-	cardrank: "QS World Ranking: 77\nTHE UK Ranking: 11\nFinancial Times, European Business Schools: 85\n",
+{type: "ukpg", id: "pgglas", cardimg: "pgglas.jpg", img: "pgglas.jpg", name: "格拉斯哥大學\nUniversity of Glasgow", 
+	cardrank: "QS World Ranking: 77\nTHE UK Ranking: 11\nFinancial Times: 85\n",
 	intro: "學校位於蘇格蘭第一大城市，交通便利，是全英國唯三有地鐵的城市。此大學是蘇格蘭最古老大學之一，同時也是羅素集團成員之一。該校因為成立歷史悠久，學術研究資源豐厚，是莘莘學子們唸書的好選擇。商學院是經由ACCSB, EQUIS,以及AMBA三個國際組織所認證，是世界top 1%的商學院。", 
-	rank: "QS World Ranking: 77\nTHE UK Ranking: 11\nFinancial Times, European Business Schools: 85",
+	rank: "QS World Ranking: 77\nTHE UK Ranking: 11\nFinancial Times: 85",
 	major: "金融經濟\n商管碩士\n電腦科學 \n生物醫學 \n航太工程",
 	extra: "格拉斯哥大學培養出許多知名校友，經濟學之父亞當史密斯（Adam Smith），蒸汽機改良者詹姆斯瓦特（James Watt），都是其校友，其中物理學家阿爾伯愛因斯坦(Albert Einstein) 於1933年被格拉斯哥大學授予名譽博士學位。"
 },
 
-{type: "ukpg", id: "pgshef", cardimg: "shef.jpg", img: "shef.jpg", name: "University of Sheffield", 
+{type: "ukpg", id: "pgshef", cardimg: "shef.jpg", img: "shef.jpg", name: "雪菲爾大學\nUniversity of Sheffield", 
 	cardrank: "QS World Ranking: 93\nTHE UK Ranking: 14\nThe Guardian: 31\n",
 	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
 	rank: "QS World Ranking: 93\nTHE UK Ranking: 14\nThe Guardian: 31",
@@ -400,7 +398,7 @@ var schoolData = [
 	extra: "全英國生活開銷最低，同時是最安全的城市之一，擁有非常適合居住的讀書環境。\n商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。\n距離倫敦2小時火車。"
 },
 
-{type: "ukpg", id: "pgnott", cardimg: "pgnott.jpg", img: "pgnott.jpg", name: "University of Nottingham", 
+{type: "ukpg", id: "pgnott", cardimg: "pgnott.jpg", img: "pgnott.jpg", name: "諾丁漢大學\nUniversity of Nottingham", 
 	cardrank: "QS World Ranking: 99\nTHE UK Ranking: 19\n\n",
 	intro: "座落於英格蘭中部，諾丁漢城市一年四季遊客舉辦各種豐富的文化活動，包括劇院的演出，畫廊的展覽，學生大多在活動期間積極參與活動，累積實習經驗。該校更是羅素集團成員之一，學術地位以及名聲在國際上享有高知名度。碩士獎學金豐富，提供優秀學生學費減免的機會。", 
 	rank: "QS World Ranking: 99\nTHE UK Ranking: 19",
@@ -408,8 +406,8 @@ var schoolData = [
 	extra: "學校學位課程獎學金優渥，積極招募世界菁英學生就讀。\n校園距離市中心約20分鐘車程，可以同時享受市中心和綠地校園的環境。\n諾丁漢城市是羅賓漢故事的起源地。"
 },
 
-
-{type: "ukpg", id: "pgmary", cardimg: "pgmary.jpg", img: "pgmary.jpg", name: "Queen Mary University of London", 
+/*double check*/
+{type: "ukpg", id: "pgmary", cardimg: "pgmary.jpg", img: "pgmary.jpg", name: "瑪麗皇后大學\nQueen Mary University of London", 
 	cardrank: "QS World Ranking: 99\nTHE UK Ranking: 19\n\n",
 	intro: "身為羅素集團以及倫敦大學的成員，學術品質質量高，地點在倫敦商務中心，就學期間方便學生尋找實習，增加國外工作經驗，更進一步爭取海外正職工作。\n學校更孕育了9位諾貝爾獎得主。", 
 	rank: "QS World Ranking: 114\nTHE UK Ranking: 13",
@@ -417,15 +415,15 @@ var schoolData = [
 	extra: "高教學品質被評價為TEF Silver Award\n少數坐落在倫敦卻有校園的學校\nMile End 校區旁邊是金融商務地區"
 },
 
-{type: "ukpg", id: "pglan", cardimg: "pglan.jpg", img: "pglan.jpg", name: "Lancaster University", 
-	cardrank: "QS World Ranking: 135\nTHE UK Ranking: 17\nFinancial Times, European Business Schools: 54\n",
+{type: "ukpg", id: "pglan", cardimg: "pglan.jpg", img: "pglan.jpg", name: "蘭卡斯特大學\nLancaster University", 
+	cardrank: "QS World Ranking: 135\nTHE UK Ranking: 17\nFinancial Times: 54\n",
 	intro: "身為羅素集團以及倫敦大學的成員，學術品質質量高，地點在倫敦商務中心，就學期間方便學生尋找實習，增加國外工作經驗，更進一步爭取海外正職工作。\n學校更孕育了9位諾貝爾獎得主。", 
-	rank: "QS World Ranking: 135\nTHE UK Ranking: 17\nFinancial Times, European Business Schools: 54",
+	rank: "QS World Ranking: 135\nTHE UK Ranking: 17\nFinancial Times: 54",
 	major: "商管碩士\n財經碩士\n語言學\n工商管理 \n創意寫作 ",
 	extra: "蘭卡斯特大學與杜倫大學、利兹大學、利物浦大學、曼徹斯特大學、紐卡索大學、雪菲爾大學和約克大學一同成立N8大學聯盟。\n商學院是經由ACCSB, EQUIS,以及AMBA三個國際組織所認證。"
 },
 
-{type: "ukpg", id: "pgisti", cardimg: "pgisti.jpg", img: "pgisti.jpg", name: "Istituto Marangoni", 
+{type: "ukpg", id: "pgisti", cardimg: "pgisti.jpg", img: "pgisti.jpg", name: "馬蘭戈尼學院\nIstituto Marangoni", 
 	cardrank: "Top 25 Fashion Schools in the World 2019\n\n\n",
 	intro: "馬蘭戈尼學院在全世界有六個主校區(倫敦、巴黎、米蘭、佛羅倫斯、上海、深圳)，是全球知名頂尖時尚藝術學校。學校積極推動精緻教學，班級人數約為25人，掌握教學品質。校內常有世界一線國際品牌對學生做人才招募，讓學生畢業後留在藝術領域工作機會大增。", 
 	rank: "Top 25 Fashion Schools in the World 2019",

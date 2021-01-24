@@ -141,7 +141,7 @@
 						<td class="tableTitle">學校簡介</td>
 						<td class="tableIntro"></td>
 					</tr>
-					<tr>
+					<tr class="rankTR">
 						<td class="tableTitle rankTitle">學校排名</td>
 						<td class="tableRank"></td>
 					</tr>
@@ -173,17 +173,24 @@
           	</div>
 				
 				<div class="seminarlist">
-					<h3>您的留學講座清單</h3>
-					<ul id="talky">
+					<h3 id="divtalk">您的留學講座清單</h3>
+					<ul id="ultalk">
 					</ul>
 					<input type="hidden" id="talks" name="talks">
 				</div>
-
 				<div class="schoollist">
-					<h3>您的學校清單</h3>
-					<ul id="tempy">
+					<h3 id="divhs">您的高中學校清單</h3>
+					<ul id="ulhs">
 					</ul>
-					<input type="hidden" id="schools" name="schools">
+					<input type="hidden" id="hss" name="hs">
+					<h3 id="divug">您的大學學校清單</h3>
+					<ul id="ulug">
+					</ul>
+					<input type="hidden" id="ugs" name="ug">
+					<h3 id="divpg">您的碩士學校清單</h3>
+					<ul id="ulpg">
+					</ul>
+					<input type="hidden" id="pgs" name="pg">
 				</div>
 
 
@@ -219,7 +226,8 @@
     <span class="helper"></span>
     <div>
         <div class="close popupCloseButton">&times;</div>
-        <p> School 已新增至清單!</p>
+		<p id="alertSchool"></p>
+        <p>已新增至清單!</p>
     </div>
 </div>
 

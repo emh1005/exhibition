@@ -1,6 +1,10 @@
 // check cookie enable
 var cookieEnable = areCookiesEnabled();
-var shoppingCart = new Set();
+var shoppingCart = new Map();
+shoppingCart.set("talk", new Set());
+shoppingCart.set("hs", new Set());
+shoppingCart.set("ug", new Set());
+shoppingCart.set("pg", new Set());
 
 //carousel
 
@@ -91,24 +95,20 @@ var cardList = {};
 var testCheck = false;
 var addToCart = function(e) {
 	var schoolName = e.target.parentNode.parentNode.parentNode.name;
-	if (cookieEnable) {
-		appendCookie('schools', schoolName);
-	}
-	shoppingCart.add(schoolName);
-	updateCartCount();
+	addShoppingCart(e.target.parentNode.name, schoolName);
 	testCheck = true;
-	alert(schoolName+" 已新增至清單!");
+//	alert(schoolName+" 已新增至清單!");
+	document.getElementById('alertSchool').innerText = schoolName;
+	document.getElementsByClassName('hover_bkgr_fricc')[0].style.display = "block";
 }
-var addToTalk = function(e) {
-	var schoolName = e.target.parentNode.parentNode.parentNode.name;
-	if (cookieEnable) {
-		appendCookie('talks', schoolName);
+function convertType(myType) {
+	var result = myType;
+	if (myType !== "talk") {
+		result = myType.substring(2);
 	}
-	shoppingCart.add('talk '+schoolName);
-	updateCartCount();
-	testCheck = true;
-	alert(schoolName+" 已新增至清單!");
+	return result;
 }
+// pop up modal for individual school
 var cardClick = function(e) {
 	if (testCheck) {
 		testCheck = false;
@@ -124,29 +124,44 @@ var cardClick = function(e) {
 	modal.getElementsByClassName("tableIntro")[0].innerHTML = schoolObj.intro.replace(/\n/g, '<br/>');
 	modal.getElementsByClassName("tableRank")[0].innerHTML = schoolObj.rank.replace(/\n/g, '<br/>');
 	modal.getElementsByClassName("tableMajor")[0].innerHTML = schoolObj.major.replace(/\n/g, '<br/>');
+	if (schoolObj.rank) { // get rank
+		modal.getElementsByClassName("rankTR")[0].style.display = "table-row";
+	} else {	// no extra content, disable whole TR
+		modal.getElementsByClassName("rankTR")[0].style.display = "none";
+	}
 	if (schoolObj.extra) { // get extra content
 		modal.getElementsByClassName("tableExtra")[0].innerHTML = '<li>'+schoolObj.extra.replace(/\n/g, '</li><li>')+'</li>';
+		modal.getElementsByClassName("extraTR")[0].style.display = "table-row";
 	} else {	// no extra content, disable whole TR
 		modal.getElementsByClassName("extraTR")[0].style.display = "none";
 	}
 	if (schoolObj.type === "ushs") {
 		modal.getElementsByClassName("rankTitle")[0].innerHTML = "學術實力";
 		modal.getElementsByClassName("majorTitle")[0].innerHTML = "學校資源";
+		modal.getElementsByClassName("tableRank")[0].innerHTML = '<li>'+schoolObj.rank.replace(/\n/g, '</li><li>')+'</li>';
+		modal.getElementsByClassName("tableMajor")[0].innerHTML = '<li>'+schoolObj.major.replace(/\n/g, '</li><li>')+'</li>';
 	} else if (schoolObj.type === "ukhs") {
 		modal.getElementsByClassName("rankTitle")[0].innerHTML = "學術宗旨";
 		modal.getElementsByClassName("majorTitle")[0].innerHTML = "課程種類";
+		modal.getElementsByClassName("tableMajor")[0].innerHTML = '<li>'+schoolObj.major.replace(/\n/g, '</li><li>')+'</li>';
 	} else if (schoolObj.type === "talk") {
 		modal.getElementsByClassName("tableTitle")[0].innerHTML = "&nbsp;";
 		modal.getElementsByClassName("tableTitle")[1].innerHTML = "&nbsp;";
 		modal.getElementsByClassName("tableTitle")[2].innerHTML = "&nbsp;";
+	} else {
+		modal.getElementsByClassName("tableTitle")[0].innerHTML = "學校簡介";
+		modal.getElementsByClassName("tableTitle")[1].innerHTML = "學校排名";
+		modal.getElementsByClassName("tableTitle")[2].innerHTML = "推薦科系";
 	}
-//	modal.classList.remove("fade-out");
-//	modal.classList.add("fade-in");
-	modal.className = schoolObj.type + " school fade-in";  // set classList directly, with different type
+	modal.classList.remove("fade-out");
+	modal.classList.add("fade-in");
+//	modal.className = schoolObj.type + " school fade-in";  // set classList directly, with different type
 	modal.style.display = "block";
 	/*modal.style.opacity = "1";
 	modal.style.visibility = "visible";*/
+	modal.getElementsByClassName("addschool")[0].name = schoolObj.type;
 }
+// generate cards acccording to template and school lists
 var clickAction = function(ct, type, btn) {
 	var a = document.getElementById(ct);
 	var card = document.getElementById(type);
@@ -174,13 +189,22 @@ var clickAction = function(ct, type, btn) {
 			myNode.getElementsByClassName("cardName")[0].innerHTML = obj.name.replace(/\n/g, '<br/>');
 			myNode.getElementsByClassName("cardRank")[0].innerHTML = obj.cardrank.replace(/\n/g, '<br/>');
 //			myNode.getElementsByClassName("tableExtra")[0].innerHTML = obj.extra;
-			myNode.getElementsByClassName("addbtn")[0].onclick = (obj.type === 'talk')? addToTalk : addToCart;
+			myNode.getElementsByClassName("addbtn")[0].name = obj.type;
+			myNode.getElementsByClassName("addbtn")[0].onclick = addToCart;
 			myNode.onclick = cardClick;
 			card.appendChild(myNode);
 		}
 		cardList[type] = true;
 	}
 	card.style.display = "block";
+}
+
+//------ card template ------------
+document.getElementById("ugasu").onclick = function(e) {
+//	tempy.insertAdjacentHTML('afterend', '<li id="deleteschool"><span class="product">asu</span><span class="delete" onclick="document.getElementById(deleteschool).remove();">&times;</span></li>');
+	var schoolName = e.target.parentNode.name;
+	addShoppingCart(e.target.name, schoolName);
+	closeModal();
 }
 
 usbtn.onclick = function() {
@@ -246,7 +270,6 @@ uktalkbtn.onclick = function() {
 
 //popup modal for schools and events
 var modal = document.getElementById("schoolModal");
-//var btn = document.getElementById("temp");
 var close = document.getElementById("close");
 
 closeModal = function() {
@@ -264,72 +287,99 @@ window.onclick = function(event){
 		modal.style.display = "none";
 	}
 }*/
+// ---------- shopping card functions
+function addShoppingCart(type, item) {
+	type = convertType(type);
+	if (cookieEnable) {
+		if (!shoppingCart.get(type).has(item))	// avoid duplicates
+			appendCookie(type, item);
+	}
+	shoppingCart.get(type).add(item);
+	updateCartCount();
+}
+function restoreCartFromCookie() {
+	if (cookieEnable) {
+		for (var type of shoppingCart.keys()) {
+			var schools = getCookie(type);
+			if (schools && schools.length > 0) {
+				shoppingCart.set(type, new Set(schools.split(',')));
+			}
+		}
+	}
+	updateCartCount();
+}
+function updateCartCount() {
+	var count = 0;
+	if (cookieEnable) {
+		for (var key of shoppingCart.keys()) {
+			var schoolList = getCookie(key);
+			if (schoolList)
+				count += schoolList.split(',').length;
+		}
+	} else {  // no cookies, use shopping cart
+		for (var values of shoppingCart.values()) {
+			count += values.size;
+		}
+	}
+	document.getElementById('cartcount').innerHTML = count;
+}
 
-//popup for cart
+// -------- popup for shopping cart
 var cart = document.getElementById("cart");
-
 var cartbtn = document.getElementById("carticon");
-
 var closecart = document.getElementById("closecart");
-
 var modaloverlay = document.getElementById("modaloverlay");
-
-var tempy = document.getElementById("tempy");
-var talky = document.getElementById("talky");
-cartbtn.onclick = function() {
+cartbtn.onclick = function() {	//display shopping cart checkout page
 	modaloverlay.classList.remove("fade-out");
 	modaloverlay.classList.add("fade-in");
 	modaloverlay.style.display = "block";
 	cart.classList.remove("fade-out");
 	cart.classList.add("fade-in");
 	cart.style.display = "block";
-	// add to cart for cookie case
-	var schoolList = Array.from(shoppingCart);
-	var talkList = [];
-	if (cookieEnable) {
-		var talks = getCookie('talks');
-		var schools = getCookie('schools');
-		if (talks && talks.length > 0) {
-			talkList = talks.split(',');
-		}
-		if (schools && schools.length > 0) {
-			schoolList = schools.split(',');
-		}  // else no cookie set
-	}
-	for (var i=0; i<talkList.length; i++) {
-		addItemToList(talky, talkList[i]);
-	}
-	for (var i=0; i<schoolList.length; i++) {
-		if (schoolList[i].slice(0, 5) === 'talk ') { //talk
-			addItemToList(talky, schoolList[i].substr(5));
-		} else {
-			addItemToList(tempy, schoolList[i]);
-		}
+	// process shopping cart
+	for (var [type, schoolSet] of shoppingCart) {
+		if (cookieEnable) {
+			var schools = getCookie(type);
+			if (schools && schools.length > 0) {
+				schoolSet = new Set(schools.split(','));
+			}
+		}	// else no cookie set
+		addToListNode(type, schoolSet);
 	}
 }
 
-closeForm = function() {
+closeForm = function() {	//close shopping cart checkout page and clear the lists
 	modaloverlay.classList.remove("fade-in");
 	modaloverlay.classList.add("fade-out");
 	modaloverlay.style.display = "none";
 	cart.classList.remove("fade-in");
 	cart.classList.add("fade-out");
 	cart.style.display = "none";
-	while (talky.firstChild) {
-		talky.removeChild(talky.firstChild);
-	}
-	while (tempy.firstChild) {
-		tempy.removeChild(tempy.firstChild);
+	// clear the list
+	for (var type of shoppingCart.keys()) {
+		var docNode = document.getElementById("ul"+type);
+		while (docNode.firstChild) {
+			docNode.removeChild(docNode.firstChild);
+		}
 	}
 }
 closecart.onclick = closeForm;
 
 
 //add to shopping cart
-var addschool = document.getElementById("ugasu");
-var deleteschool = "deleteschool";
-
-function addItemToList(list, item) {
+function addToListNode(type, itemSet) {
+	var divNode = document.getElementById("div"+type);
+	if (itemSet.size == 0) {  // no item
+		divNode.style.display = "none";
+	} else {	// got item, populate the list
+		var ulNode = document.getElementById("ul"+type);
+		for (var item of itemSet) {
+			addItemToList(type, ulNode, item);
+		}
+		divNode.style.display = "block";
+	}
+}
+function addItemToList(type, list, item) {
 	var li = document.createElement("li");
 	var dataSpan = document.createElement('span')
 	dataSpan.setAttribute("class", "product");
@@ -344,40 +394,10 @@ function addItemToList(list, item) {
 	deleteSpan.onclick = function(e) {
 		e.target.parentNode.parentNode.remove();
 		var value = e.target.parentNode.parentNode.textContent;
-		removeCookie("talks", value);
-		removeCookie("schools", value);
-		shoppingCart.delete(value);
-		shoppingCart.delete("talk "+value);
+		removeCookie(type, value);
+		shoppingCart.get(type).delete(value);
 		updateCartCount();
 	};
-}
-
-addschool.onclick = function(e) {
-//	tempy.insertAdjacentHTML('afterend', '<li id="deleteschool"><span class="product">asu</span><span class="delete" onclick="document.getElementById(deleteschool).remove();">&times;</span></li>');
-	var parent = e.target.parentNode;
-	var schoolName = parent.name;
-	var type = (parent.classList.contains("talk"))? 'talks' : 'schools';
-	if (cookieEnable) {
-		 appendCookie(type, schoolName);
-	}
-	if (type === 'talks')
-		schoolNamme = 'talk '+schoolName;
-	shoppingCart.add(schoolName);
-	updateCartCount();
-	closeModal();
-}
-
-function updateCartCount() {
-	var count = shoppingCart.size;
-	if (cookieEnable) {
-		var talkList = getCookie('talks');
-		if (talkList)
-			count = talkList.split(',').length;
-		var schoolList = getCookie('schools');
-		if (schoolList)
-			count += schoolList.split(',').length;
-	}
-	document.getElementById('cartcount').innerHTML = count;
 }
 
 var topbutton = document.getElementById("topBtn");
@@ -406,14 +426,14 @@ function topFunction() {
 
 // ---------- function for submit form ---------
 function submitForm() {
-var talks = document.getElementById("talky").getElementsByTagName("li");
-document.getElementById("talks").value = liAsString(talks);
-deleteCookie('talks');
-var schools = document.getElementById("tempy").getElementsByTagName("li");
-document.getElementById("schools").value = liAsString(schools);
-deleteCookie('schools');
-shoppingCart.clear();
-closeForm();
+	for (key of shoppingCart.keys()) {
+		var node = document.getElementById("ul"+key).getElementsByTagName("li");
+		document.getElementById(key+"s").value = liAsString(node);
+		deleteCookie(key);
+		shoppingCart.get(key).clear();
+	}
+	updateCartCount();
+	closeForm();
 }
 
 // get all li as string
@@ -453,7 +473,7 @@ function getAllCookies() {
     }
     
     return cookieMap;
-}
+f}
 
 function getCookie(name) {
     var value = getAllCookies()[name];
@@ -512,4 +532,10 @@ function deleteCookie(name) {
 }
 
 // update shopping count on startup
-updateCartCount();
+restoreCartFromCookie();
+document.getElementsByClassName('hover_bkgr_fricc')[0].onclick = function() {
+	document.getElementsByClassName('hover_bkgr_fricc')[0].style.display = "none";
+};
+document.getElementsByClassName('popupCloseButton')[0].onclick = function() {
+	document.getElementsByClassName('hover_bkgr_fricc')[0].style.display = "none";
+};
