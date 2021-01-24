@@ -122,9 +122,9 @@ var cardClick = function(e) {
 	modal.getElementsByClassName("schoolimg")[0].setAttribute("src", 'img/'+schoolObj.img);
 	modal.getElementsByClassName("tableName")[0].innerHTML = schoolObj.name.replace(/\n/g, '<br/>');
 	modal.getElementsByClassName("tableIntro")[0].innerHTML = schoolObj.intro.replace(/\n/g, '<br/>');
-	modal.getElementsByClassName("tableRank")[0].innerHTML = schoolObj.rank.replace(/\n/g, '<br/>');
 	modal.getElementsByClassName("tableMajor")[0].innerHTML = schoolObj.major.replace(/\n/g, '<br/>');
 	if (schoolObj.rank) { // get rank
+		modal.getElementsByClassName("tableRank")[0].innerHTML = schoolObj.rank.replace(/\n/g, '<br/>');
 		modal.getElementsByClassName("rankTR")[0].style.display = "table-row";
 	} else {	// no extra content, disable whole TR
 		modal.getElementsByClassName("rankTR")[0].style.display = "none";
