@@ -392,10 +392,11 @@ function addItemToList(type, list, item) {
 //  li.appendChild(document.createTextNode("asu"));
 	list.appendChild(li);
 	deleteSpan.onclick = function(e) {
-		e.target.parentNode.parentNode.remove();
-		var value = e.target.parentNode.parentNode.textContent;
-		removeCookie(type, value);
-		shoppingCart.get(type).delete(value);
+//		e.target.parentNode.parentNode.remove();
+li.remove();
+//		var item = e.target.parentNode.parentNode.textContent;
+		removeCookie(type, item);
+		shoppingCart.get(type).delete(item);
 		updateCartCount();
 	};
 }
