@@ -3,7 +3,7 @@ body, html {
 	cursor: default;
 	margin: 0;
 	background-color: #fffcf5;
-	height: 100%;
+	heigt: 100%;
 	scroll-behavior: smooth;
 	transition: all 1s;
 }
@@ -35,7 +35,7 @@ h2, h3 {
     
 }
 
-#headerimg {
+.headerimg {
 	/*! display:block; */
 	width: 75%;
 	text-align: center;
@@ -49,6 +49,13 @@ h2, h3 {
 		/*! position: absolute; */
 	/*! padding: 10px; */
 }
+
+.formimg {
+		margin: auto;
+		display: block;
+		width: 85%;
+		margin-top: 30px;
+	}
 
 .header #logo {
 	width: 120px;
@@ -198,8 +205,8 @@ h2, h3 {
 	margin-bottom: 10px;
 	margin-left: 35px;
 	margin-right: 35px;
-	background: #D9E9F9;
-	color: #000;
+	background: #005EAD;
+	color: #fff;
 	border-radius: 50%;
 	width: 160px;
 	height: 160px;
@@ -224,21 +231,22 @@ h2, h3 {
 	margin-top: 100px;
 }
 
-#ukbtn {
-	background: #f7d7d7;
+#ukbtn, #ukhsbtn, #ukugbtn, #ukpgbtn, #uktalkbtn {
+	background: #C1181C;
 }
 
-#ukbtn.selected {
-	background: #6C0A0A !important; 
+#ukbtn.selected,#ukhsbtn.selected, #ukugbtn.selected, #ukpgbtn.selected, #uktalkbtn.selected {
+	box-shadow: inset 0 0 0 14px #73080B;
 }
 
-#ukbtn:hover, #ukbtn:focus {
+#ukbtn:hover, #ukbtn:focus, #ukhsbtn:hover, #ukhsbtn:focus, #ukugbtn:hover, #ukugbtn:focus, #ukpgbtn:hover, #ukpgbtn:focus, #uktalkbtn:hover, #uktalkbtn:focus {
 	transition: all .5s ease-out;
 	background: #E67D7D;
 	text-decoration: none;
 	cursor: pointer;
 }
 
+/*
 #ushsbtn, #ukhsbtn {
 	background: #DEC3E6;
 }
@@ -283,21 +291,22 @@ h2, h3 {
 	text-decoration: none;
 	cursor: pointer;
 }
-
+*/
 
 /*#usbtn:checked + label>a, #ukbtn:checked + label>a, */
 .clicked>a {
 	width: 125px;
 	height: 125px;
 	font-size: 20px;
-	background: #D9E9F9;
-	color: #000;
+	/*! background: #D9E9F9; */
+	/*! color: #000; */
 }
 
 
 .selected {
-	background: #103256 !important;
-	color: #fff !important;
+	/*! background: #103256 !important; */
+	/*! color: #fff !important; */
+	box-shadow: inset 0 0 0 14px #002F56;
 }
 
 ul {
@@ -333,11 +342,11 @@ ul {
 	/*kinda want an appear animation...*/
 }
 
-#us::before, #uk::before { 
+#us::before, #uk::before, #ushs::before, #ukhs::before, #usug::before, #ukug::before, #uspg::before, #ukpg::before, #ustalk::before, #uktalk::before { 
 	display: block; 
 	content: " "; 
-	margin-top: -285px; 
-	height: 285px; 
+	margin-top: -275px; 
+	height: 275px; 
 	visibility: hidden; 
 	pointer-events: none;
 }
@@ -474,6 +483,10 @@ padding: 5px;
 	text-justify: distribute;
 }
 
+
+.cardRank>span {
+	visibility: hidden;
+}
 
 .ranking {
 	float: left;
@@ -701,10 +714,30 @@ padding: 5px;
 .person {
 	padding-left: 10%;
 	padding-right: 10%;
+	box-sizing: border-box;
+}
+
+.person>p {
+	padding: 5px;
+	margin-top: 40px;
+	border: 2px solid #85A4C4;
+	padding-right: 0;
+	border-radius: 5px;
+}
+
+.person>p>br {
+	content: "";
+	font-size: 24px;
+	display: block;
+	margin-bottom: 12px;
 }
 
 .textinput {
 	width: 74%;
+	border: none;
+	border-bottom: solid 1px #85A4C4;
+	border-radius: 5px;
+	line-height: 50px;
 }
 
 #submit {
@@ -714,13 +747,15 @@ padding: 5px;
 #submit>input {
 	color: #fff;
 	background-color: #103256;
-	width: 200px;
+	width: 180px;
 	border-radius: 15px;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	padding: 15px;
+	padding: 22px;
+	font-size: 16px;
 	border: 0;
 }
+
 
 
 .seminarlist li, .schoollist li {
@@ -1441,9 +1476,8 @@ footer .footerinfo li {
 }
 
 /*banner getting too small?*/
-@media screen and (min-width:499px)
+@media screen and (min-width:500px)
 and (max-width:699px){
-
 		.button {
 	margin: auto;
 	width: 80%;
@@ -1517,13 +1551,20 @@ footer .footerinfo li, .ind-con {
 		margin-left: 0;
 	}
 	
-	#headerimg {
+	.headerimg {
 	/*! display: block; */
-	float: left;
+	/*! float: left; */
 	/*! margin-left: 20px; */
 		text-align: left;
 	}
-	
+		.formimg {
+			width: 95%;
+			margin-top: 10px;
+			float: none;
+			text-align: center;
+}
+
+
 		#headerbreak {
 	display: block;
 }
@@ -1588,12 +1629,17 @@ footer .footerinfo li, .ind-con {
 
 @media screen and (min-width:417px) /*disable scroll in the back when modal open?*/
 and (max-width:499px){
-	#headerimg{
+	.headerimg{
 		margin: auto;
 display: block;
 padding: 10px;
 		width: 85%;
 	}
+	.formimg {
+    width: 100%;
+		margin-top: 25px;
+		padding: 0;
+}
 	
 	.space {
 		margin-top: 71px;
@@ -1774,15 +1820,20 @@ footer .footerinfo li, .ind-con {
 	}
 }
 
-@media screen and (min-width:409px)
+@media screen and (min-width:410px)
 and (max-width:416px){
 	
-		#headerimg{
+		.headerimg{
 		margin: auto;
 display: block;
 padding: 10px;
 			width: 85%;
 	}
+		.formimg {
+    width: 100%;
+		margin-top: 30px;
+		padding: 0;
+}
 	
 	.space {
 		margin-top: 71px;
@@ -1954,13 +2005,17 @@ footer .footerinfo li, .ind-con {
 
 @media screen and (min-width:280px)
 and (max-width:409px){
-		#headerimg{
+		.headerimg{
 		margin: auto;
 display: block;
 padding: 10px;
 			width: 90%;
 	}
-
+	.formimg {
+    width: 100%;
+		margin-top: 35px;
+		padding: 0;
+}
 	.banner_mobile {
 	display: block;
 }
