@@ -438,5 +438,39 @@ var schoolData = [
 	extra: "知名校友包括：\nLouis Vuitton/ Marc Jacobs設計總監Julie de Libran\nMOSCHINO創辦人Franco Moschino\nGucci/ Tod's設計總監Alessandra Facchinetti\nDolce & Gabbana 創辦人Domenico Dolce"
 },
 
+{type: "talk", id: "docprep", cardimg: "docprep.jpg", img: "docprep1.jpg", name: "申請 美國/英國「研究所」\n文件撰寫 全攻略", 
+	cardrank: "2021年2月20日(六) 下午1:30\n\n藉由成功學生案例分享，擺脫老王賣瓜的讀書計畫，並找到推薦信的致勝秘笈。克服 考試分數/在校成績不完美，成功進入英美名校…",
+	intro: "<b>日期</b>\n2021年2月20日(六) 下午1:30", 
+	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
+	major: "成功學生案例分享：哥倫比亞大學 碩士班(生物系轉念心理碩士班)；明尼蘇達大學雙城分校 博士班(大學部直升博士班)\n擺脫老王賣瓜的讀書計畫：別再參考一成不變的模板，讓讀書計畫「活」起來\n推薦信致勝秘笈：找到對的推薦人，搭配縝密的撰寫邏輯，讓推薦信不再流於形式。 "
+},
+
+{type: "talk", id: "ielts", cardimg: "ielts.jpg", img: "ielts.jpg", name: "雅思IELTS寫作常見錯誤句型破解", 
+	cardrank: "2021年2月20日(六) 下午3:00\n\nJessy老師將在本講座破解10大雅思常見錯誤，點出常見中式英文的盲點，讓你的雅思寫作不再卡關…<span class="hidetext">老王賣瓜的讀書計畫並找到推</span>",
+	intro: "<b>日期</b>\n2021年2月20日(六) 下午3:00", 
+	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
+	major: "Jessy老師專注於雅思教學7年，雅思聽力及閱讀9分，擅長針對學生的盲點作加強，改善中式英文，著重雅思得分技巧的訓練。\n本次講座將針對寫作task 1/2每種題型的解題方法，加強常見錯誤的修正，讓英文更正統道地，協助同學掌握考試技巧，在雅思IELTS考試中取得高分。 "
+},
+
+{type: "talk", id: "mba", cardimg: "mba.jpg", img: "mba.jpg", name: "一年取得商學碩士並成功在美國就業", 
+	cardrank: "2021年2月24日(三) 晚上6:30\n\n免GRE, GMAT進入全美就業率最高的商學研究所，並了解就業訣竅順利在美國就業…<span class="hidetext">老王賣瓜的讀書計畫並找到推入英美名校美名校</span>",
+	intro: "<b>日期</b>\n2021年2月24日(三) 晚上6:30", 
+	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
+	major: "邀請Hult Intl. Business School代表講解\n1. 如何取得在美工作資格\n2. 如何在美成功找到工作\n3. 怎樣的商學課程適合自己？哪一個商學課程前景看好？\n\nHult Business School 霍特商學院為全球最具國際性的商學院，學校地點遍布波士頓、舊金山、印度與杜拜。榮獲AACSB認證 (全球前5%商學院才有此認證)且學校提供500強企業實習機會。\n\n免GRE/GMAT，一年商學碩士課程\n- 國際市場行銷 碩士\n- 商業分析 碩士\n- 金融學 碩士\n- 國際商務學 碩士\n- 工商管理MBA\n\nHult Intl. Business School為全美最強就業型商學院，與多家全球500強企業合作，提供學徒實習計畫，包含Google, Nissan, L'Oreal與皆曾參與本計畫。畢業生就業率，高出全美國際碩士學生就業率的平均值 四倍。"
+},
+
+{type: "talk", id: "ukstudy", cardimg: "ukstudy.jpg", img: "ukstudy.jpg", name: "別放棄！\申請英國2021秋季入學還來得及！", 
+	cardrank: "2021年2月27日(六) 下午2:00\n\n申請英國碩士有截止時間嗎？我完全沒準備要怎麼趕上申請…<span class="hidetext">老王賣瓜的讀書計畫並找到推入英美名校美名校了解就業業率最高的商</span>",
+	intro: "<b>日期</b>\n2021年2月27日(六) 下午2:00", 
+	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
+	major: "主講者：英國顧問Esther Chuang\n\n現在申請是否太晚？太晚申請都會被拒絕？IELTS還沒考試怎麼辦？\n難道我要放棄2021入學再延後一年入學，浪費我寶貴的青春？\n\n資深英國顧問Esther Chuang已經成功協助許多學生順利獲得目標學校入學許可。\n依照申請時間不同，給予相對應的策略建議，搭配客製化文件，為學生的申請加分，讓學生不擔心自己的申請無效，順利取得2021秋季的入學許可。 "
+},
+
+{type: "talk", id: "ukmantalk", cardimg: "man.jpg", img: "man.jpg", name: "申請世界百大名校-曼徹斯特大學University of Manchester", 
+	cardrank: "2021年3月3日(三) 晚上6:30\n\n聽說曼徹斯特大學入學門檻高？比較難申請？學校有宿舍嗎？好多疑問都想要得到答案…<span class="hidetext">老王賣瓜的讀書計畫並找到推入英美名校美</span>",
+	intro: "<b>日期</b>\n2021年3月3日(三) 晚上6:30", 
+	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
+	major: "主講者：University of Manchester學校代表Chris Gibson\n\n我們邀請到學校代表Chris Gibson親自為同學們解答對這所名校的疑問，同學可以接收第一手資訊，挖掘申請的秘訣。\n\nUniversity of Manchester 長年位居世界排名前30，身為羅素集團和英國六所紅磚大學的創始成員之一，學校的學術研究資源豐富，發布許多世界知名論文，更孕育出25位諾貝爾獎得主。\n\n英國雜誌更評選曼徹斯特大學的畢業生是企業愛用第一名。\n想要增加錄取的機會，就趕快來聽聽Chris怎麼說！"
+},       
 
 ]
