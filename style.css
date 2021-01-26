@@ -3,7 +3,7 @@ body, html {
 	cursor: default;
 	margin: 0;
 	background-color: #fffcf5;
-	height: 100%;
+	heigt: 100%;
 	scroll-behavior: smooth;
 	transition: all 1s;
 }
@@ -692,6 +692,7 @@ padding: 5px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);*/
+	background-color: #eee;
 }
 
 .cart form {
@@ -720,9 +721,9 @@ padding: 5px;
 .person>p {
 	padding: 5px;
 	margin-top: 40px;
-	border: 2px solid #85A4C4;
+	border: 1.5px dashed rgba(0,0,0, 0.15);
 	padding-right: 0;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .person>p>br {
@@ -762,6 +763,7 @@ padding: 5px;
 	border-bottom: 1px solid #EEA725;
 	padding: 3px;
 	list-style-type: none;
+	width: 90%;
 }
 
 .delete {
@@ -2176,7 +2178,7 @@ footer .footerinfo li, .ind-con {
 }
 	
 	.cart form {
-			font-size: 14px;
+			font-size: 16px;
 	width: 95%;
 	}
 	.schoolinfo td{
@@ -2210,4 +2212,575 @@ footer .footerinfo li, .ind-con {
 		top: -15px;
 	}
 	
+}
+
+/* 
+ * FlowupLabels Basic Stylesheet 
+ * -----------------------------
+ * This style sheet is marked with comments indicating 
+ * what should and what shouldn't be changed for your 
+ * styling purposes.
+ */
+
+.fl_wrap {
+  /* Can change */
+  width: 100%;
+  min-height: 50px;
+  margin: 12px auto; /* change 0 to auto for center alignment */
+
+  /* Don't change */
+  /* display: block; */
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* initial label state */
+.fl_label {
+  /* Can change */
+  top: 15px;
+  left: 5px;
+  
+  /* Don't change */
+  position: absolute;
+  z-index: 3; /* This can be removed but then the labels must be placed after the inputs in the HTML */
+  -webkit-transition: all .05s linear;
+     -moz-transition: all .05s linear;
+         -transition: all .05s linear;
+}
+
+.fl_input{
+  /* Can change */
+  background: none;
+  border: none;
+  border-bottom: 1.5px dashed rgba(0,0,0, 0.15);
+  /*! background-color: rgba(0, 0, 0, 0.065); */
+
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 20px 0 0 5px;
+  letter-spacing: 1px;
+  
+  /* Don't change */
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  width: 100%;
+  z-index: 2000; /* This can be removed but then the labels must be placed after the inputs in the HTML */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fl_textarea {
+  /* Can change */
+  background: none;
+  border: none;
+  background-color: rgba(0,0,0, 0.05);
+  border-bottom: 1px dashed rgba(0,0,0, 0.15);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 45px 0 0 10px;
+  letter-spacing: 1px;
+  
+  /* Don't change */
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  width: 100%;
+  min-height: 100px;
+  z-index: 2000; /* This can be removed but then the labels must be placed after the inputs in the HTML */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+  
+/* Focus & populated label styling */
+.fl_wrap.focused .fl_label,
+.fl_wrap.populated .fl_label,
+/* and graceful degradation */
+.fl_label {
+  /* Can change */
+  top: 0;
+  font-size: 16px;
+  /*! color: #444; */
+}
+
+.fl_wrap.focused .fl_label {
+  /* Can change */
+  color: #005ead;
+  font-weight: 600;
+
+}
+
+.inp-con figure.effect-bubba h2 {
+  color: #fff;
+  text-shadow: 0 0 10px black;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.contact-list {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.contact-list ul {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 90%;
+  margin: 40px auto 0 auto;
+}
+
+.contact-list li {
+  width: calc(100% / 2 - 20px);
+  margin: 10px auto;
+  padding: 15px 30px;
+}
+
+.contact-list .contact-box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-list .contact-box img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.contact-list .inp-tt01 {
+  width: 20%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+  margin: 80px 0 40px 0px;
+  letter-spacing: 3px;
+  color: #005ead;
+}
+
+.contact-list .inp-tt01::after {
+  content: url('../images/tit-line.svg');
+  position: absolute;
+  right: 50px;
+  top: -25%;
+  width: 15%;
+}
+
+/* 預約列表768 */
+
+@media screen and (max-width:768px) {
+  .contact-list li {
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px 30px;
+  }
+}
+
+/* 預約列表500 */
+
+@media screen and (max-width: 500px) {
+  .contact-list .title {
+    margin: 30px 0 10px 0;
+  }
+  .contact-list ul {
+    padding: 0;
+    width: 100%;
+  }
+  .contact-list li {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .inp-con figure figcaption, .inp-con figure figcaption>a {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact-list .title {
+    margin: 30px 0 10px 0;
+  }
+  .contact-list ul {
+    padding: 0;
+    width: 100%;
+  }
+  .contact-list li {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .inp-con figure figcaption, .inp-con figure figcaption>a {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+/*  預約內頁1920 */
+
+{
+  width: 100%;
+}
+
+.con-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+
+.info-box {
+  width: 100%;
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box li {
+  width: 80%;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #444;
+  margin: 10px auto;
+  font-weight: 600;
+}
+
+.info-box li span {
+  margin: 0 10px;
+}
+
+.info-box strong{
+  color: #26351E;
+}
+
+.info-des {
+  width: 100%;
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 2;
+  color: #444;
+  text-align: center;
+  font-weight: 600;
+  margin: 20px 0 40px 0;
+}
+
+/* 電腦版時倒敘 */
+
+@media screen and (min-width: 1024px) {
+  .info-des {
+    order: 1;
+  }
+  .info-box {
+    order: 2;
+  }
+}
+
+/* 電腦版時倒敘 */
+
+.info-des span {
+  font-size: 20px;
+  color: #005ead;
+}
+
+.info-des em {
+  font-size: 20px;
+  color: #d61518;
+  margin: 0 5px 0 0;
+}
+
+form {
+  width: 80%;
+  /*! background-color: rgba(0, 0, 0, 0.065); */
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+.contact-box-all {
+  width: 100%;
+  display: flex;
+  /*! justify-content: space-around; */
+  /*! align-items: flex-start; */
+  /*! padding: 0 20px; */
+}
+
+.leftbox {
+  width: 100%;
+}
+
+.rightbox {
+  width: 65%;
+}
+
+.list-tit0 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 30px 0 20px 0;
+}
+
+.box-all {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.box-all .box-l {
+  width: 50%;
+}
+
+.box-all .box-r {
+  width: 50%;
+}
+
+.list-tit {
+  width: 100%;
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #444;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+
+input[type='checkbox']:checked {
+  border-width: 5px;
+  border-color: white;
+  background-color: #005ead;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  border-radius: 30%;
+  position: relative;
+  top: 5px;
+  width: 17px;
+  height: 17px;
+  margin: 0 5px 5px 5px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: none;
+  transition-duration: none;
+  cursor: pointer;
+}
+
+select {
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 40px;
+  display: block;
+  padding: .5rem;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.065);
+  border-radius: .25rem;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: none;
+  transition-duration: none;
+  cursor: pointer;
+}
+
+.con-bot {
+  width: 100%;
+}
+
+.botbox {
+  width: 95%;
+  margin: 0 auto 80px auto;
+  padding: 0 10px;
+}
+
+.code {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.code-con {
+  width: 40%;
+}
+
+.code-con .fl_input {
+  width: 40%;
+}
+
+.code .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.code .pic {
+  width: 15%;
+}
+
+.submit-btn {
+  width: 20%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.sb-btn {
+  border: none;
+  padding: 10px 20px;
+  color: #333;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.065);
+  text-transform: uppercase;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.sb-btn:hover {
+  color: #fff;
+}
+
+/* 預約內頁RWD-768*/
+
+@media screen and (max-width: 768px) {
+  .leftbox {
+    width: 100%;
+  }
+  .rightbox {
+    width: 100%;
+  }
+  .contact-box-all {
+    flex-wrap: wrap;
+  }
+  .info-des {
+    margin: 20px 0 0 0;
+  }
+}
+
+/* 預約內頁RWD-500*/
+
+@media screen and (max-width: 500px) {
+  .info-box li {
+    width: 100%;
+    font-size: 15px;
+  }
+  .info-box li a {
+    width: 100%;
+    font-size: 15px;
+  }
+  .info-box li span {
+    margin: 0 5px;
+  }
+  .info-des {
+    font-size: 18px;
+    margin: 20px auto 0 auto;
+  }
+  .info-des span {
+    font-size: 20px;
+    color: #005ead;
+  }
+  .info-des em {
+    font-size: 20px;
+    color: #d61518;
+    margin: 0 5px 0 0;
+  }
+  form {
+    width: 100%;
+    padding: 40px 10px;
+  }
+  .contact-box-all {
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+.contact-box-all .tip {
+    color: #d61518;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .contact-box-all span {
+    color: #d61518;
+    font-weight: 600;
+    margin: 0 5px 0 0;
+  }
+  .leftbox {
+    width: 100%;
+  }
+  .rightbox {
+    width: 100%;
+  }
+  .list {
+    flex-wrap: wrap;
+  }
+  input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 10px 5px;
+  }
+  .box-all {
+    flex-wrap: wrap;
+  }
+  .box-all .box-l {
+    width: 100%;
+  }
+  .box-all .box-r {
+    width: 100%;
+  }
+  .botbox {
+    padding: 0;
+  }
+  .code .pic {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .info-box li {
+    width: 100%;
+    font-size: 14px;
+  }
+  .info-box li a {
+    width: 100%;
+    font-size: 14px;
+  }
+  .info-box li span {
+    margin: 0 2px;
+  }
+}
+
+@media screen and (min-width:565px)
+and (max-width:600px){
+	.seminarlist li, .schoollist li {
+		width: 92%;
+	}
+}
+
+@media screen and (min-width:610px)
+and (max-width:655px){
+	.seminarlist li, .schoollist li {
+		width: 96.5%;
+	}
 }
