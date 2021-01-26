@@ -56,6 +56,13 @@ var schoolData = [
 	extra: "與寄宿家庭Homestay共同生活，融入當地環境\n寄宿家庭Homestay提供早、晚餐以及上下課交通\n提供每個月的校外活動，遊覽當地名勝"
 },
 
+{type: "ushs", id: "wood", cardimg: "wood.jpg", img:"wood.jpg", name: "Woodstock Academy\n伍德斯托克學院 (位於 康乃狄克州伍德斯托克)", 
+	cardrank: "100%國際生升學率; 50%進入全美百大\nNewsweek's列為全美500所最佳高中之一\n \n",
+	intro: "伍德斯托克學院（The Woodstock Academy）成立於1801年，是美國一所招收9-12年級男女學生的寄宿制高中。學院位於康州東北部的歷史小城伍德斯托克，距離波士頓一個小時，距離紐約市約兩個半到三小時。在伍德斯托克學院，學生有超過230門不同種類的課程可以選擇；另外課外活動也是學生生活的重要組成部分，幫助學生成為全面發展的人才，提高人際交往能力。\n\n校園將歷史感與現代感融為一體，讓學生在21世紀的教育背景下感受到古典的學術氛圍。學院包括1個圖書館，2個功能齊全的學生自助餐廳，2個體育館，2個禮堂，舞台，實驗室，藝術工作室，綜合體育館等等。",
+	rank: "提供27門大學學分課程（與康乃狄克大學合作）; 之後可抵免大學學分\n23門AP課程及5門外語課程\n首屈一指的視覺藝術和表演藝術課程\n學校師資優良，教學水平高，85%教師持有高級學位",
+	major: "CP值高; 學費合理\n全新的STEAM中心，提供各種數理、科學、設計、工程等專業之研究工作室\n學校有自己的航太工作室 (aerospace studio)",
+	extra: "每年為學生提供3-5次國際旅行機會，拓寬學生的視野，開闊學生的眼界\n豐富的社團及體育活動；籃球隊是康州的常勝軍\n新穎寬敞的宿舍大樓，每層並配置1至2位舍監，輔導學生生活作息"
+},
 
 {type: "usug", id: "ugua", cardimg: "ugua.jpg", img: "ugua.jpg", name: "亞利桑那大學\nUniversity of Arizona", 
 	/*cardrank: "世界大學&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;排名97名\n商學專業&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全美32名\n市場行銷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全美24名\n管理資訊系統&nbsp;全美4名",*/
@@ -95,7 +102,7 @@ var schoolData = [
 	cardrank: "世界大學 排名146名\n綜合大學 全美103名\n商學院&emsp; 全美35名\n理工學院 全美41名",
 	intro: "成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。", 
 	rank: "世界大學 排名146名\n綜合大學 全美103名\n商學院&emsp; 全美35名\n理工學院 全美41名\n供應鏈/物流 全美3名",
-	major: "全球物流 &ast;&ast;\n財務金融 &ast;&ast;\n使用者經驗 &ast;&ast;\n資訊管理 &ast;&ast;\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "全球物流 &ast;&ast;\n財務金融 &ast;&ast;\n電腦科學 &ast;&ast;\n商業分析 &ast;&ast;\n使用者經驗 &ast;&ast;\n資訊管理 &ast;&ast;\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "雇主最愛聘僱的大學畢業生 全美 5 名\n畢業生在矽谷工作學生數量 全美 10 名"
 },
 
@@ -158,7 +165,7 @@ var schoolData = [
 
 /* uspg */
 
-{type: "uspg", id: "pguma", cardimg: "uma.jpg", img: "uma.jpg", name: "麻州大學阿默斯特分校\nUMass Amherst", 
+{type: "uspg", id: "pguma", cardimg: "uma.jpg", img: "uma.jpg", name: "麻州大學阿默斯特分校\nUMass Amherst\n線上+實體\n電子與電腦工程碩士學位", 
 	cardrank: "世界大學 排名142名\n綜合大學 全美66名\n電腦工程 全美20名\n \n",
 	intro: "成立於1863年，是美國麻薩諸塞州公立大學系統中，排名最好、歷史最悠久、校園最大的學校。其工程學院是得到ABET美國工程協會認證。距離波士頓大約2小時車程。全美校園食物最美味的頭銜。", 
 	rank: "世界大學 排名142名\n綜合大學 全美66名\n電腦工程 全美20名",
@@ -170,7 +177,7 @@ var schoolData = [
 	cardrank: "世界大學 排名146名\n綜合大學 全美103名\n商學院&emsp; 全美35名\n理工學院 全美41名",
 	intro: "成立於 1885 年，坐落於該州的最大城市─鳳凰城。總共有五個校區，22 個學院，超過 500 個科系選擇，眾多科系排名為全美前 20，包含行銷、管理、會計、工程、教育等。全校學生超過 10 萬人。", 
 	rank: "世界大學 排名146名\n綜合大學 全美103名\n商學院&emsp; 全美35名\n理工學院 全美41名\n供應鏈/物流 全美3名",
-	major: "全球物流 &ast;&ast;\n財務金融 &ast;&ast;\n使用者經驗 &ast;&ast;\n資訊管理 &ast;&ast;\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "全球物流 &ast;&ast;\n財務金融 &ast;&ast;\n電腦科學 &ast;&ast;\n商業分析 &ast;&ast;\n使用者經驗 &ast;&ast;\n資訊管理 &ast;&ast;\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "雇主最愛聘僱的大學畢業生 全美 5 名\n畢業生在矽谷工作學生數量 全美 10 名"
 },
 
@@ -228,7 +235,7 @@ var schoolData = [
 	cardrank: "綜合大學 全美76名\n公共事務 全美13名\n國際商務 全美14名\n </br>",
 	intro: "成立於1892年，位於華盛頓哥倫比亞特區，距離白宮僅15分鐘車程，學校在政治、商業的連結資源豐富。此外，華府為媒體重鎮，本校的大眾傳播課程實務性強，受到學生喜愛。其國際事務學院曾被美國《外交政策》雜誌選為全球TOP 10。", 
 	rank: "綜合大學 全美76名\n公共事務 全美13名\n國際商務 全美14名",
-	major: "財務金融 \n數據分析 &ast;&ast;\n生物科 &ast;&ast;\n公共行政 \n國際經濟 \n健康促進管理 \n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "財務金融 \n數據分析 &ast;&ast;\n生物科技 &ast;&ast;\n公共行政 \n國際經濟 \n健康促進管理 \n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "畢業生就業率高達92% \n學生會活躍度  全美第1名\n最多實習機會大學  全美20名\n各學院專屬的Career Center，了解各專業學生的需求\n校園緊鄰國土安全局且離白宮及市中心僅15分鐘車程，治安好。"
 },
 
@@ -286,7 +293,7 @@ var schoolData = [
 },
 
 {type: "ukhs", id: "catslon", cardimg: "catslon.jpg", img: "catslon.jpg", name: "CATS London", 
-	cardrank: "GCSE(14+歲)\nInternational Baccalaureate(16+歲)\nA-Level (15+歲)\nInternational Foundation (17+歲)",
+	cardrank: "GCSE(14+歲)\nA-Level (15+歲)\nInternational Baccalaureate(16+歲)\nInternational Foundation (17+歲)",
 	intro: "CATS London 校區在倫敦市中心最方便的Holborn 地鐵站附近，大英博物館就在學校隔壁，學術氣息濃厚，生活交通相當便利。校內由超過80個國籍的學生組成，小班式教學能照顧好每個學生的需求，更提供額外英文課程，讓國際學生不擔心英文能力。針對想要申請劍橋牛津大學的學生也提供額外學術/面試輔導，而大部分學生也都順利申請上世界百大英國大學。", 
 	rank: "We offer a world-class education, attracting students from across the globe. In a diverse and exciting international community, you will learn to be your best and achieve a place at a top university.",
 	major: "GCSE中學部(14+歲)\nA-Level高中課程(15+歲)\nInternational Baccalaureate國際文憑課程(16+歲)\nInternational Foundation 大學預備課程(17+歲)",
@@ -330,7 +337,7 @@ var schoolData = [
 
 {type: "ukug", id: "ugexe", cardimg: "ugexe.jpg", img: "ugexe.jpg", name: "艾希特大學\nUniversity of Exeter", 
 	cardrank: "QS World Ranking: 164\nTHE UK Ranking: 24\nThe Guardian: 16\n",
-	intro: "英國知名世界百大學校，超過7000名國際學生來自140個國家，讓學生體驗多元文化，並且提供學生豐富獎學金機會。校園開闊充滿綠意，距離市中心走路即可抵達，學生生活方便又可以享受校園生活。", 
+	intro: "艾克斯特大學身為羅素集團的成員的其中一員，該校的學術資源豐富，有23個學術領域在英國境內位列前10名，提供學生高品質的教學。\n學校也獲得TEF機構頒發教學金牌獎殊榮。校園充滿綠地，被票選為英國最美校園之一。", 
 	rank: "QS World Ranking: 164\nTHE UK Ranking: 24\nThe Guardian: 16",
 	major: "商管碩士 \n財經碩士 \n生物科學 \n電子工程\n古典文學 ",
 	extra: "羅馬時期為英國西南部的防禦重鎮，城市歷史文化豐富，可體驗濃厚英國文化。\n商學院由世界三大頂級學術認證機構（AMBA、EQUIS、AACSB）。\n距離倫敦約3小時火車。\n知名校友J.K.羅琳。"
@@ -417,7 +424,7 @@ var schoolData = [
 
 {type: "ukpg", id: "pglan", cardimg: "pglan.jpg", img: "pglan.jpg", name: "蘭卡斯特大學\nLancaster University", 
 	cardrank: "QS World Ranking: 135\nTHE UK Ranking: 17\nFinancial Times: 54\n",
-	intro: "身為羅素集團以及倫敦大學的成員，學術品質質量高，地點在倫敦商務中心，就學期間方便學生尋找實習，增加國外工作經驗，更進一步爭取海外正職工作。\n學校更孕育了9位諾貝爾獎得主。", 
+	intro: "學校座落於知名風景-湖區附近，校園佔地廣大且優美，距離湖區國家公園僅需40分鐘車程。獲得英國TEF教學卓越框架金獎(TEF Gold rating for teaching)，2018年「最佳20個大學校園獎」中名列第三。商學院更是被認證為世界頂尖商學院之ㄧ。", 
 	rank: "QS World Ranking: 135\nTHE UK Ranking: 17\nFinancial Times: 54",
 	major: "商管碩士\n財經碩士\n語言學\n工商管理 \n創意寫作 ",
 	extra: "蘭卡斯特大學與杜倫大學、利兹大學、利物浦大學、曼徹斯特大學、紐卡索大學、雪菲爾大學和約克大學一同成立N8大學聯盟。\n商學院是經由ACCSB, EQUIS,以及AMBA三個國際組織所認證。"
@@ -440,28 +447,28 @@ var schoolData = [
 },
 
 {type: "talk", id: "ielts", cardimg: "ielts.jpg", img: "ielts.jpg", name: "雅思IELTS寫作常見錯誤句型破解", 
-	cardrank: "2021年2月20日(六) 下午3:00\n\nJessy老師將在本講座破解10大雅思常見錯誤，點出常見中式英文的盲點，讓你的雅思寫作不再卡關…",
+	cardrank: "2021年2月20日(六) 下午3:00\n\nJessy老師將在本講座破解10大雅思常見錯誤，點出常見中式英文的盲點，讓你的雅思寫作不再卡關…<span style="visibility: hidden">老王賣瓜的讀書計畫並找到推</span>",
 	intro: "<b>日期</b>\n2021年2月20日(六) 下午3:00", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
 	major: "Jessy老師專注於雅思教學7年，雅思聽力及閱讀9分，擅長針對學生的盲點作加強，改善中式英文，著重雅思得分技巧的訓練。\n本次講座將針對寫作task 1/2每種題型的解題方法，加強常見錯誤的修正，讓英文更正統道地，協助同學掌握考試技巧，在雅思IELTS考試中取得高分。 "
 },
 
 {type: "talk", id: "mba", cardimg: "mba.jpg", img: "mba.jpg", name: "一年取得商學碩士並成功在美國就業", 
-	cardrank: "2021年2月24日(三) 晚上6:30\n\n免GRE, GMAT進入全美就業率最高的商學研究所，並了解就業訣竅順利在美國就業…",
+	cardrank: "2021年2月24日(三) 晚上6:30\n\n免GRE, GMAT進入全美就業率最高的商學研究所，並了解就業訣竅順利在美國就業…<span style="visibility: hidden">老王賣瓜的讀書計畫並找到推入英美名校美名校</span>",
 	intro: "<b>日期</b>\n2021年2月24日(三) 晚上6:30", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
 	major: "邀請Hult Intl. Business School代表講解\n1. 如何取得在美工作資格\n2. 如何在美成功找到工作\n3. 怎樣的商學課程適合自己？哪一個商學課程前景看好？\n\nHult Business School 霍特商學院為全球最具國際性的商學院，學校地點遍布波士頓、舊金山、印度與杜拜。榮獲AACSB認證 (全球前5%商學院才有此認證)且學校提供500強企業實習機會。\n\n免GRE/GMAT，一年商學碩士課程\n- 國際市場行銷 碩士\n- 商業分析 碩士\n- 金融學 碩士\n- 國際商務學 碩士\n- 工商管理MBA\n\nHult Intl. Business School為全美最強就業型商學院，與多家全球500強企業合作，提供學徒實習計畫，包含Google, Nissan, L'Oreal與皆曾參與本計畫。畢業生就業率，高出全美國際碩士學生就業率的平均值 四倍。"
 },
 
-{type: "talk", id: "ukstudy", cardimg: "ukstudy.jpg", img: "ukstudy.jpg", name: "別放棄，申請英國2021秋季入學還來得及！", 
-	cardrank: "2021年2月27日(六) 下午2:00\n\n申請英國碩士有截止時間嗎？我完全沒準備要怎麼趕上申請…\n \n",
+{type: "talk", id: "ukstudy", cardimg: "ukstudy.jpg", img: "ukstudy.jpg", name: "別放棄！\申請英國2021秋季入學還來得及！", 
+	cardrank: "2021年2月27日(六) 下午2:00\n\n申請英國碩士有截止時間嗎？我完全沒準備要怎麼趕上申請…<span style="visibility: hidden">老王賣瓜的讀書計畫並找到推入英美名校美名校了解就業業率最高的商</span>\n \n",
 	intro: "<b>日期</b>\n2021年2月27日(六) 下午2:00", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
 	major: "主講者：英國顧問Esther Chuang\n\n現在申請是否太晚？太晚申請都會被拒絕？IELTS還沒考試怎麼辦？\n難道我要放棄2021入學再延後一年入學，浪費我寶貴的青春？\n\n資深英國顧問Esther Chuang已經成功協助許多學生順利獲得目標學校入學許可。\n依照申請時間不同，給予相對應的策略建議，搭配客製化文件，為學生的申請加分，讓學生不擔心自己的申請無效，順利取得2021秋季的入學許可。 "
 },
 
 {type: "talk", id: "ukmantalk", cardimg: "man.jpg", img: "man.jpg", name: "申請世界百大名校-曼徹斯特大學University of Manchester", 
-	cardrank: "2021年3月3日(三) 晚上6:30\n\n聽說曼徹斯特大學入學門檻高？比較難申請？學校有宿舍嗎？好多疑問都想要得到答案 … ",
+	cardrank: "2021年3月3日(三) 晚上6:30\n\n聽說曼徹斯特大學入學門檻高？比較難申請？學校有宿舍嗎？好多疑問都想要得到答案…<span style="visibility: hidden">老王賣瓜的讀書計畫並找到推入英美名校美</span>",
 	intro: "<b>日期</b>\n2021年3月3日(三) 晚上6:30", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
 	major: "主講者：University of Manchester學校代表Chris Gibson\n\n我們邀請到學校代表Chris Gibson親自為同學們解答對這所名校的疑問，同學可以接收第一手資訊，挖掘申請的秘訣。\n\nUniversity of Manchester 長年位居世界排名前30，身為羅素集團和英國六所紅磚大學的創始成員之一，學校的學術研究資源豐富，發布許多世界知名論文，更孕育出25位諾貝爾獎得主。\n\n英國雜誌更評選曼徹斯特大學的畢業生是企業愛用第一名。\n想要增加錄取的機會，就趕快來聽聽Chris怎麼說！"
