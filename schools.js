@@ -158,7 +158,7 @@ var schoolData = [
 	cardrank: "綜合大學 全美76名\n公共事務 全美13名\n國際商務 全美14名\n \n",
 	intro: "成立於1892年，位於華盛頓哥倫比亞特區，距離白宮僅15分鐘車程，學校在政治、商業的連結資源豐富。此外，華府為媒體重鎮，本校的大眾傳播課程實務性強，受到學生喜愛。其國際事務學院曾被美國《外交政策》雜誌選為全球TOP 10。", 
 	rank: "綜合大學 全美76名\n公共事務 全美13名\n國際商務 全美14名",
-	major: "財務金融 \n數據分析 &ast;&ast;\n生物科 &ast;&ast;\n公共行政 \n國際經濟 \n健康促進管理 \n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
+	major: "財務金融 \n數據分析 &ast;&ast;\n生物科技 &ast;&ast;\n公共行政 \n國際經濟 \n健康促進管理 \n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
 	extra: "畢業生就業率高達92% \n學生會活躍度  全美第1名\n最多實習機會大學  全美20名\n各學院專屬的Career Center，了解各專業學生的需求\n校園緊鄰國土安全局且離白宮及市中心僅15分鐘車程，治安好。"
 },
 
@@ -284,7 +284,7 @@ var schoolData = [
 
 
 /* ukhs */
-{type: "ukhs", id: "dcs", cardimg: "dcs.jpg", img: "dcs.jpg", name: "Dean Close School", 
+{type: "ukhs", id: "dcs", cardimg: "dcs.jpg", img: "dcs.jpg", name: "丁克洛斯中學\nDean Close School", 
 	cardrank: "Pre-Preparatory (2-7歲)\nPreparatory (7-13歲)\nSenior School & Sixth Form (13-18歲)\n \n",
 	intro: "此中學位於英國西邊城市Cheltenham, 距離倫敦搭乘火車約2小時可以抵達。\n學校提供一條龍式教育，從學生2歲～18歲皆可在此校就讀，校園內學生約700人，中學部約有450人。中學高考成績超過70%拿到A*-B的成績，99% 的學生都順利升上英國大學，每年更是有許多劍橋大學及牛津大學錄取生。", 
 	rank: "The ethos of Dean Close encourages independent thinking and the self-confidence to challenge the status quo. It challenges selfishness and promotes respect for others, service to the School and wider community and the development of healthy and positive relationships.",
@@ -292,7 +292,7 @@ var schoolData = [
 	extra: "Dean Close School為基督教學校，學校也將基督教對人友善、尊重他人等教義放入日常生活中教導學生。\n校內有非常多社團可以讓學生發展課後興趣，例如戲劇、音樂、廚藝、曲棍球、游泳、網球、壁球、攀岩等。"
 },
 
-{type: "ukhs", id: "catslon", cardimg: "catslon.jpg", img: "catslon.jpg", name: "CATS London", 
+{type: "ukhs", id: "catslon", cardimg: "catslon.jpg", img: "catslon.jpg", name: "劍橋文理高中倫敦校區\nCATS London", 
 	cardrank: "GCSE(14+歲)\nA-Level (15+歲)\nInternational Baccalaureate(16+歲)\nInternational Foundation (17+歲)",
 	intro: "CATS London 校區在倫敦市中心最方便的Holborn 地鐵站附近，大英博物館就在學校隔壁，學術氣息濃厚，生活交通相當便利。校內由超過80個國籍的學生組成，小班式教學能照顧好每個學生的需求，更提供額外英文課程，讓國際學生不擔心英文能力。針對想要申請劍橋牛津大學的學生也提供額外學術/面試輔導，而大部分學生也都順利申請上世界百大英國大學。", 
 	rank: "We offer a world-class education, attracting students from across the globe. In a diverse and exciting international community, you will learn to be your best and achieve a place at a top university.",
@@ -466,7 +466,7 @@ var schoolData = [
 	major: "主講者：英國顧問Esther Chuang\n\n現在申請是否太晚？太晚申請都會被拒絕？IELTS還沒考試怎麼辦？\n難道我要放棄2021入學再延後一年入學，浪費我寶貴的青春？\n\n資深英國顧問Esther Chuang已經成功協助許多學生順利獲得目標學校入學許可。\n依照申請時間不同，給予相對應的策略建議，搭配客製化文件，為學生的申請加分，讓學生不擔心自己的申請無效，順利取得2021秋季的入學許可。 "
 },
 
-{type: "talk", id: "ukmantalk", cardimg: "man.jpg", img: "man.jpg", name: "申請世界百大名校-曼徹斯特大學University of Manchester", 
+{type: "talk", id: "ukmantalk", cardimg: "man.jpg", img: "man.jpg", name: "申請世界百大名校-曼徹斯特大學\nUniversity of Manchester", 
 	cardrank: "2021年3月3日(三) 晚上6:30\n\n聽說曼徹斯特大學入學門檻高？比較難申請？學校有宿舍嗎？好多疑問都想要得到答案…<span>老王賣瓜的讀書計畫並找到推入英美名校美</span>",
 	intro: "<b>日期</b>\n2021年3月3日(三) 晚上6:30", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
