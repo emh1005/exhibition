@@ -459,7 +459,7 @@ var schoolData = [
 	major: "邀請Hult Intl. Business School代表講解\n1. 如何取得在美工作資格\n2. 如何在美成功找到工作\n3. 怎樣的商學課程適合自己？哪一個商學課程前景看好？\n\nHult Business School 霍特商學院為全球最具國際性的商學院，學校地點遍布波士頓、舊金山、印度與杜拜。榮獲AACSB認證 (全球前5%商學院才有此認證)且學校提供500強企業實習機會。\n\n免GRE/GMAT，一年商學碩士課程\n- 國際市場行銷 碩士\n- 商業分析 碩士\n- 金融學 碩士\n- 國際商務學 碩士\n- 工商管理MBA\n\nHult Intl. Business School為全美最強就業型商學院，與多家全球500強企業合作，提供學徒實習計畫，包含Google, Nissan, L'Oreal與皆曾參與本計畫。畢業生就業率，高出全美國際碩士學生就業率的平均值 四倍。"
 },
 
-{type: "talk", id: "ukstudy", cardimg: "ukstudy.jpg", img: "ukstudy.jpg", name: "別放棄！\申請英國2021秋季入學還來得及！", 
+{type: "talk", id: "ukstudy", cardimg: "ukstudy.jpg", img: "ukstudy.jpg", name: "別放棄！\n申請英國2021秋季入學還來得及！", 
 	cardrank: "2021年2月27日(六) 下午2:00\n\n申請英國碩士有截止時間嗎？我完全沒準備要怎麼趕上申請…<span>老王賣瓜的讀書計畫並找到推入英美名校美名校了解就業業率最高的商</span>",
 	intro: "<b>日期</b>\n2021年2月27日(六) 下午2:00", 
 	rank: "<b>地點</b>\nEDU壹教育辦公室\n台北市大安區光復南路260巷23號3樓\n(國父紀念館站二號出口 Campus Café旁)",
