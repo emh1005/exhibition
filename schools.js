@@ -57,7 +57,7 @@ var schoolData = [
 },
 
 {type: "ushs", id: "wood", cardimg: "wood.jpg", img:"wood.jpg", name: "Woodstock Academy\n伍德斯托克學院 (位於 康乃狄克州伍德斯托克)", 
-	cardrank: "100%國際生升學率; 50%進入全美百大\nNewsweek's列為全美500所最佳高中之一\n\n",
+	cardrank: "100%國際生升學率; 50%進入全美百大\nNewsweek's列為全美500所最佳高中之一\n \n",
 	intro: "伍德斯托克學院（The Woodstock Academy）成立於1801年，是美國一所招收9-12年級男女學生的寄宿制高中。學院位於康州東北部的歷史小城伍德斯托克，距離波士頓一個小時，距離紐約市約兩個半到三小時。在伍德斯托克學院，學生有超過230門不同種類的課程可以選擇；另外課外活動也是學生生活的重要組成部分，幫助學生成為全面發展的人才，提高人際交往能力。\n\n校園將歷史感與現代感融為一體，讓學生在21世紀的教育背景下感受到古典的學術氛圍。學院包括1個圖書館，2個功能齊全的學生自助餐廳，2個體育館，2個禮堂，舞台，實驗室，藝術工作室，綜合體育館等等。",
 	rank: "提供27門大學學分課程（與康乃狄克大學合作）; 之後可抵免大學學分\n23門AP課程及5門外語課程\n首屈一指的視覺藝術和表演藝術課程\n學校師資優良，教學水平高，85%教師持有高級學位",
 	major: "CP值高; 學費合理\n全新的STEAM中心，提供各種數理、科學、設計、工程等專業之研究工作室\n學校有自己的航太工作室 (aerospace studio)",
@@ -164,7 +164,7 @@ var schoolData = [
 	
 /*newly added*/	
  {type: "usug", id: "mcphs", cardimg: "mcphs.jpg", img: "mcphs.jpg", name: "麻省藥科與健康科學大學\nMCPHS", 
-	cardrank: "畢業生收入 全美1名\nNAPLEX (北美藥劑師資格考試) 通過率 92%\n\n\n",
+	cardrank: "畢業生收入 全美1名\nNAPLEX (北美藥劑師資格考試) 通過率 92%\n\n \n",
 	intro: "麻省藥科與健康科學大學 (MCPHS) 成立於1823年，是波士頓最古老的高等教育學府。 近200年來，MCPHS一直以醫療保健為中心，設立了全方位的醫療保健課程。作為全美 第二所藥科大學，MCPHS擁有全美最大的藥學院，同時也是培養出全美最多藥劑師的大學。MCPHS現代化的校園坐落於波士頓市中心繁華地段，位於世界聞名的長木醫學區 (Longwood)世界最負盛名的醫療機構彙集地。\nMCPHS擁有11個學院，專業覆蓋藥劑學、醫療保健管理、醫學預科與健康研究、針灸和中醫學、護理學、口腔保健、物理治療等。", 
 	rank: "畢業生收入 全美1名\n歷史悠久的藥科大學 全美2名\nNAPLEX (北美藥劑師資格考試) 通過率 92%",
 	major: "護理學\n藥劑學\n藥物科學 &ast;&ast;\n公共衛生\n口腔保健\n健康心理學\n全球醫療保健管理\n醫學預科與健康研究\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
@@ -172,7 +172,7 @@ var schoolData = [
 },
  
   {type: "usug", id: "grc", cardimg: "grc.jpg", img: "grc.jpg", name: "綠河社區大學\nGreen River College", 
-	cardrank: "社區大學 全美8名\n滿16歲 即可申請\n\n\n",
+	cardrank: "社區大學 全美8名\n滿16歲 即可申請\n\n \n",
 	intro: "綠河社區大學位於華盛頓州奧本市，距西雅圖約40分鐘車程，校園環境幽美、安全。學生人數約為10,000人，學校提供超過 75項副學士、學士及證書課程，並有英語中心，讓沒有TOEFL/IELTS成績或希望進入學術課程前加強英語能力的同學能夠透過條件式入學方式進入就讀。\n\n學校提供高中完成課程(High School Completion Program)。只要學生滿16歲，即使尚未取得高中畢業文憑亦可申請進入綠河社區大學就讀。在本校修讀高中完成課程，所獲得的學分可以同步適用在高中課程以及大一、大二通識課程之學分轉換。只要花費2年(不包括入學前所需英語課程)，即可取得高中文憑以及本校所頒布的副學士學位，申請轉學進入四年制名校完成大三大四課程，並取得名校之畢業證書。", 
 	rank: "社區大學 全華盛頓州1名\n社區大學 全美8名",
 	major: "航空學\n會計學\n商學\n電腦科學 &ast;&ast;\n幼兒教育\n工程學 &ast;&ast;\n資訊科技\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
@@ -181,7 +181,7 @@ var schoolData = [
  
  
    {type: "usug", id: "smc", cardimg: "smc.jpg", img: "smc.jpg", name: "聖塔莫尼卡社區大學\nSanta Monica College", 
-	cardrank: "轉學至UCLA 全美1名\n轉學至USC 全美1名\n\n\n",
+	cardrank: "轉學至UCLA 全美1名\n轉學至USC 全美1名\n\n \n",
 	intro: "成立於1929年，位於著名的濱海觀光城市─聖塔莫尼卡市，距離洛杉磯車程約20分鐘。學校提供超過 76 種主修領域的學習課程，最受歡迎的課程包含有Economics, Art & Design, Interaction Design (IXD), Engineering 以及 Film。\n\n學校學生超過三萬人，本校的優勢為轉學成功率高，已經連續27年保持了轉學進入加州地區大學學生數量最高的記錄。", 
 	rank: "轉學至UCLA 全美1名\n轉學至USC全美1名\n轉學至Columbia University全美2名",
 	major: "經濟學\n人體運動學\n營養學\n傳播學\n企業管理\n電腦科學 &ast;&ast;\n網路程式設計&ast;&ast;\n電機工程 &ast;&ast;\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
@@ -191,7 +191,7 @@ var schoolData = [
  
 
    {type: "usug", id: "fhda", cardimg: "fhda.jpg", img: "fhda.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College", 
-	cardrank: "轉學至加州大學系統 全美1名\n轉學至加州州立大學系統 全美1名\n\n\n",
+	cardrank: "轉學至加州大學系統 全美1名\n轉學至加州州立大學系統 全美1名\n\n \n",
 	intro: "兩校位於矽谷中心，舊金山以南、聖荷西以西，是全美最安全的區域之一。校園周邊坐落著6000多家企業，包括Google、Apple、Facebook、Tesla、NASA Research Labs、Adobe等。學校提供當地企業實習和畢業工作機會，領域涵括健康科學、藝術和設計、商業、科學、心理學、電腦科學、工程等。\n\n學校提供超過100個主修專業，與加州大學系統下的學校簽訂有「保證轉學協議」，包含UC Irvine, UC Davis, UC Riverside以及UC Santa Barbara等；也與UCLA簽訂有「優先錄取協議」。學校也提供升學顧問，給予同學轉學指導。", 
 	rank: "轉學至加州大學系統(UC) 全美1名\n轉學至加州州立大學系統(CSU) 全美1名",
 	major: "化學 &ast;&ast;\n生物學& ast;&ast;\n工程學 &ast;&ast;\n環境學 &ast;&ast;\n生物學 &ast;&ast;\n電腦科學 &ast;&ast;\n經濟學\n心理學\n新聞學\n企業管理\n電影電視及電子媒體\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
