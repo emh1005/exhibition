@@ -163,7 +163,7 @@ var schoolData = [
 },
 	
 /*newly added*/	
- {type: "ug", id: "mcphs", cardimg: "mcphs.jpg", img: "mcphs.jpg", name: "麻省藥科與健康科學大學\nMCPHS", 
+ {type: "usug", id: "mcphs", cardimg: "mcphs.jpg", img: "mcphs.jpg", name: "麻省藥科與健康科學大學\nMCPHS", 
 	cardrank: "畢業生收入 全美1名\nNAPLEX (北美藥劑師資格考試) 通過率 92%\n\n",
 	intro: "麻省藥科與健康科學大學 (MCPHS) 成立於1823年，是波士頓最古老的高等教育學府。 近200年來，MCPHS一直以醫療保健為中心，設立了全方位的醫療保健課程。作為全美 第二所藥科大學，MCPHS擁有全美最大的藥學院，同時也是培養出全美最多藥劑師的大學。MCPHS現代化的校園坐落於波士頓市中心繁華地段，位於世界聞名的長木醫學區 (Longwood)世界最負盛名的醫療機構彙集地。\nMCPHS擁有11個學院，專業覆蓋藥劑學、醫療保健管理、醫學預科與健康研究、針灸和中醫學、護理學、口腔保健、物理治療等。", 
 	rank: "畢業生收入 全美1名\n歷史悠久的藥科大學 全美2名\nNAPLEX (北美藥劑師資格考試) 通過率 92%",
@@ -171,7 +171,7 @@ var schoolData = [
 	extra: "針對英語水準不理想的同學，MCPHS大學部提供了橋樑課程（Bridge Program）。橋樑課程的老師將協助提升英文詞彙及部分學術內容，讓你能順利銜接至美國大學正式課程。橋樑課程為期4個月，每年有三次開學日期，分別為1 月、5月、9月。TOEFL成績達到69-79分或IELTS 達到6.0-6.5分即可申請此課程\n本校的護理學是為期32個月的速成項目(accelerated program)\n本校提供口腔保健科系─牙醫系預備課程 (predental track)，只需多花費四個月，即有資格申請進入牙醫系"
 },
  
-  {type: "ug", id: "grc", cardimg: "grc.jpg", img: "grc.jpg", name: "綠河社區大學\nGreen River College", 
+  {type: "usug", id: "grc", cardimg: "grc.jpg", img: "grc.jpg", name: "綠河社區大學\nGreen River College", 
 	cardrank: "社區大學 全美8名\n滿16歲 即可申請\n\n",
 	intro: "綠河社區大學位於華盛頓州奧本市，距西雅圖約40分鐘車程，校園環境幽美、安全。學生人數約為10,000人，學校提供超過 75項副學士、學士及證書課程，並有英語中心，讓沒有TOEFL/IELTS成績或希望進入學術課程前加強英語能力的同學能夠透過條件式入學方式進入就讀。\n\n學校提供高中完成課程(High School Completion Program)。只要學生滿16歲，即使尚未取得高中畢業文憑亦可申請進入綠河社區大學就讀。在本校修讀高中完成課程，所獲得的學分可以同步適用在高中課程以及大一、大二通識課程之學分轉換。只要花費2年(不包括入學前所需英語課程)，即可取得高中文憑以及本校所頒布的副學士學位，申請轉學進入四年制名校完成大三大四課程，並取得名校之畢業證書。", 
 	rank: "社區大學 全華盛頓州1名\n社區大學 全美8名",
@@ -180,7 +180,7 @@ var schoolData = [
 },
  
  
-   {type: "ug", id: "smc", cardimg: "smc.jpg", img: "smc.jpg", name: "聖塔莫尼卡社區大學\nSanta Monica College", 
+   {type: "usug", id: "smc", cardimg: "smc.jpg", img: "smc.jpg", name: "聖塔莫尼卡社區大學\nSanta Monica College", 
 	cardrank: "社區大學 全美8名\n滿16歲 即可申請\n\n",
 	intro: "成立於1929年，位於著名的濱海觀光城市─聖塔莫尼卡市，距離洛杉磯車程約20分鐘。學校提供超過 76 種主修領域的學習課程，最受歡迎的課程包含有Economics, Art & Design, Interaction Design (IXD), Engineering 以及 Film。\n\n學校學生超過三萬人，本校的優勢為轉學成功率高，已經連續27年保持了轉學進入加州地區大學學生數量最高的記錄。", 
 	rank: "轉學至UCLA 全美1名\n轉學至USC全美1名\n轉學至Columbia University全美2名",
@@ -190,7 +190,7 @@ var schoolData = [
  
  
 
-   {type: "ug", id: "fdac", cardimg: "fdac.jpg", img: "fdac.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College", 
+   {type: "usug", id: "fdac", cardimg: "fdac.jpg", img: "fdac.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College", 
 	cardrank: "轉學至加州大學系統 全美1名\n轉學至加州州立大學系統 全美1名\n\n",
 	intro: "兩校位於矽谷中心，舊金山以南、聖荷西以西，是全美最安全的區域之一。校園周邊坐落著6000多家企業，包括Google、Apple、Facebook、Tesla、NASA Research Labs、Adobe等。學校提供當地企業實習和畢業工作機會，領域涵括健康科學、藝術和設計、商業、科學、心理學、電腦科學、工程等。\n\n學校提供超過100個主修專業，與加州大學系統下的學校簽訂有「保證轉學協議」，包含UC Irvine, UC Davis, UC Riverside以及UC Santa Barbara等；也與UCLA簽訂有「優先錄取協議」。學校也提供升學顧問，給予同學轉學指導。", 
 	rank: "轉學至加州大學系統(UC) 全美1名\n轉學至加州州立大學系統(CSU) 全美1名",
