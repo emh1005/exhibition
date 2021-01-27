@@ -190,8 +190,7 @@ var schoolData = [
  
  
 
-   {type: "ug", id: "fdac", cardimg: "fdac.jpg", img: "fdac.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College
-", 
+   {type: "ug", id: "fdac", cardimg: "fdac.jpg", img: "fdac.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College", 
 	cardrank: "轉學至加州大學系統 全美1名\n轉學至加州州立大學系統 全美1名\n\n",
 	intro: "兩校位於矽谷中心，舊金山以南、聖荷西以西，是全美最安全的區域之一。校園周邊坐落著6000多家企業，包括Google、Apple、Facebook、Tesla、NASA Research Labs、Adobe等。學校提供當地企業實習和畢業工作機會，領域涵括健康科學、藝術和設計、商業、科學、心理學、電腦科學、工程等。\n\n學校提供超過100個主修專業，與加州大學系統下的學校簽訂有「保證轉學協議」，包含UC Irvine, UC Davis, UC Riverside以及UC Santa Barbara等；也與UCLA簽訂有「優先錄取協議」。學校也提供升學顧問，給予同學轉學指導。", 
 	rank: "轉學至加州大學系統(UC) 全美1名\n轉學至加州州立大學系統(CSU) 全美1名",
