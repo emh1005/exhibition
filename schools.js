@@ -181,7 +181,7 @@ var schoolData = [
  
  
    {type: "usug", id: "smc", cardimg: "smc.jpg", img: "smc.jpg", name: "聖塔莫尼卡社區大學\nSanta Monica College", 
-	cardrank: "社區大學 全美8名\n滿16歲 即可申請\n\n",
+	cardrank: "轉學至UCLA 全美1名\n轉學至USC 全美1名\n\n",
 	intro: "成立於1929年，位於著名的濱海觀光城市─聖塔莫尼卡市，距離洛杉磯車程約20分鐘。學校提供超過 76 種主修領域的學習課程，最受歡迎的課程包含有Economics, Art & Design, Interaction Design (IXD), Engineering 以及 Film。\n\n學校學生超過三萬人，本校的優勢為轉學成功率高，已經連續27年保持了轉學進入加州地區大學學生數量最高的記錄。", 
 	rank: "轉學至UCLA 全美1名\n轉學至USC全美1名\n轉學至Columbia University全美2名",
 	major: "經濟學\n人體運動學\n營養學\n傳播學\n企業管理\n電腦科學 &ast;&ast;\n網路程式設計&ast;&ast;\n電機工程 &ast;&ast;\n\n&ast;&ast;代表其科系為 STEM，畢業後可有三年 OPT",
@@ -190,7 +190,7 @@ var schoolData = [
  
  
 
-   {type: "usug", id: "fdac", cardimg: "fdac.jpg", img: "fdac.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College", 
+   {type: "usug", id: "fhda", cardimg: "fhda.jpg", img: "fhda.jpg", name: "山麓和迪安薩學院\nFoothill/DeAnza College", 
 	cardrank: "轉學至加州大學系統 全美1名\n轉學至加州州立大學系統 全美1名\n\n",
 	intro: "兩校位於矽谷中心，舊金山以南、聖荷西以西，是全美最安全的區域之一。校園周邊坐落著6000多家企業，包括Google、Apple、Facebook、Tesla、NASA Research Labs、Adobe等。學校提供當地企業實習和畢業工作機會，領域涵括健康科學、藝術和設計、商業、科學、心理學、電腦科學、工程等。\n\n學校提供超過100個主修專業，與加州大學系統下的學校簽訂有「保證轉學協議」，包含UC Irvine, UC Davis, UC Riverside以及UC Santa Barbara等；也與UCLA簽訂有「優先錄取協議」。學校也提供升學顧問，給予同學轉學指導。", 
 	rank: "轉學至加州大學系統(UC) 全美1名\n轉學至加州州立大學系統(CSU) 全美1名",
