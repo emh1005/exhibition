@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 body, html {
 	font-family: 'Noto Sans TC', sans-serif;
 	cursor: default;
@@ -109,7 +111,7 @@ h2, h3 {
 #carticon:hover, #carticon:focus {
 	transition: all .5s;
 	background-color: red;
-	text-decoration: none;
+	text-decoration: nonㄑe;
 	cursor: pointer;
 }
 
@@ -187,7 +189,7 @@ h2, h3 {
   height: 6px;
 }
 
-#country h2 {
+#country h2, #start h2 {
 	font-size: 30px;
 }
 
@@ -213,6 +215,8 @@ h2, h3 {
 	font-size: 25px;
 }
 
+
+
 .button>a>p {
 	display: table-cell; 
 	vertical-align: middle; 
@@ -228,15 +232,47 @@ h2, h3 {
 	color: #fff;
 }
 
-#country>h2{
+	.specialbtn a {
+	width: 180px;
+	height: 180px;
+	}
+	
+	.specialbtn.clicked>a {
+	width: 140px;
+		height: 140px;
+	}
+
+#country>h2 {
+	margin-top: 50px;
+}
+
+#start>h2{
 	margin-top: 100px;
 }
+
+#startbtn, #contactbtn {
+	background: #E2EFD9;
+}
+
+#startbtn.selected {
+	box-shadow: inset 0 0 0 5px #A9D18E, inset 0 0 0 9px #E2EFD9;
+	background: #A9D18E !important;
+}
+
+#startbtn:hover, #startbtn:focus, #contactbtn:hover {
+	transition: all .5s ease-out;
+	background: #A9D18E;
+	text-decoration: none;
+	cursor: pointer;
+	color: #fff;
+}
+
 
 #ukbtn, #ukhsbtn, #ukugbtn, #ukpgbtn, #uktalkbtn {
 	background: #E67D7D;
 }
 
-#ukbtn.selected,#ukhsbtn.selected, #ukugbtn.selected, #ukpgbtn.selected, #uktalkbtn.selected {
+#ukbtn.selected, #ukhsbtn.selected, #ukugbtn.selected, #ukpgbtn.selected, #uktalkbtn.selected {
 	box-shadow: inset 0 0 0 5px #C1181C, inset 0 0 0 9px #E67D7D;
 	background: #C1181C !important;
 }
@@ -332,6 +368,11 @@ ul {
 	idk why if font size/circle width+height/padding changes, text not centered in circle
 }
 */
+#country {
+	display: none;
+}
+	
+
 #us, #uk {
 	/*transition: all .5s ease-out;
 	opacity: 0;
@@ -346,11 +387,11 @@ ul {
 	/*kinda want an appear animation...*/
 }
 
-#us::before, #uk::before, #ushs::before, #ukhs::before, #usug::before, #ukug::before, #uspg::before, #ukpg::before, #ustalk::before, #uktalk::before { 
+#country::before, #us::before, #uk::before, #ushs::before, #ukhs::before, #usug::before, #ukug::before, #uspg::before, #ukpg::before, #ustalk::before, #uktalk::before { 
 	display: block; 
 	content: " "; 
-	margin-top: -275px; 
-	height: 275px; 
+	margin-top: -225px; 
+	height: 225px; 
 	visibility: hidden; 
 	pointer-events: none;
 }
@@ -768,13 +809,18 @@ padding: 5px;
 	padding: 3px;
 	list-style-type: none;
 	width: 90%;
+	display: flex;
 }
 
 .delete {
-	float: right;
+	/*! float: right; */
 	position: relative;
+	/*! width: 100%; */
+	/*! height: 0; */
+	margin-left: auto;
+	/*! max-width: 25px; */
+	flex-shrink: 0;
 	width: 25px;
-	height: 0;
 }
 
 /*
@@ -1263,6 +1309,16 @@ and (max-width:1238px){
 	height: 100px;
 }
 	
+	.specialbtn a {
+	width: 180px;
+	height: 180px;
+	}
+	
+	.specialbtn.clicked>a {
+	width: 140px;
+	height: 140px;
+}
+	
 	.cardimg>h4 {
 	font-size: 20px;
 		width: 100%;
@@ -1341,6 +1397,16 @@ and (max-width:1095px){
 	height: 95px;
 }
 	
+		.specialbtn a {
+	width: 180px;
+	height: 180px;
+	}
+	
+	.specialbtn.clicked>a {
+	width: 140px;
+	height: 140px;
+}
+	
 .card {
 	width: 60%;
 }
@@ -1409,6 +1475,17 @@ and (max-width:900px){
 	width: 90px;
 	height: 90px;
 }
+		.specialbtn a {
+	width: 180px;
+	height: 180px;
+margin-left: 35px;
+margin-right: 35px;
+	}
+	
+	.specialbtn.clicked>a {
+	width: 140px;
+	height: 140px;
+}
 	
 .card {
 	width: 75%;
@@ -1440,13 +1517,6 @@ footer .footerinfo li {
 	.header #carticon {
 		font-weight: 300;
   font-size: 16px;
-}
-		#headerbreak {
-	display: block;
-}
-
-#headerfull {
-	display: none;
 }
 	
 .header>h1 {
@@ -1499,7 +1569,17 @@ and (max-width:699px){
 	width: 85px;
 	height: 85px;
 }
+		.specialbtn a {
+	width: 135px;
+	height: 135px;
+margin-left: 10px;
+margin-right: 10px;
+	}
 	
+	.specialbtn.clicked>a {
+	width: 100px;
+	height: 100px;
+}
 .card {
 	width: 85%;
 }
@@ -1721,6 +1801,18 @@ padding: 10px;
 	width: 100px;
 	height: 100px;
 }
+			.specialbtn a {
+	width: 135px;
+	height: 135px;
+margin-left: 10px;
+margin-right: 10px;
+	}
+	
+	.specialbtn.clicked>a {
+	width: 100px;
+	height: 100px;
+}
+	
 	
 .card {
 	margin: auto;
@@ -2091,7 +2183,12 @@ padding: 10px;
 	width: 80px;
 	height: 80px;
 }
-	
+	.specialbtn.clicked>a {
+	width: 95px;
+	height: 95px;
+				margin-left: 1px;
+		margin-right: 1px;
+}
 .card {
 	margin: auto;
 	margin-top: 30px;
@@ -2774,7 +2871,7 @@ select {
     margin: 0 2px;
   }
 }
-
+/*
 @media screen and (min-width:565px)
 and (max-width:600px){
 	.seminarlist li, .schoollist li {
@@ -2787,4 +2884,4 @@ and (max-width:655px){
 	.seminarlist li, .schoollist li {
 		width: 96.5%;
 	}
-}
+}*/

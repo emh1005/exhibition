@@ -68,6 +68,9 @@ function showSlidesTimed() {
 
 
 //display us/uk options
+var startbtn = document.getElementById("startbtn");
+var start = document.getElementById("start");
+
 var usbtn = document.getElementById("usbtn");
 var us = document.getElementById("us");
 
@@ -91,6 +94,8 @@ var btnAction = function(a, b, btn) {
 	/*b.style.opacity = "1";
 	b.style.visibility = "visible";*/
 }
+
+
 var cardList = {};
 var testCheck = false;
 var addToCart = function(e) {
@@ -207,9 +212,13 @@ document.getElementById("ugasu").onclick = function(e) {
 	closeModal();
 }
 
+startbtn.onclick = function() {
+	btnAction(start, country, startbtn);
+}
+
 usbtn.onclick = function() {
 	uk.classList.remove("clicked");
-	for(var i=0; i< allBtn.length;i++) {
+	for(var i=2; i< allBtn.length;i++) {
 		allBtn[i].classList.remove("selected");
 	}
 	btnAction(country, us, usbtn);
@@ -222,7 +231,7 @@ usbtn.onclick = function() {
 
 ukbtn.onclick = function() {
 	us.classList.remove("clicked");
-	for(var i=0; i< allBtn.length;i++) {
+	for(var i=2; i< allBtn.length;i++) {
 		allBtn[i].classList.remove("selected");
 	}
 	btnAction(country, uk, ukbtn);
