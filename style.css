@@ -1570,6 +1570,7 @@ and (max-width:699px){
 	height: 85px;
 }
 		.specialbtn a {
+			font-size: 21.5px;
 	width: 135px;
 	height: 135px;
 margin-left: 10px;
@@ -1801,7 +1802,8 @@ padding: 10px;
 	width: 100px;
 	height: 100px;
 }
-			.specialbtn a {
+		.specialbtn a {
+			font-size: 21.5px;
 	width: 135px;
 	height: 135px;
 margin-left: 10px;
@@ -2003,6 +2005,10 @@ padding: 10px;
 	width: 105px;
 	height: 105px;
 }
+	.specialbtn a {
+		font-size: 21.5px;
+	}
+	
 	
 .card {
 	margin: auto;
