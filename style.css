@@ -387,7 +387,7 @@ ul {
 	/*kinda want an appear animation...*/
 }
 
-#country::before, #us::before, #uk::before, #ushs::before, #ukhs::before, #usug::before, #ukug::before, #uspg::before, #ukpg::before, #ustalk::before, #uktalk::before { 
+#country::before, #us::before, #uk::before, #ushs::before, #ukhs::before, #usug::before, #ukug::before, #uspg::before, #ukpg::before, #talk::before { 
 	display: block; 
 	content: " "; 
 	margin-top: -225px; 
@@ -652,7 +652,7 @@ padding: 5px;
 	border-radius: 15px;
 	margin: auto;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	padding: 15px;
 }
 
@@ -1570,7 +1570,7 @@ and (max-width:699px){
 	height: 85px;
 }
 		.specialbtn a {
-			font-size: 21.5px;
+			font-size: 21px;
 	width: 135px;
 	height: 135px;
 margin-left: 10px;
@@ -1755,13 +1755,16 @@ padding: 10px;
   font-size: 16px;
 		margin-right: 0;
 		float: none;
-		padding: 20px 0 20px 0;
+		padding: 0;
+		left: 0;
+		height: 70px;
+		line-height: 70px;
 	}
 	
 	#carticon:hover, #carticon:focus {
-	transition: all .5s;
-	background-color: unset;
+	background-color: #103256;
 }
+
 	
 	.header #logo {
 		padding: 15px;
@@ -1788,8 +1791,25 @@ padding: 10px;
 		margin: 0;
 	}
 		#cartcount {
-			top: 90.5vh;
-    right: 32%;
+			/*! top: 90.5vh; */
+    /*! right: 32%; */
+			position: static;
+top: 0;
+right: 0;
+height: 0;
+
+background: unset;
+font-size: unset;
+font-weight: 700;
+border-radius: 0;
+margin-left: 10px;
+			
+	}
+	#cartcount::before {
+		content: "(";
+	}
+	#cartcount::after {
+		content: ")";
 	}
 	
 		.button {
@@ -1808,7 +1828,7 @@ padding: 10px;
 	height: 100px;
 }
 		.specialbtn a {
-			font-size: 21.5px;
+			font-size: 21px;
 	width: 135px;
 	height: 135px;
 margin-left: 10px;
@@ -1965,14 +1985,21 @@ padding: 10px;
   font-size: 16px;
 		margin-right: 0;
 		float: none;
-		padding: 20px 0 20px 0;
+		padding: 0;
+left: 0;
+height: 70px;
+line-height: 70px;
+		
 	}
 	
-		
-	#carticon:hover, #carticon:focus {
-	transition: all .5s;
-	background-color: unset;
+		#carticon:hover, #carticon:focus {
+	background-color: #103256;
 }
+	
+		#carticon:hover, #carticon:focus {
+	background-color: #103256;
+}
+	
 		#headerbreak {
 	display: block;
 }
@@ -1990,10 +2017,25 @@ padding: 10px;
 		position: absolute;
 		margin: 0;
 	}
-			#cartcount {
-			top: 90.5vh;
-    right: 31%;
+		#cartcount {
+position: static;
+top: 0;
+right: 0;
+height: 0;
+background: unset;
+font-size: unset;
+font-weight: 700;
+border-radius: 0;
+margin-left: 10px;
+			
 	}
+	#cartcount::before {
+		content: "(";
+	}
+	#cartcount::after {
+		content: ")";
+	}
+	
 	.header #logo {
 		width: 90px;
 		padding: 15px;
@@ -2017,7 +2059,7 @@ padding: 10px;
 	height: 105px;
 }
 	.specialbtn a {
-		font-size: 21.5px;
+		font-size: 21px;
 	}
 	
 	
@@ -2152,14 +2194,11 @@ padding: 10px;
   font-size: 15px;
 		margin-right: 0;
 		float: none;
-		padding: 20px 0 20px 0;
+		padding: 0;
+left: 0;
+height: 70px;
+line-height: 70px;
 	}
-	
-		
-	#carticon:hover, #carticon:focus {
-	transition: all .5s;
-	background-color: unset;
-}
 	
 	.header #logo {
 		padding: 12px;
@@ -2186,9 +2225,23 @@ padding: 10px;
 		position: absolute;
 	}
 	
-	#cartcount {
-			top: 90.5vh;
-    right: 28%;
+		#cartcount {
+position: static;
+top: 0;
+right: 0;
+height: 0;
+background: unset;
+font-size: unset;
+font-weight: 700;
+border-radius: 0;
+margin-left: 10px;
+			
+	}
+	#cartcount::before {
+		content: "(";
+	}
+	#cartcount::after {
+		content: ")";
 	}
 	
 		.button {
