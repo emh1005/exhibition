@@ -165,6 +165,7 @@ var cardClick = function(e) {
 	/*modal.style.opacity = "1";
 	modal.style.visibility = "visible";*/
 	modal.getElementsByClassName("addschool")[0].name = schoolObj.type;
+	modal.scrollTop = 0;
 }
 // generate cards acccording to template and school lists
 var clickAction = function(ct, type, btn) {
@@ -202,7 +203,6 @@ var clickAction = function(ct, type, btn) {
 		cardList[type] = true;
 	}
 	card.style.display = "block";
-	card.scrollTop = 0;
 }
 
 //------ card template ------------
