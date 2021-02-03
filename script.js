@@ -202,7 +202,7 @@ var clickAction = function(ct, type, btn) {
 		cardList[type] = true;
 	}
 	card.style.display = "block";
-	card.scrollTop(0);
+	card.scrollTop = 0;
 }
 
 //------ card template ------------
