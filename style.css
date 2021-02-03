@@ -111,7 +111,7 @@ h2, h3 {
 #carticon:hover, #carticon:focus {
 	transition: all .5s;
 	background-color: red;
-	text-decoration: nonㄑe;
+	text-decoration: none;
 	cursor: pointer;
 }
 
@@ -1758,6 +1758,11 @@ padding: 10px;
 		padding: 20px 0 20px 0;
 	}
 	
+	#carticon:hover, #carticon:focus {
+	transition: all .5s;
+	background-color: unset;
+}
+	
 	.header #logo {
 		padding: 15px;
 		margin-left: 0;
@@ -1962,6 +1967,12 @@ padding: 10px;
 		float: none;
 		padding: 20px 0 20px 0;
 	}
+	
+		
+	#carticon:hover, #carticon:focus {
+	transition: all .5s;
+	background-color: unset;
+}
 		#headerbreak {
 	display: block;
 }
@@ -2143,6 +2154,12 @@ padding: 10px;
 		float: none;
 		padding: 20px 0 20px 0;
 	}
+	
+		
+	#carticon:hover, #carticon:focus {
+	transition: all .5s;
+	background-color: unset;
+}
 	
 	.header #logo {
 		padding: 12px;
